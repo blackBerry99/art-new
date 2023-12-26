@@ -1,0 +1,127 @@
+{{ 'accordion-section.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+	{% render 'spaced-section' %}
+{% endstyle %}
+
+<section
+	id="section-{{ section.id }}"
+	data-section-id="{{ section.id }}"
+	class="section-container container acc"
+>
+	<div class="acc">
+		<div class="acc__info">
+			{% if  section.settings.heading !=  blank %}
+				<h2 class="acc__heading">{{ section.settings.heading }}</h2>
+			{% endif %}
+
+			<a class="webwinkelkeurReviews" href="https://www.webwinkelkeur.nl/webshop/Bedrijfsnaam-nl_1212077"><img class="size-full wp-image-5623 aligncenter" role="img" src="https://www.bedrijfsnaam.nl/wp-content/uploads/bedrijfsnaam-kopen-4.svg" alt="reviews" /></a>
+
+			{% if  section.settings.descr !=  blank %}
+				<div class="acc__descr">{{ section.settings.descr }}</div>
+			{% endif %}
+		</div>
+		{% if  section.blocks.size > 0 %}
+		<div class="acc__main">
+			{%- for block in section.blocks -%}
+			<div class="accordion">
+				<details {% if block.settings.default_open %} open {% endif %}>
+					<summary>
+						<div class="summary_title">
+							{%- assign height = block.settings.image.height -%}
+							{%- assign width = block.settings.image.width -%}
+							{% if block.settings.accordion_image != blank %}
+								{{
+								block.settings.accordion_image
+								| image_url: width: 30
+								| image_tag:
+								loading: 'lazy',
+								height: height,
+								width: width
+								}}
+							{% endif %}
+							<h5 class="h5">{{ block.settings.heading }} </h5>
+							{% render 'icon-caret' %}
+						</div>
+					</summary>
+					<div class="product__description quick-add-hidden">
+						{{ block.settings.text }}
+					</div>
+				</details>
+			</div>
+			{% endfor %}
+		</div>
+		{% endif %}
+	</div>
+
+
+
+</section>
+
+{% schema %}
+{
+	"name": "Section with accordion",
+	"max_blocks": 20,
+	"settings": [
+		{
+		"type": "text",
+		"id": "heading",
+		"default": "Wij doen altijd een stapje extra",
+		"label": "Heading"
+		},
+		{
+		"type": "textarea",
+		"id": "descr",
+		"default": "Wij doen altijd een stapje extra",
+		"label": "Description"
+		}
+	],
+	"blocks": [
+		{
+			"type": "accordion_block",
+			"name": "Accordion block",
+			"settings": [
+			{
+			"id": "heading",
+			"type": "text",
+			"default": "Some heading",
+			"label": "Deading"
+			},
+			{
+			"id": "text",
+			"type": "richtext",
+			"default": "<p>Some text</p>",
+			"label": "Description"
+			},
+			{
+			"type": "image_picker",
+			"id": "accordion_image",
+			"label": "Icon"
+			},
+			{
+			"type": "checkbox",
+			"id": "default_open",
+			"default": false,
+			"label": "Opened by default"
+			}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Accordion block",
+			"blocks": [
+				{
+					"type": "accordion_block"
+				},
+				{
+					"type": "accordion_block"
+				},
+				{
+					"type": "accordion_block"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

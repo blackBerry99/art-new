@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "settings": {
+      }
+    },
+    "featured_blog": {
+      "type": "featured-blog",
+      "settings": {
+        "post_layout": "row",
+        "heading": "",
+        "blog_title": "Some heading",
+        "blog": "",
+        "post_limit": 3,
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "show_view_all": false,
+        "margin_top": 170,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_blog"
+  ]
+}
