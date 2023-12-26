@@ -50,21 +50,28 @@
 		| image_url: width: 447
 		| image_tag:
 		loading: 'lazy',
-		sizes: '(min-width: 270px) 50vw, 100vw',
-		widths: '30, 60, 90, 120'
+		class: big,
+		widths: '447'
 		}}
 	{%- endif -%}
 	{%- if section.settings.wa_link != blank -%}
 		<div class="link-btn">
 			<div class="link-btn__text"> {{ section.settings.wa_link_text }}</div>
-			<a  target="_blank" href="{{ section.settings.wa_link }}" class="link-btn__link"> </a>
+			<a  target="_blank" href="{{ section.settings.wa_link }}" class="link-btn__link">
+				<svg class="icon icon-button-arrow" width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M9.33716 3.345L2.16466 10.5175L0.986328 9.33917L8.15799 2.16667H1.83716V0.5H11.0038V9.66667H9.33716V3.345Z" fill="#C27A0D"></path>
+				</svg></a>
 		</div>
 	{%- endif -%}
 
 	{%- if section.settings.call_link != blank -%}
 		<div class="link-btn">
 			<div class="link-btn__text"> {{ section.settings.call_link_text }}</div>
-			<a  target="_blank" href="{{ section.settings.call_link }}" class="link-btn__link"> </a>
+			<a  target="_blank" href="{{ section.settings.call_link }}" class="link-btn__link">
+				<svg class="icon icon-button-arrow" width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M9.33716 3.345L2.16466 10.5175L0.986328 9.33917L8.15799 2.16667H1.83716V0.5H11.0038V9.66667H9.33716V3.345Z" fill="#C27A0D"></path>
+				</svg>
+			</a>
 		</div>
 	{%- endif -%}
 	<div class="swiper ticker-js-{{ section.id }}" id="js-carousel">
@@ -110,12 +117,9 @@
 
 {% schema %}
 {
-	"name": "t:sections.ticker.presets.name",
+	"name": "Ticker section",
 	"tag": "section",
-	"class": "ticker",
-	"enabled_on": {
-		"templates": ["*"]
-	},
+	"class": "ticker-section",
 	"settings": [
 		{
 		"type": "image_picker",
@@ -141,7 +145,7 @@
 		},
 		{
 		"type": "text",
-		"id": "call_text",
+		"id": "call_link_text",
 		"default": "Bel met Arnoud",
 		"label": "Call link text"
 		},
@@ -197,7 +201,7 @@
 	],
 	"presets": [
 		{
-			"name": "t:sections.ticker.presets.name"
+			"name": "Ticker section"
 		}
 	]
 }

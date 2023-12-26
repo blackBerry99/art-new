@@ -3,8 +3,8 @@
   z-index: 10;
 }
 .footer .list-social__item .icon {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 24px;
+  height: 24px;
 }
 .footer .link {
   text-decoration: none;
@@ -94,12 +94,15 @@
   text-decoration: none;
   word-wrap: break-word;
   max-width: 100%;
+  width: 100%;
 }
 
 .footer__logo {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: auto;
+  max-height: none;
 }
 
 .footer__logo-link span {
@@ -108,32 +111,16 @@
 
 .footer__content-middle {
   position: relative;
+  background: #FFFFFF;
 }
 .footer__content-middle .container {
   position: relative;
 }
-.footer__content-middle .container::before {
-  content: none;
-  position: absolute;
-  top: 0;
-  left: 2rem;
-  right: 2rem;
-  margin: 0 auto;
-  height: 0.1rem;
-  background-color: rgba(var(--color-border));
-}
-@media screen and (min-width: 990px) {
-  .footer__content-middle .container::before {
-    content: "";
-  }
-}
 
 .footer__content-middle-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-top: 24px;
+  padding-bottom: 24px;
+display: flex;
 }
 
 .footer__content-middle-main {
@@ -301,11 +288,7 @@
     margin-right: 0;
   }
 }
-@media screen and (min-width: 990px) {
-  .footer__content-middle-container {
-    padding: 6rem 0;
-  }
-}
+
 @media screen and (min-width: 990px) {
   .footer__content-top {
     padding-bottom: 6.4rem;
@@ -476,6 +459,7 @@
 .footer .footer__payment {
   display: flex;
   flex-direction: column;
+  margin-left: 220px;
 }
 .footer .footer__payment .footer__payment-heading {
   font-size: 12px;
@@ -495,7 +479,7 @@
 
 .footer-block__heading {
   margin-top: 0;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2px;
   color: rgb(var(--color-foreground-title));
   font-family: var(--font-footer-menu-family);
   font-style: var(--font-footer-menu-style);
@@ -503,11 +487,15 @@
 }
 
 .footer-block__text {
-  font-size: var(--font-footer-link-size);
-  color: rgb(var(--color-secondary-text));
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
 }
 .footer-block__text p {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 196px;
+  text-align: center;
 }
 .footer-block__text a {
   position: relative;
@@ -542,38 +530,22 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 0.8rem;
+  gap: 10px;
 }
 .footer__list-social .list-social__item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-width: 50px;
 }
 .footer__list-social .list-social__item .list-social__text {
   display: flex;
   align-items: center;
-  column-gap: 0.8rem;
+  column-gap: 10px;
   transition: color 1s;
+  margin-top: 18px;
 }
 .footer__list-social .list-social__item .list-social__text:hover {
   color: rgb(var(--color-accent));
-}
-.footer__list-social .list-social__item:not(:last-child) .list-social__text::after {
-  content: "";
-  width: 1.2rem;
-  height: 0.1rem;
-  background-color: #c1c1c1;
-}
-@media screen and (min-width: 576px) {
-  .footer__list-social .list-social__item:not(:last-child) .list-social__text::after {
-    width: 3.2rem;
-  }
-}
-@media screen and (min-width: 1360px) {
-  .footer__list-social .list-social__item:nth-child(3n+0) .list-social__text::after {
-    width: 0 !important;
-  }
 }
 .footer__list-social .list-social__item--placeholder:not(:only-child) {
   display: none;
@@ -797,8 +769,8 @@ footer details[open] summary ~ * {
   }
 }
 .footer-block__details-content .list-menu__item--link {
-  font-size: var(--font-footer-link-size);
-  color: rgb(var(--color-secondary-text));
+  font-size: 18px;
+  color: #ededed;
 }
 
 @media screen and (min-width: 990px) {
@@ -837,6 +809,10 @@ footer details[open] summary ~ * {
   .footer-block__details-content > :first-child .list-menu__item--link {
     padding-top: 0;
     margin-top: 0;
+  }
+
+  .footer-block--info {
+    margin: 0 140px 0 auto;
   }
 }
 .footer-block__details-content .placeholder-svg {
@@ -881,4 +857,29 @@ footer details[open] summary ~ * {
   width: 100%;
   padding: 3.2rem 0;
   border-top: 1px solid rgba(var(--color-border));
+}
+
+.footer-block:not(.footer-block--menu) li a{
+  font-size: 30px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.footer-block--menu li a{
+  line-height: 1.6;
+}
+
+.footer-block__heading {
+  color: #B6B6B6;
+  font-size: 14px;
+  line-height: 2;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer .link-btn {
+  margin-top: 32px;
+}
+.footer.color-background-3 {
+  background-color: #161616;
 }

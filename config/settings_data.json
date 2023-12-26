@@ -62,6 +62,8 @@
     "badge_icon_background": "#FFFFFF",
     "background_card": "#F4F0EC",
     "quickview_hover": false,
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
     "favicon": "shopify:\/\/shop_images\/Moderne-kunst.svg",
     "quickview_show": true,
     "predictive_search_enabled": true,

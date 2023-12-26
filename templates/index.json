@@ -126,7 +126,8 @@
         "padding_top": 50,
         "padding_bottom": 50,
         "margin_top": 60,
-        "margin_bottom": 0
+        "margin_bottom": 0,
+        "text_add": "Bekend van:"
       }
     },
     "21c423b3-a885-469d-a009-744aad420d61": {
@@ -411,6 +412,57 @@
         "margin_top": 170,
         "margin_bottom": 0
       }
+    },
+    "db3781d6-ba4b-4487-8007-9a715d2de40a": {
+      "type": "accordion-section",
+      "blocks": {
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-1": {
+          "type": "accordion_block",
+          "settings": {
+            "heading": "14 dagen vrijblijvend proefhangen",
+            "text": "<p>Some text<\/p>",
+            "accordion_image": "shopify:\/\/shop_images\/Layer_3.svg",
+            "default_open": false
+          }
+        },
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-2": {
+          "type": "accordion_block",
+          "settings": {
+            "heading": "Gratis verzenden & retourneren",
+            "text": "<p>Some text<\/p>",
+            "accordion_image": "shopify:\/\/shop_images\/Group.svg",
+            "default_open": false
+          }
+        },
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-3": {
+          "type": "accordion_block",
+          "settings": {
+            "heading": "Schadevrij bezorg garantie",
+            "text": "<p>Some text<\/p>",
+            "accordion_image": "shopify:\/\/shop_images\/Layer_1_1.svg",
+            "default_open": false
+          }
+        },
+        "30aaa4d5-367b-4fca-9683-3fd62a805e8e": {
+          "type": "accordion_block",
+          "settings": {
+            "heading": "Website beveiligd en gekeurd",
+            "text": "<p>Some text<\/p>",
+            "accordion_image": "shopify:\/\/shop_images\/Group_5.svg",
+            "default_open": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-1",
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-2",
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-3",
+        "30aaa4d5-367b-4fca-9683-3fd62a805e8e"
+      ],
+      "settings": {
+        "heading": "Wij doen altijd een stapje extra",
+        "descr": "Onze klanten beoordelen ons met 5 sterren op Webwinkelkeur op basis van 26 onafhankelijke en geverifieerde ervaringen."
+      }
     }
   },
   "order": [
@@ -421,6 +473,7 @@
     "27ba735f-c835-4041-bc3e-409190ff3388",
     "ac00dc1e-cca8-4c90-a54b-928261a2b31f",
     "2e961fb9-d129-43c6-ae77-a7067c4ca4eb",
+    "db3781d6-ba4b-4487-8007-9a715d2de40a",
     "5fc74ce8-d011-4265-b2c4-ee385b089c86",
     "2eb1e1de-3152-4ded-b75d-dc23a11b1e33"
   ]
