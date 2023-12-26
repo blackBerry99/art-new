@@ -1,0 +1,30 @@
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "background-2",
+        "show_border": false,
+        "logo_width": 110,
+        "show_newsletter": true,
+        "newsletter_text": "Subscribe to Our Newsletter and Get 10% Off",
+        "show_social": true,
+        "show_social_icons": false,
+        "enable_follow_on_shop": false,
+        "payment_enable": true,
+        "payment_heading": "We Accept:",
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "show_policy": false,
+        "copyright": "&copy; Copyright, {{ shop.name | link_to: routes.root_url }} {{ 'now' | date: '%Y' }}",
+        "margin_top": 170,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

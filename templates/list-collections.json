@@ -1,0 +1,125 @@
+{
+  "sections": {
+    "24e6b7f4-6750-46ae-aec1-e7d29eeed0f4": {
+      "type": "slideshow",
+      "blocks": {
+        "3db3e08e-526e-48f5-92b7-2a8ed61237f8": {
+          "type": "slideshow_item",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "theme-dark",
+            "collection_title_1": "Ronald Chapeau",
+            "collection_title_2": "The Godfather",
+            "heading": "",
+            "slideshow_item_image": "shopify:\/\/shop_images\/Guy-Olivier-Schilder-Kunstenaar.jpg",
+            "position_by_vertical": "center",
+            "opacity_overlay": 0,
+            "opacity_overlay_mobile": 0,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "c7760aa3-3377-4afa-930d-cc87858b791f": {
+          "type": "slideshow_item",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "theme-dark",
+            "collection_title_1": "Je shen",
+            "collection_title_2": "Love Boat",
+            "heading": "",
+            "slideshow_item_image": "shopify:\/\/shop_images\/Je-Shen-Schilder-Kunstenaar.jpg",
+            "position_by_vertical": "center",
+            "opacity_overlay": 0,
+            "opacity_overlay_mobile": 0,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "d8a3d5bb-d43d-4c40-be70-9eb69231dcf0": {
+          "type": "slideshow_item",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "theme-dark",
+            "collection_title_1": "Herman Brood",
+            "collection_title_2": "Wild Bill",
+            "heading": "",
+            "slideshow_item_image": "shopify:\/\/shop_images\/Herman-Brood-Schilderijen-Kunst.jpg",
+            "position_by_vertical": "center",
+            "opacity_overlay": 0,
+            "opacity_overlay_mobile": 0,
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "cd0f6f4b-dd17-4029-9459-12822dd3503c": {
+          "type": "slideshow_item",
+          "settings": {
+            "color_scheme": "theme-dark",
+            "collection_title_1": "Van Apple",
+            "collection_title_2": "Dream Hotel II",
+            "heading": "",
+            "slideshow_item_image": "shopify:\/\/shop_images\/Van-Apple-Art-Kunstenaar-Leiden.jpg",
+            "position_by_vertical": "center",
+            "opacity_overlay": 0,
+            "opacity_overlay_mobile": 0,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "b78e0e23-4783-44f5-bd50-12111fe37841": {
+          "type": "slideshow_item",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "theme-light",
+            "collection_title_1": "Ronald Chapeau",
+            "collection_title_2": "The Don",
+            "heading": "Some heading",
+            "position_by_vertical": "center",
+            "opacity_overlay": 0,
+            "opacity_overlay_mobile": 0,
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3db3e08e-526e-48f5-92b7-2a8ed61237f8",
+        "c7760aa3-3377-4afa-930d-cc87858b791f",
+        "d8a3d5bb-d43d-4c40-be70-9eb69231dcf0",
+        "cd0f6f4b-dd17-4029-9459-12822dd3503c",
+        "b78e0e23-4783-44f5-bd50-12111fe37841"
+      ],
+      "settings": {
+        "under_menu": false,
+        "heading_position": "top",
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": false,
+        "parallax": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 4,
+        "slide_effects": "slide",
+        "padding_top": 40,
+        "padding_bottom": 60,
+        "margin_top": 40,
+        "margin_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "",
+        "sort": "products_high",
+        "image": "collection",
+        "collection_individual": "",
+        "image_ratio": "landscape",
+        "image_fit": "cover",
+        "show_count": true,
+        "show_desc": false
+      }
+    }
+  },
+  "order": [
+    "24e6b7f4-6750-46ae-aec1-e7d29eeed0f4",
+    "main"
+  ]
+}
