@@ -69,28 +69,6 @@
         "margin_bottom": 0
       }
     },
-    "f5755aed-c8c1-418b-b4a3-27e79aa588a9": {
-      "type": "rich-text",
-      "blocks": {
-        "template--20214204858713__f5755aed-c8c1-418b-b4a3-27e79aa588a9-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Bekend van:<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--20214204858713__f5755aed-c8c1-418b-b4a3-27e79aa588a9-text-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "margin_top": 90,
-        "margin_bottom": 0
-      }
-    },
     "47cb27da-9947-4d97-a77a-23b89f558ff0": {
       "type": "brand-image",
       "blocks": {
@@ -145,9 +123,9 @@
       "settings": {
         "border_top": false,
         "border_bottom": true,
-        "padding_top": 0,
-        "padding_bottom": 30,
-        "margin_top": 0,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "margin_top": 60,
         "margin_bottom": 0
       }
     },
@@ -438,7 +416,6 @@
   "order": [
     "instagram-collage",
     "c76ed737-5742-4bda-a9d6-a3f6f8ba8033",
-    "f5755aed-c8c1-418b-b4a3-27e79aa588a9",
     "47cb27da-9947-4d97-a77a-23b89f558ff0",
     "21c423b3-a885-469d-a009-744aad420d61",
     "27ba735f-c835-4041-bc3e-409190ff3388",

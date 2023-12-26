@@ -1,0 +1,30 @@
+.acc {
+    padding: 60px 0;
+}
+.acc__descr {
+    margin-top: 20px;
+}
+.acc__main {
+    margin-top: 40px;
+    flex: 1;
+}
+.acc__info {
+    flex: 1;
+}
+
+@media screen and (min-width: 990px) {
+    .acc {
+        display: flex;
+        justify-content: space-between;
+        padding: 170px 0;
+    }
+    .acc__heading {
+        margin-bottom: 16px;
+    }
+    .acc__descr {
+        margin-top: 42px;
+    }
+    .acc__main {
+        margin-top: 0;
+    }
+}
