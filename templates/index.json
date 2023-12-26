@@ -1,0 +1,450 @@
+{
+  "sections": {
+    "instagram-collage": {
+      "type": "instagram-collage",
+      "disabled": true,
+      "settings": {
+        "heading": "<p>Heading for Image collage<\/p>",
+        "name_account": "Some text",
+        "desc_account": "Some text",
+        "button_label": "Explore",
+        "button_link": "",
+        "margin_top": 170,
+        "margin_bottom": 0
+      }
+    },
+    "c76ed737-5742-4bda-a9d6-a3f6f8ba8033": {
+      "type": "image-card",
+      "blocks": {
+        "template--20214204858713__c76ed737-5742-4bda-a9d6-a3f6f8ba8033-image-card_block-1": {
+          "type": "image-card_block",
+          "settings": {
+            "color_scheme": "theme-dark",
+            "card_subtitle": "Schilderijen",
+            "card_title": "Laat je wand spreken",
+            "card_image": "shopify:\/\/shop_images\/Herman-Brood-Banner-2.jpg",
+            "card_image_hover": "shopify:\/\/shop_images\/Herman-Brood-Banner-2.jpg",
+            "opacity_overlay": 0.2,
+            "card_desctiption_hover": "Herman Brood - Chet Baker",
+            "button_label": "Alle schilderijen",
+            "button_link": "shopify:\/\/collections\/schilderijen"
+          }
+        },
+        "template--20214204858713__c76ed737-5742-4bda-a9d6-a3f6f8ba8033-image-card_block-2": {
+          "type": "image-card_block",
+          "settings": {
+            "color_scheme": "theme-dark",
+            "card_subtitle": "Sculpturen",
+            "card_title": "Geef je ruimte vorm",
+            "card_image": "shopify:\/\/shop_images\/Sculpture-2-1.jpg",
+            "card_image_hover": "shopify:\/\/shop_images\/Sculpture-2-1-1-hover.png",
+            "opacity_overlay": 0.3,
+            "card_desctiption_hover": "Van Apple - Popeye",
+            "button_label": "Alle sculpturen",
+            "button_link": "shopify:\/\/collections\/sculpturen"
+          }
+        },
+        "template--20214204858713__c76ed737-5742-4bda-a9d6-a3f6f8ba8033-image-card_block-3": {
+          "type": "image-card_block",
+          "settings": {
+            "color_scheme": "theme-dark",
+            "card_subtitle": "Kunstenaars",
+            "card_title": "Ontdek creatief talent",
+            "card_image": "shopify:\/\/shop_images\/Herman-Brood-Banner-1.jpg",
+            "card_image_hover": "shopify:\/\/shop_images\/Herman-Brood-Banner-1.jpg",
+            "opacity_overlay": 0.2,
+            "card_desctiption_hover": "Herman Brood",
+            "button_label": "Alle kunstenaars",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "template--20214204858713__c76ed737-5742-4bda-a9d6-a3f6f8ba8033-image-card_block-1",
+        "template--20214204858713__c76ed737-5742-4bda-a9d6-a3f6f8ba8033-image-card_block-2",
+        "template--20214204858713__c76ed737-5742-4bda-a9d6-a3f6f8ba8033-image-card_block-3"
+      ],
+      "settings": {
+        "margin_top": 60,
+        "margin_bottom": 0
+      }
+    },
+    "f5755aed-c8c1-418b-b4a3-27e79aa588a9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20214204858713__f5755aed-c8c1-418b-b4a3-27e79aa588a9-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bekend van:<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20214204858713__f5755aed-c8c1-418b-b4a3-27e79aa588a9-text-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 90,
+        "margin_bottom": 0
+      }
+    },
+    "47cb27da-9947-4d97-a77a-23b89f558ff0": {
+      "type": "brand-image",
+      "blocks": {
+        "18219ed1-f657-4e0c-81e2-8278efc7c34d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rtl4.png",
+            "image_width": 140,
+            "brand_link": ""
+          }
+        },
+        "template--20214204858713__47cb27da-9947-4d97-a77a-23b89f558ff0-column-6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/artlaren.png",
+            "image_width": 60,
+            "brand_link": ""
+          }
+        },
+        "template--20214204858713__47cb27da-9947-4d97-a77a-23b89f558ff0-column-5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/excellent.png",
+            "image_width": 140,
+            "brand_link": ""
+          }
+        },
+        "template--20214204858713__47cb27da-9947-4d97-a77a-23b89f558ff0-column-7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/keve.png",
+            "image_width": 140,
+            "brand_link": ""
+          }
+        },
+        "template--20214204858713__47cb27da-9947-4d97-a77a-23b89f558ff0-column-8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nederland.png",
+            "image_width": 90,
+            "brand_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "18219ed1-f657-4e0c-81e2-8278efc7c34d",
+        "template--20214204858713__47cb27da-9947-4d97-a77a-23b89f558ff0-column-6",
+        "template--20214204858713__47cb27da-9947-4d97-a77a-23b89f558ff0-column-5",
+        "template--20214204858713__47cb27da-9947-4d97-a77a-23b89f558ff0-column-7",
+        "template--20214204858713__47cb27da-9947-4d97-a77a-23b89f558ff0-column-8"
+      ],
+      "settings": {
+        "border_top": false,
+        "border_bottom": true,
+        "padding_top": 0,
+        "padding_bottom": 30,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "21c423b3-a885-469d-a009-744aad420d61": {
+      "type": "featured-products",
+      "blocks": {
+        "template--20214204858713__21c423b3-a885-469d-a009-744aad420d61-column-2": {
+          "type": "column",
+          "settings": {
+            "product": "peter-donkersloot-don-corleone-v",
+            "active": false
+          }
+        },
+        "template--20214204858713__21c423b3-a885-469d-a009-744aad420d61-column-3": {
+          "type": "column",
+          "settings": {
+            "product": "lambert-oude-wesselink-business-meeting",
+            "active": false
+          }
+        },
+        "25f49b2c-58a6-4b16-8b25-ff8c22ab7237": {
+          "type": "column",
+          "settings": {
+            "product": "herman-brood-chet-baker-giclee",
+            "active": false
+          }
+        },
+        "40548d75-c379-4ba9-a0d4-38d22dd87bf4": {
+          "type": "column",
+          "settings": {
+            "product": "guy-olivier-la-fete-continu",
+            "active": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20214204858713__21c423b3-a885-469d-a009-744aad420d61-column-2",
+        "template--20214204858713__21c423b3-a885-469d-a009-744aad420d61-column-3",
+        "25f49b2c-58a6-4b16-8b25-ff8c22ab7237",
+        "40548d75-c379-4ba9-a0d4-38d22dd87bf4"
+      ],
+      "settings": {
+        "subtitle": "",
+        "heading": "Populair",
+        "color_scheme": "base-background-2",
+        "image_ratio": "portrait",
+        "image_fit": "contain",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_sku": false,
+        "show_desc": false,
+        "margin_top": 30,
+        "margin_bottom": 0
+      }
+    },
+    "27ba735f-c835-4041-bc3e-409190ff3388": {
+      "type": "featured-products",
+      "blocks": {
+        "25ec3bcd-1bca-4033-8a72-4ec95cf7bd87": {
+          "type": "column",
+          "settings": {
+            "product": "floyd-douglas-venetie",
+            "active": false
+          }
+        },
+        "19d9a42f-e218-4153-a33a-3be04d4b4cfc": {
+          "type": "column",
+          "settings": {
+            "product": "jef-poldervaart-la-jeune-fille-et-moi",
+            "active": false
+          }
+        },
+        "bb1ce789-be38-4e1c-a31e-b6504471638f": {
+          "type": "column",
+          "settings": {
+            "product": "van-apple-popeye-pink",
+            "active": false
+          }
+        },
+        "b7348dc6-0037-42b5-a02b-cb82788805c9": {
+          "type": "column",
+          "settings": {
+            "product": "je-shen-mediation-pink",
+            "active": false
+          }
+        }
+      },
+      "block_order": [
+        "25ec3bcd-1bca-4033-8a72-4ec95cf7bd87",
+        "19d9a42f-e218-4153-a33a-3be04d4b4cfc",
+        "bb1ce789-be38-4e1c-a31e-b6504471638f",
+        "b7348dc6-0037-42b5-a02b-cb82788805c9"
+      ],
+      "settings": {
+        "subtitle": "",
+        "heading": "",
+        "color_scheme": "base-background-2",
+        "image_ratio": "portrait",
+        "image_fit": "contain",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_sku": false,
+        "show_desc": false,
+        "margin_top": 10,
+        "margin_bottom": 0
+      }
+    },
+    "ac00dc1e-cca8-4c90-a54b-928261a2b31f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20352216957273__ac00dc1e-cca8-4c90-a54b-928261a2b31f-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Alle producten",
+            "button_link": "shopify:\/\/collections",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--20352216957273__ac00dc1e-cca8-4c90-a54b-928261a2b31f-button-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 10,
+        "padding_bottom": 10,
+        "margin_top": 10,
+        "margin_bottom": 0
+      }
+    },
+    "2e961fb9-d129-43c6-ae77-a7067c4ca4eb": {
+      "type": "image-tabs",
+      "blocks": {
+        "template--20214204858713__2e961fb9-d129-43c6-ae77-a7067c4ca4eb-image-tabs_item-1": {
+          "type": "image-tabs_item",
+          "settings": {
+            "tab_title": "Abstract",
+            "image_tabs": "shopify:\/\/shop_images\/Abstracte-kunst-schilderij.jpg",
+            "button_link": "https:\/\/modernekunst.nl\/collections\/wall-art?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Abstract"
+          }
+        },
+        "1d09ed15-66e5-46bb-85e9-80d73fe3565d": {
+          "type": "image-tabs_item",
+          "settings": {
+            "tab_title": "Foto kunst",
+            "image_tabs": "shopify:\/\/shop_images\/Fotografie-kunst.jpg",
+            "button_link": "https:\/\/modernekunst.nl\/collections\/wall-art?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Foto+kunst"
+          }
+        },
+        "template--20214204858713__2e961fb9-d129-43c6-ae77-a7067c4ca4eb-image-tabs_item-2": {
+          "type": "image-tabs_item",
+          "settings": {
+            "tab_title": "Pop art",
+            "image_tabs": "shopify:\/\/shop_images\/pop-art-schilderijen.jpg",
+            "button_link": "https:\/\/modernekunst.nl\/collections\/wall-art?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Pop+art"
+          }
+        },
+        "template--20214204858713__2e961fb9-d129-43c6-ae77-a7067c4ca4eb-image-tabs_item-3": {
+          "type": "image-tabs_item",
+          "settings": {
+            "tab_title": "Street art",
+            "image_tabs": "shopify:\/\/shop_images\/street-art.jpg",
+            "button_link": "https:\/\/modernekunst.nl\/collections\/wall-art?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Street+art"
+          }
+        },
+        "9b206b08-0cac-4683-a82d-097d74a078fe": {
+          "type": "image-tabs_item",
+          "settings": {
+            "tab_title": "Modern",
+            "image_tabs": "shopify:\/\/shop_images\/moderne-kunst-kopen.jpg",
+            "button_link": "https:\/\/modernekunst.nl\/collections\/wall-art?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Modern"
+          }
+        }
+      },
+      "block_order": [
+        "template--20214204858713__2e961fb9-d129-43c6-ae77-a7067c4ca4eb-image-tabs_item-1",
+        "1d09ed15-66e5-46bb-85e9-80d73fe3565d",
+        "template--20214204858713__2e961fb9-d129-43c6-ae77-a7067c4ca4eb-image-tabs_item-2",
+        "template--20214204858713__2e961fb9-d129-43c6-ae77-a7067c4ca4eb-image-tabs_item-3",
+        "9b206b08-0cac-4683-a82d-097d74a078fe"
+      ],
+      "custom_css": [
+        ".image-tabs__body {padding: 6rem 15rem 10rem 12rem;}"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "slide_effects": "creative",
+        "subheading": "",
+        "heading": "",
+        "collection_title_1": "Kunststijlen",
+        "collection_title_2": "",
+        "margin_top": 100,
+        "margin_bottom": 0
+      }
+    },
+    "5fc74ce8-d011-4265-b2c4-ee385b089c86": {
+      "type": "video-banner",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-4",
+        "subheading": "",
+        "heading": "<p>Onze showroom in Leiden<\/p>",
+        "heading_size": "large",
+        "text_information": "",
+        "text_align": "center",
+        "show_view_all": true,
+        "button_label": "Afspraak maken",
+        "button_style": "primary",
+        "button_link": "",
+        "video": "shopify:\/\/files\/videos\/Mijn film 5.mp4",
+        "video_ratio": "adapt",
+        "video_fit": "contain",
+        "opacity_overlay": 0.2,
+        "padding_top": 100,
+        "padding_bottom": 0
+      }
+    },
+    "2eb1e1de-3152-4ded-b75d-dc23a11b1e33": {
+      "type": "testimonials",
+      "blocks": {
+        "template--20214204858713__2eb1e1de-3152-4ded-b75d-dc23a11b1e33-testimonials_blocks-1": {
+          "type": "testimonials_blocks",
+          "settings": {
+            "testimonials_product": "guy-olivier-la-rouge",
+            "slide_text": "We werden vakkundig en vol enthousiasme geholpen. We mochten zelfs meerdere schilderijen op zicht meenemen. Onze Guy Olivier hangt geweldig! Wij komen er zeker nog terug.",
+            "image": "shopify:\/\/shop_images\/image_31.png",
+            "slide_name": "Ineke Roos",
+            "slide_position": ""
+          }
+        },
+        "template--20214204858713__2eb1e1de-3152-4ded-b75d-dc23a11b1e33-testimonials_blocks-3": {
+          "type": "testimonials_blocks",
+          "settings": {
+            "testimonials_product": "nissim-men-stil-life-air",
+            "slide_text": "Als verzamelaar van kunst ben ik tevreden over het advies van Moderne Kunst!\nDe keuze in kunstenaars zoals Pieter Vonk, Van Apple, Nissim Men en Peter Donkersloot zorgen dat ik me voel als een kind in een snoepwinkel.",
+            "image": "shopify:\/\/shop_images\/Sander_Kuiper_Review.png",
+            "slide_name": "Sander Kuiper",
+            "slide_position": ""
+          }
+        },
+        "688c549c-066f-4e55-8a47-58e272df1f6b": {
+          "type": "testimonials_blocks",
+          "settings": {
+            "testimonials_product": "guy-olivier-double-trouble",
+            "slide_text": "Er is altijd ruimte voor meer kunst. We hebben o.a. prachtig werk van Diederik van Apple en een groot kunstwerk van Guy Olivier hangen.\nVriendelijkheid, deskundig,  topservice zorgen ervoor dat je altijd weer graag terug komt.",
+            "image": "shopify:\/\/shop_images\/Eugenie_van_der_Linden_Review.png",
+            "slide_name": "Eugenie van der Linden",
+            "slide_position": ""
+          }
+        },
+        "1681ee5b-d268-4c7f-a356-34ee54cd97ce": {
+          "type": "testimonials_blocks",
+          "settings": {
+            "testimonials_product": "herman-brood-chet-baker-giclee",
+            "slide_text": "Wat een topzaak:-) Wij zijn op een zaterdag binnen komen vallen en erg prettig geholpen. Na het zien van een mooi werk hebben wij er even over nagedacht, en toen was het geen probleem de zeefdruk even binnen ons interieur te zien",
+            "image": "shopify:\/\/shop_images\/unnamed.png",
+            "slide_name": "Tim B",
+            "slide_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20214204858713__2eb1e1de-3152-4ded-b75d-dc23a11b1e33-testimonials_blocks-1",
+        "template--20214204858713__2eb1e1de-3152-4ded-b75d-dc23a11b1e33-testimonials_blocks-3",
+        "688c549c-066f-4e55-8a47-58e272df1f6b",
+        "1681ee5b-d268-4c7f-a356-34ee54cd97ce"
+      ],
+      "settings": {
+        "testimonials_layout": "carousel",
+        "subheading": "",
+        "testimonials_heading": "",
+        "color_scheme": "base-background-1",
+        "image_ratio": "landscape",
+        "image_fit": "contain",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_sku": false,
+        "show_desc": false,
+        "margin_top": 170,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "instagram-collage",
+    "c76ed737-5742-4bda-a9d6-a3f6f8ba8033",
+    "f5755aed-c8c1-418b-b4a3-27e79aa588a9",
+    "47cb27da-9947-4d97-a77a-23b89f558ff0",
+    "21c423b3-a885-469d-a009-744aad420d61",
+    "27ba735f-c835-4041-bc3e-409190ff3388",
+    "ac00dc1e-cca8-4c90-a54b-928261a2b31f",
+    "2e961fb9-d129-43c6-ae77-a7067c4ca4eb",
+    "5fc74ce8-d011-4265-b2c4-ee385b089c86",
+    "2eb1e1de-3152-4ded-b75d-dc23a11b1e33"
+  ]
+}
