@@ -22,7 +22,7 @@
   --color-link: var(--color-base-text);
   --alpha-link: 0.5;
   --color-button: var(--color-base-button-background);
-  --color-orange: rgba(238, 128, 65, 1);
+  --color-orange: #EE8041;
   --color-button-text: var(--color-base-solid-button-labels);
   --color-button-secondary: var(--color-base-outline-button-labels);
   --color-button-secondary-text: var(--color-secondary-button-labels);

@@ -78,7 +78,7 @@
               {%- when 'vendor' -%}
                 <p class="product__text" {{ block.shopify_attributes }}>
                   {{- product.vendor -}}
-                </p>          
+                </p>
 
               {%- when 'title' -%}
                 <div
@@ -135,16 +135,6 @@
                     show_badges: true,
                     price_class: 'price--product'
                   -%}
-                  {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-                    <div class="product__tax caption">
-                      {%- if shop.taxes_included -%}
-                        {{ 'products.product.include_taxes' | t }}
-                      {%- endif -%}
-                      {%- if shop.shipping_policy.body != blank -%}
-                        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                      {%- endif -%}
-                    </div>
-                  {%- endif -%}
                 </div>
                 <div {{ block.shopify_attributes }} style="margin: 0">
                   {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
@@ -277,12 +267,12 @@
                           </quantity-input>
                         </div>
                       </div>
-            
+
                       <script type="application/json">
                         {{ product.variants | json }}
                       </script>
                     </variant-radios>
-	                  
+
                   {% else %}
                     {% if product.has_only_default_variant == true
                       and product.selected_or_first_available_variant.available == true
@@ -427,7 +417,7 @@
                     {% endif %}
                   {% endif %}
                 </div>
-								
+
               {%- when 'buy_buttons' -%}
                 <div {{ block.shopify_attributes }}>
                   {%- liquid
@@ -495,10 +485,8 @@
                         >
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
-                            {% render 'icon-cart' %}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
-                            {% render 'icon-cart' %}
                           {%- endif -%}
                         </button>
                       </div>
@@ -631,6 +619,27 @@
                   {{ block.settings.custom_liquid }}
                 </div>
 
+                {%- when 'owner' -%}
+                    <div class="info-block">
+                        {%- if block.settings.image != blank -%}
+                        <div class="info-block__img">
+                                {{
+                                block.settings.image
+                                | image_url: width: 45
+                                | image_tag:
+                                loading: 'lazy',
+                                class: big,
+                                widths: '120'
+                                }}
+                        </div>
+                        {%- endif -%}
+                         {%- if block.settings.text != blank -%}
+                             <div class="info-block__text">
+                                 {{ block.settings.text }}
+                             </div>
+                         {%- endif -%}
+                    </div>
+
               {%- when 'sku' -%}
                 <p
                   class="product__sku no-js-hidden {% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -671,35 +680,26 @@
                 {%- endif -%}
 
               {%- when 'about_product' -%}
-                <div class="accordion" {{ block.shopify_attributes }}>
-                  <details {% if block.settings.default_open %} open {% endif %}>
-                    <summary>
-                      <div class="summary_title">
-                        {%- assign height = block.settings.image.height -%}
-									  		{%- assign width = block.settings.image.width -%}
-                        {% if block.settings.accordion_image != blank %}
-                          {{
-                            block.settings.accordion_image
-                            | image_url: width: 30
-                            | image_tag:
-                              loading: 'lazy',
-                              height: height,
-													    width: width
-                          }}
-                        {% endif %}
-                        <h5 class="h5">{{ block.settings.heading }} </h5>
-                        {% render 'icon-caret' %}
-                      </div>
-                    </summary>
-                    <div class="product__description quick-add-hidden">
-                      {{ block.settings.text }}
-                    </div>
-                  </details>
+                <div class="summary_title">
+                    {%- assign height = block.settings.image.height -%}
+                    {%- assign width = block.settings.image.width -%}
+                    {% if block.settings.accordion_image != blank %}
+                        {{
+                        block.settings.accordion_image
+                        | image_url: width: 30
+                        | image_tag:
+                        loading: 'lazy',
+                        height: height,
+                        width: width
+                        }}
+                    {% endif %}
+                    <h5 class="h5">{{ block.settings.heading }} </h5>
                 </div>
             {%- endcase -%}
           {%- endfor -%}
+            <a class="webwinkelkeurReviews" href="https://www.webwinkelkeur.nl/webshop/Bedrijfsnaam-nl_1212077"><img class="size-full wp-image-5623 aligncenter" role="img" src="https://www.bedrijfsnaam.nl/wp-content/uploads/bedrijfsnaam-kopen-4.svg" alt="reviews" /></a>
 
-          <a href="{{ product.url }}" class="list-menu__item link link-hover-line-outer focus-inset full-details">
+            <a href="{{ product.url }}" class="list-menu__item link link-hover-line-outer focus-inset full-details">
             <span>{{- 'general.card.view__more' | t -}}</span>
           </a>
         </div>
@@ -747,7 +747,7 @@
 														widths: '576, 550, 1100',
 														width: 743,
 														height: 743
-												}}	
+												}}
                       </div>
                     </div>
                   {%- endunless -%}
@@ -784,7 +784,7 @@
 												| image_tag:
 													loading: 'lazy',
 													widths: '550, 1100'
-											}}											
+											}}
                     </div>
                   </li>
                 {%- endunless -%}
@@ -865,6 +865,16 @@
         </div>
       {% endif %}
     </div>
+        {%- if product.description != blank -%}
+        <div class="product-full">
+            {{ product.description }}
+
+            {% assign url = product.metafields.custom.author.value %}
+            <div class="product-author">
+
+            </div>
+        </div>
+        {% endif %}
     </div>
     </div>
 
@@ -937,9 +947,9 @@
 											widths: '576, 550, 1100',
 											width: '576',
 						      		data-media-id: media.id
-									}}							
+									}}
 								</button>
-                
+
 								<template>
 									{%- case media.media_type -%}
 										{%- when 'external_video' -%}
@@ -1309,6 +1319,22 @@
           "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
         }
       ]
+    },
+    {
+    "type": "owner",
+    "name": "Owner block",
+    "settings": [
+    {
+    "type": "richtext",
+    "id": "text",
+    "label": "Text"
+    },
+    {
+    "type": "image_picker",
+    "id": "image",
+    "label": "Image"
+    }
+    ]
     },
     {
 		"type": "inventory",

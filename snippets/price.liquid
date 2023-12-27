@@ -54,9 +54,12 @@
 					class="price__last"
 				{% endif %}
 			>
-				<span class="price-item price-item--regular">
-					{{ money_price }}
-				</span>
+
+				{% if product.price > 0 %}
+					<span class="price-item price-item--regular">
+						{{ money_price }}
+					</span>
+				{% endif %}
 			</dd>
 		</div>
 		<div class="price__sale">

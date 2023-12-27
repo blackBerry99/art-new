@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8470c5d6-9dcc-465a-9062-b6358974c373" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/accordion-section.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/accordion-section.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/section-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/section-footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/section-ticker.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/section-ticker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/section-main-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/section-main-product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/template-collection.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template-collection.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/accordion-section.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/accordion-section.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/announcement-bar.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/announcement-bar.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/footer-group.json" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer-group.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/footer.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/header-group.json" beforeDir="false" afterPath="$PROJECT_DIR$/sections/header-group.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/ticker-section.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/ticker-section.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/icon-facebook.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/icon-facebook.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/icon-instagram.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/icon-instagram.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locales/nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/nl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/main-product.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/main-product.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/price.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/price.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +34,44 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="ProjectId" id="2a7MCTr9hzNG7tfbhVwLwsZn13k" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/snippets" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8470c5d6-9dcc-465a-9062-b6358974c373" name="Changes" comment="" />
+      <created>1703665040739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703665040739</updated>
+      <workItem from="1703665042860" duration="114000" />
+      <workItem from="1703665212724" duration="8000" />
+      <workItem from="1703665227694" duration="594000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
