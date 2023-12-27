@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8470c5d6-9dcc-465a-9062-b6358974c373" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/section-main-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/section-main-product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/template-collection.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template-collection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/nl.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sections/main-product.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/main-product.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/price.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/price.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +18,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,6 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -68,6 +72,7 @@
       <workItem from="1703665042860" duration="114000" />
       <workItem from="1703665212724" duration="8000" />
       <workItem from="1703665227694" duration="594000" />
+      <workItem from="1703665918950" duration="2742000" />
     </task>
     <servers />
   </component>

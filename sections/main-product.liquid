@@ -5,6 +5,7 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'custom.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-cart-drawer.css' | asset_url }}" media="all">
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="all">
@@ -629,7 +630,7 @@
                                 | image_tag:
                                 loading: 'lazy',
                                 class: big,
-                                widths: '120'
+                                widths: '45'
                                 }}
                         </div>
                         {%- endif -%}
@@ -866,12 +867,34 @@
       {% endif %}
     </div>
         {%- if product.description != blank -%}
+            <h2>Over dit kunstwerk</h2>
         <div class="product-full">
             {{ product.description }}
-
-            {% assign url = product.metafields.custom.author.value %}
+            {% assign author = product.metafields.custom.author.value %}
             <div class="product-author">
+                <div class="product-author__main">
+                    {%- if author.photo.value != blank -%}
+                        {{
+                        author.photo.value
+                        | image_url: width: 70
+                        | image_tag:
+                        loading: 'lazy',
+                        widths: '70, 535, 720, 940, 1070, 1100, 1290'
+                        }}
+                    {% endif %}
+                    <div class="product-author__info">
+                        <div class="product-author__name">
+                            {{ author.name.value }}
+                        </div>
+                        <div class="product-author__country">
+                            {{ author.country.value }}
+                        </div>
+                    </div>
+                </div>
 
+                <div class="product-author__descr">
+                    {{ author.info.value }}
+                </div>
             </div>
         </div>
         {% endif %}
