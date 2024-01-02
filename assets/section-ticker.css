@@ -53,7 +53,11 @@ background: #161616;
   align-items: center;
   position: relative;
 }
-
+@media screen and (min-width: 1200px) {
+  .ticker-section {
+    padding-bottom: 6rem;
+  }
+}
 .link-btn {
   display: flex;
   padding: 6px 8px 6px 32px;

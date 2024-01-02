@@ -1993,9 +1993,9 @@ deferred-media {
   background-color: rgb(var(--color-background-input));
   border-radius: 0.4rem;
   color: rgb(var(--color-base-text));
-  font-size: 1.4rem;
+  font-size: 19px;
   width: 100%;
-  border: 0.1rem solid rgb(var(--color-border-input));
+  border: 0.1rem solid #c5c5c5;
   height: 5.5rem;
   box-sizing: border-box;
   transition: border var(--duration-default);
@@ -2049,6 +2049,9 @@ deferred-media {
 }
 .field input[type=search]::placeholder {
   color: rgb(var(--color-foreground));
+}
+.field input::placeholder {
+  color: #666666;
 }
 .field input[type=text],
 .field input[type=email],
@@ -2154,7 +2157,8 @@ deferred-media {
 .field input[type=tel]:placeholder-shown + label::before,
 .field input[type=password]:placeholder-shown + label::before,
 .field .field__input:placeholder-shown + label::before {
-  color: rgb(var(--color-base-text));
+  color: #666666;
+  font-size: 19px;
 }
 .field input[type=text]:focus + label::before, .field input[type=text]:focus + label::after,
 .field input[type=email]:focus + label::before,
@@ -5815,4 +5819,7 @@ details-disclosure > details {
 }
 .age-verification__declined.show {
   display: block;
+}
+.webwinkelkeurReviews img {
+  max-width: 100%;
 }

@@ -626,11 +626,11 @@
                         <div class="info-block__img">
                                 {{
                                 block.settings.image
-                                | image_url: width: 45
+                                | image_url: width: 120
                                 | image_tag:
                                 loading: 'lazy',
                                 class: big,
-                                widths: '45'
+                                widths: '120'
                                 }}
                         </div>
                         {%- endif -%}
@@ -870,32 +870,43 @@
             <h2>Over dit kunstwerk</h2>
         <div class="product-full">
             {{ product.description }}
-            {% assign author = product.metafields.custom.author.value %}
-            <div class="product-author">
-                <div class="product-author__main">
-                    {%- if author.photo.value != blank -%}
-                        {{
-                        author.photo.value
-                        | image_url: width: 70
-                        | image_tag:
-                        loading: 'lazy',
-                        widths: '70, 535, 720, 940, 1070, 1100, 1290'
-                        }}
+            {%- if product.vendor != blank -%}
+                {% for collection in collections %}
+                    {% if collection.title == product.vendor %}
+                        <div class="product-author">
+                            <div class="product-author__main">
+                                {%- if  collection.image != blank -%}
+                                    {{
+                                    collection.image
+                                    | image_url: width: 120
+                                    | image_tag:
+                                    loading: 'lazy',
+                                    class: big,
+                                    widths: '120'
+                                    }}
+                                {% endif %}
+                                <div class="product-author__info">
+                                    {% if collection.title != blank %}
+                                        <div class="product-author__name">
+                                            {{ collection.title }}
+                                        </div>
+                                    {% endif %}
+                                       {% if collection.metafields.custom.country.value != blank %}
+                                    <div class="product-author__country">
+                                        {{ collection.metafields.custom.country.value }}
+                                    </div>
+                                       {% endif %}
+                                </div>
+                            </div>
+                            {% if collection.description != blank %}
+                                <div class="product-author__descr">
+                                    {{ collection.description }}
+                                </div>
+                            {% endif %}
+                        </div>
                     {% endif %}
-                    <div class="product-author__info">
-                        <div class="product-author__name">
-                            {{ author.name.value }}
-                        </div>
-                        <div class="product-author__country">
-                            {{ author.country.value }}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-author__descr">
-                    {{ author.info.value }}
-                </div>
-            </div>
+                {% endfor %}
+            {% endif %}
         </div>
         {% endif %}
     </div>

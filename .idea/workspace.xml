@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8470c5d6-9dcc-465a-9062-b6358974c373" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/sections/faq-section.liquid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/contact-block.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/accordion-section.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/section-contact-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/section-contact-form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/section-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/section-footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/section-main-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/section-main-product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/section-ticker.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/section-ticker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locales/nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/nl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/accordion-section.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/accordion-section.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/contact-form.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/contact-form.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sections/main-product.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/main-product.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/rich-text.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/rich-text.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/404.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/404.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/page.contact.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page.contact.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/page.over-ons.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page.over-ons.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +51,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2a7MCTr9hzNG7tfbhVwLwsZn13k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -58,6 +72,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sections" />
       <recent name="$PROJECT_DIR$/snippets" />
     </key>
   </component>
@@ -72,7 +87,8 @@
       <workItem from="1703665042860" duration="114000" />
       <workItem from="1703665212724" duration="8000" />
       <workItem from="1703665227694" duration="594000" />
-      <workItem from="1703665918950" duration="2742000" />
+      <workItem from="1703665918950" duration="18382000" />
+      <workItem from="1704159557813" duration="1510000" />
     </task>
     <servers />
   </component>

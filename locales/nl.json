@@ -151,7 +151,7 @@
   "products": {
     "product": {
       "back": "Collection",
-      "add_to_cart": "Add to Cart",
+      "add_to_cart": "in winkelwagen",
       "on_sale": "Sale",
       "choose_product_options": "Choose options for {{ product_name }}",
       "product_variants": "Product variants",
