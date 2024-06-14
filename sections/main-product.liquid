@@ -479,13 +479,10 @@
                               </a>
                           {% else %}
                         {%- if show_dynamic_checkout -%}
-                          <div class="product-form__checkout">
-                            <button type="button" class="shopify-payment-button__button shopify-payment-button__button--unbranded" onclick="document.querySelector('[data-testid]').click();">Ik ga bestellen</button>
-<div style="display:none;">
-    {{ form | payment_button }}
-</div>
-                          </div>
-                        {%- endif -%}
+                                  <div class="product-form__checkout">
+                                      {{ form | payment_button }}
+                                  </div>
+                              {%- endif -%}
 
                         <button
                           id = "ProductSubmitButton-{{ section.id }}"
