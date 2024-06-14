@@ -118,7 +118,6 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  flex-shrink: 0;
 }
 
 .collapsible-content__digit {
@@ -127,9 +126,9 @@
   font-size: 1.4rem;
   font-weight: 500;
   margin-right: 0.8rem;
-  color: white;
+  color: rgb(var(--color-button));
   border-radius: 50%;
-  background-color: black;
+  background-color: rgb(244, 244, 244);
 }
 
 @media (min-width: 750px) {
@@ -145,7 +144,6 @@
   flex: none;
   width: 5rem;
   height: 5rem;
-  margin-left: 8px;
 }
 @media (max-width: 750px) {
   .collapsible-content__icon {
@@ -192,7 +190,4 @@
 
 .collapsible-content .container {
   max-width: 1235px;
-}
-.collapsible-content .faq__container{
-  max-width: 1840px;
 }

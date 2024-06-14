@@ -296,3 +296,16 @@
     margin-top: 5.6rem;
   }
 }
+.login-page #recover:target {
+  display: block;
+}
+.login-page #recover:target + div {
+  display: none;
+}
+.login-page .recover_success {
+  margin-bottom: 2rem !important;
+}
+.login-page .recover_success svg {
+  width: 2rem;
+  margin-right: 0.4rem;
+}

@@ -84,12 +84,8 @@
   flex-direction: column;
   min-height: initial;
   padding-top: 0;
+  padding-bottom: 2.4rem;
 }
-
-.banner-image-mobile div#Banner-template--20352217284953__a10caf53-cf52-4e2f-8e54-f89b7b351fe8.banner.banner--landscape.image--overlay.color-background-3 { 
-background: #fff;
-}
-
 .banner--container {
   padding-inline: 0;
 }

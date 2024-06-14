@@ -82,11 +82,6 @@
 		align-items: center;
 	}
 
-	.header__menu-item.list-menu__item svg {
-		width: 12px;
-		height: 16px;
-	}
-
 	.list-menu__item--link {
 		text-decoration: none;
 		padding-bottom: 1rem;
@@ -121,15 +116,9 @@
 {%- endif -%}
 
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-	<symbol id="icon-search" viewBox="0 0 20 20" fill="none">
-		<g clip-path="url(#clip0_345_1972)">
-			<path d="M19.5264 17.1063L14.9282 12.5079C15.7095 11.2641 16.1629 9.794 16.1629 8.21633C16.1629 3.7529 12.5446 0.13504 8.08129 0.13504C3.61803 0.13504 0 3.7529 0 8.21633C0 12.6799 3.61786 16.2975 8.08129 16.2975C9.7982 16.2975 11.3885 15.7607 12.6971 14.8486L17.2405 19.3923C17.5562 19.7077 17.9701 19.8648 18.3834 19.8648C18.7973 19.8648 19.2107 19.7077 19.5269 19.3923C20.1578 18.7608 20.1578 17.7377 19.5264 17.1063ZM8.08129 13.6792C5.06453 13.6792 2.61873 11.2336 2.61873 8.21667C2.61873 5.19974 5.06453 2.75393 8.08129 2.75393C11.0982 2.75393 13.5439 5.19974 13.5439 8.21667C13.5439 11.2336 11.0982 13.6792 8.08129 13.6792Z" fill="black"/>
-		</g>
-		<defs>
-			<clipPath id="clip0_345_1972">
-				<rect width="20" height="20" fill="white"/>
-			</clipPath>
-		</defs>	</symbol>
+	<symbol id="icon-search" viewBox="0 0 16 16" fill="none">
+		<path d="M12.5233 11.4628L15.7355 14.6743L14.6743 15.7355L11.4628 12.5233C10.2678 13.4812 8.7815 14.0022 7.25 14C3.524 14 0.5 10.976 0.5 7.25C0.5 3.524 3.524 0.5 7.25 0.5C10.976 0.5 14 3.524 14 7.25C14.0022 8.7815 13.4812 10.2678 12.5233 11.4628ZM11.0188 10.9063C11.9706 9.92741 12.5022 8.61532 12.5 7.25C12.5 4.349 10.1503 2 7.25 2C4.349 2 2 4.349 2 7.25C2 10.1503 4.349 12.5 7.25 12.5C8.61532 12.5022 9.92741 11.9706 10.9063 11.0188L11.0188 10.9063Z" fill="currentColor"/>
+	</symbol>
 
 	<symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 11 11">
 		<path d="M9.00568 0.823302L5.33333 4.4989L1.66099 0.823302L1.48421 0.646368L1.30736 0.823223L0.823223 1.30736L0.646368 1.48421L0.823302 1.66099L4.4989 5.33333L0.823302 9.00568L0.646368 9.18246L0.823223 9.35931L1.30736 9.84344L1.48421 10.0203L1.66099 9.84337L5.33333 6.16777L9.00568 9.84337L9.18246 10.0203L9.35931 9.84344L9.84344 9.35931L10.0203 9.18246L9.84337 9.00568L6.16777 5.33333L9.84337 1.66099L10.0203 1.48421L9.84344 1.30736L9.35931 0.823223L9.18246 0.646368L9.00568 0.823302Z" fill="currentColor" stroke="currentColor" stroke-width="0.5"/>
@@ -141,7 +130,7 @@
 	</symbol>
 </svg>
 
-<{% if section.settings.sticky_header_type == "on-scroll-up" %}sticky-header{% else %}div{% endif %} class="header-wrapper">
+<{% if section.settings.sticky_header_type == "on-scroll-up" %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper">
 	<header class="header header--{{ section.settings.logo_position }} container {% if section.settings.menu != blank %}header--has-menu{% endif %}">
 		{%- if section.settings.menu != blank -%}
 			<header-drawer data-breakpoint="tablet">
@@ -670,7 +659,7 @@
 																			<span>{{ link.title }}</span>
 																		</a>
 																	{%-endif %}
-																{%- endfor -%}
+																{%- endfor -%}											
 															{%- endif -%}
 														</ul>
 													</div>
@@ -796,7 +785,7 @@
 											<div class="search-modal__top">
 												<div class="search-modal__heading h4">{{ section.settings.heading_search }}</div>
 												<button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset modal-close-button" aria-label="{{ 'accessibility.close' | t }}">
-												</button>
+												</button> 
 											</div>
 											{%- if settings.predictive_search_enabled -%}
 												<predictive-search class="search-modal__form predictive-search_form" data-loading-text="{{ 'accessibility.loading' | t }}">
@@ -806,10 +795,10 @@
 													{%- if section.settings.show_collection_card == blank and section.settings.show_items == blank and section.settings.show_articles == blank -%}
 														<div class="field__without-items">
 															<div class="field">
-																<input class="search__input field__input"
-																	id="Search-In-Modal"
-																	type="search"
-																	name="q"
+																<input class="search__input field__input" 
+																	id="Search-In-Modal" 
+																	type="search" 
+																	name="q" 
 																	value="{{ search.terms | escape }}"
 																	placeholder="{{ 'general.search.placeholder' | t }}"
 																	{%- if settings.predictive_search_enabled -%}
@@ -831,10 +820,10 @@
 														</div>
 													{%- else -%}
 														<div class="field">
-															<input class="search__input field__input"
-																id="Search-In-Modal"
-																type="search"
-																name="q"
+															<input class="search__input field__input" 
+																id="Search-In-Modal" 
+																type="search" 
+																name="q" 
 																value="{{ search.terms | escape }}"
 																placeholder="{{ 'general.search.placeholder' | t }}"
 																{%- if settings.predictive_search_enabled -%}
@@ -898,7 +887,7 @@
 													</div>
 													<div class="search__items-bottom">
 															<a href="{{ routes.all_products_collection_url }}" class="header__article-button link-hover-line">
-																<span>{{ 'sections.header.shop_all' | t }}</span>
+																<span>{{ 'sections.header.shop_all' | t }}</span> 
 															</a>
 													</div>
 												</div>
@@ -908,8 +897,8 @@
 													<div class="search__categories">
 																{%- for collection in section.settings.collection_list -%}
 																	<div class="search__categories_img">
-																		<a {% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}>
-																			{% if collection.featured_image %}
+																		<a {% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}>			
+																			{% if collection.featured_image %}																
 																				{{
 																					collection.featured_image
 																					| image_url: width: 1066
@@ -982,7 +971,7 @@
 									 loading="lazy"
 									 alt="{{ section.settings.logo_2.alt | default: shop.name | escape }}"
 							>
-						{%- endif -%}
+						{%- endif -%} 
 					{%- else -%}
 						<span class="h4">{{ shop.name }}</span>
 					{%- endif -%}
@@ -1014,7 +1003,7 @@
 										{% render 'icon-close' %}
 										<span>{{ 'sections.header.close' | t }}</span>
 									</a>
-
+	
 								</div>
 								<div class="header__offcanvas-menu">
 									<div class="header__offcanvas-menu-wrapper">
@@ -1123,7 +1112,7 @@
 																				<span>{{ link.title }}</span>
 																			</a>
 																		{%-endif %}
-																	{%- endfor -%}
+																	{%- endfor -%}											
 																{%- endif -%}
 															</ul>
 														</div>
@@ -1249,7 +1238,7 @@
 												<div class="search-modal__top">
 													<div class="search-modal__heading h4">{{ section.settings.heading_search }}</div>
 													<button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset modal-close-button" aria-label="{{ 'accessibility.close' | t }}">
-													</button>
+													</button> 
 												</div>
 												{%- if settings.predictive_search_enabled -%}
 													<predictive-search class="search-modal__form predictive-search_form" data-loading-text="{{ 'accessibility.loading' | t }}">
@@ -1259,10 +1248,10 @@
 														{%- if section.settings.show_collection_card == blank and section.settings.show_items == blank and section.settings.show_articles == blank -%}
 															<div class="field__without-items">
 																<div class="field">
-																	<input class="search__input field__input"
-																		id="Search-In-Modal"
-																		type="search"
-																		name="q"
+																	<input class="search__input field__input" 
+																		id="Search-In-Modal" 
+																		type="search" 
+																		name="q" 
 																		value="{{ search.terms | escape }}"
 																		placeholder="{{ 'general.search.placeholder' | t }}"
 																		{%- if settings.predictive_search_enabled -%}
@@ -1284,10 +1273,10 @@
 															</div>
 														{%- else -%}
 															<div class="field">
-																<input class="search__input field__input"
-																	id="Search-In-Modal"
-																	type="search"
-																	name="q"
+																<input class="search__input field__input" 
+																	id="Search-In-Modal" 
+																	type="search" 
+																	name="q" 
 																	value="{{ search.terms | escape }}"
 																	placeholder="{{ 'general.search.placeholder' | t }}"
 																	{%- if settings.predictive_search_enabled -%}
@@ -1351,7 +1340,7 @@
 														</div>
 														<div class="search__items-bottom">
 																<a href="{{ routes.all_products_collection_url }}" class="header__article-button link-hover-line">
-																	<span>{{ 'sections.header.shop_all' | t }}</span>
+																	<span>{{ 'sections.header.shop_all' | t }}</span> 
 																</a>
 														</div>
 													</div>
@@ -1361,8 +1350,8 @@
 														<div class="search__categories">
 																	{%- for collection in section.settings.collection_list -%}
 																		<div class="search__categories_img">
-																			<a {% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}>
-																				{% if collection.featured_image %}
+																			<a {% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}>			
+																				{% if collection.featured_image %}																
 																					{{
 																						collection.featured_image
 																						| image_url: width: 1066
@@ -1432,7 +1421,6 @@
 								<div class="header__menu-item list-menu__item link link-hover-line-outer focus-inset">
 									<span {%- if link.active or link.child_active %} class="header__active-menu-item"{% endif %} title="{{ link.title | escape }}">
 										{{ link.title | escape }}
-										{% render 'icon-caret-simple' %}
 									</span>
 								</div>
 								{% if mega_menu %}
@@ -1607,7 +1595,7 @@
 						</div>
 						<div class=" header__toggle-scheme-item header__toggle-scheme-item--light" id="light">
 							<span>{{- 'general.dark_mode.dark' | t -}}</span>
-						</div>
+						</div> 
 						<label for="theme" class="theme">
 							<span class="theme__toggle-wrap">
 								<input
@@ -1627,13 +1615,16 @@
 					</label>
 					</button>
 				{%- endif -%}
-
+				
 					<details-modal class="header__search header__search-btn no-js-hidden {% if section.settings.logo_position == 'top' %} header__search-top {% endif %}">
 						<details class="header__details header__details-right">
 							<summary class="header__icon header__icon--search header__icon--summary focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
 								<svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
 									<use href="#icon-search">
 								</svg>
+								<span class="header__icon-name" title="{{- 'general.search.search' | t -}}">
+								{{- 'general.search.search' | t -}}
+							</span>
 							</summary>
 							<div class="search-modal modal__content search-modal {%- if section.settings.show_collection_card == blank and section.settings.show_items == blank and section.settings.show_articles == blank -%} __without-items {%- endif -%}" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
 								<div class="search-modal__item container">
@@ -1641,7 +1632,7 @@
 										<div class="search-modal__top">
 											<div class="search-modal__heading h4">{{ section.settings.heading_search }}</div>
 											<button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset modal-close-button" aria-label="{{ 'accessibility.close' | t }}">
-											</button>
+											</button> 
 										</div>
 										{%- if settings.predictive_search_enabled -%}
 											<predictive-search class="search-modal__form predictive-search_form" data-loading-text="{{ 'accessibility.loading' | t }}">
@@ -1651,10 +1642,10 @@
 													{%- if section.settings.show_collection_card == blank and section.settings.show_items == blank and section.settings.show_articles == blank -%}
 													<div class="field__without-items">
 														<div class="field">
-															<input class="search__input field__input"
-																id="Search-In-Modal"
-																type="search"
-																name="q"
+															<input class="search__input field__input" 
+																id="Search-In-Modal" 
+																type="search" 
+																name="q" 
 																value="{{ search.terms | escape }}"
 																placeholder="{{ 'general.search.placeholder' | t }}"
 																{%- if settings.predictive_search_enabled -%}
@@ -1676,10 +1667,10 @@
 													</div>
 												{%- else -%}
 													<div class="field">
-														<input class="search__input field__input"
-															id="Search-In-Modal"
-															type="search"
-															name="q"
+														<input class="search__input field__input" 
+															id="Search-In-Modal" 
+															type="search" 
+															name="q" 
 															value="{{ search.terms | escape }}"
 															placeholder="{{ 'general.search.placeholder' | t }}"
 															{%- if settings.predictive_search_enabled -%}
@@ -1744,7 +1735,7 @@
 												</div>
 												<div class="search__items-bottom">
 														<a href="{{ routes.all_products_collection_url }}" class="header__article-button link-hover-line">
-															<span>{{ 'sections.header.shop_all' | t }}</span>
+															<span>{{ 'sections.header.shop_all' | t }}</span> 
 														</a>
 												</div>
 											</div>
@@ -1754,8 +1745,8 @@
 												<div class="search__categories">
 															{%- for collection in section.settings.collection_list -%}
 																<div class="search__categories_img">
-																<a {% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}>
-																	{% if collection.featured_image %}
+																<a {% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}>					
+																	{% if collection.featured_image %}														
 																		{{
 																			collection.featured_image
 																			| image_url: width: 1066
@@ -1800,7 +1791,7 @@
 							</div>
 						</details>
 					</details-modal>
-
+				
 
 				{%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
 					<div class="header__localization">
@@ -1951,12 +1942,12 @@
 						</localization-form>
 					</div>
 				{%- endif -%}
-
+				
 				{%- if shop.customer_accounts_enabled -%}
 					<details-disclosure class="header__account">
 						<details>
 							<summary class="header__icon header__icon--account link--text header__icon--summary focus-inset modal__toggle" aria-haspopup="dialog" role="button">
-								{% render 'icon-account' %}
+								{% render 'icon-account' %}	
 								<span class="header__icon-name">{{ 'customer.account.title' | t }}</span>
 							</summary>
 							<div class="header__account-modal modal__toggle" role="dialog" aria-modal="true">
@@ -2003,7 +1994,8 @@
 
 			</div>
 			<a href="{{ routes.cart_url }}" class=" {% if request.page_type != 'cart' %}header__cart{% endif %} header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
-				{% render 'icon-cart' %}
+				{% render 'icon-cart' %}	
+				<span id="s" class="header__icon-name">{{ 'templates.cart.cart' | t }}</span>
 					<div class="cart-count-bubble">
 						{%- if cart.item_count < 100 -%}
 							<span aria-hidden="true">{{ cart.item_count }}</span>
@@ -2061,7 +2053,7 @@ onScroll() {
 		if (this.predictiveSearch && this.predictiveSearch.onFocusOut) {
 		this.predictiveSearch.onFocusOut();
 		this.predictiveSearch.onBlur();
-	}
+	} 
 	} else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
 		requestAnimationFrame(this.reveal.bind(this));
 	} else if (scrollTop <= this.headerBounds.top) {
@@ -2165,11 +2157,11 @@ customElements.define('sticky-header', StickyHeader);
 <script>
   if ('dark' === localStorage.getItem('_color_schema')) {
 		document.getElementById("theme").checked = true;
-  }
+  } 
 	else {
 		document.getElementById("theme").checked = false;
 	}
-
+	
 	document.getElementById('dark').onclick = function(){
 		document.getElementById("theme").checked = true;
 	}

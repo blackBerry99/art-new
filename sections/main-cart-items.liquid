@@ -214,18 +214,33 @@
 															{{ 'products.product.price.sale_price' | t }}
 														</dt>
 														<dd class="price">
-															{{ item.final_price | money }}
+															{% if settings.show_currency %}
+																{{ item.final_price | money_with_currency }}
+															{% else %}
+																{{ item.final_price | money }}
+															{% endif %}
 														</dd>
 														<dt class="visually-hidden">
 															{{ 'products.product.price.regular_price' | t }}
 														</dt>
 														<dd class="cart-item__old-price price">
-															{{ item.product.compare_at_price | money }}
+															{% if settings.show_currency %}
+																{{
+																	item.product.compare_at_price
+																	| money_with_currency
+																}}
+															{% else %}
+																{{ item.product.compare_at_price | money }}
+															{% endif %}
 														</dd>
 													</dl>
 												{%- else -%}
 													<span class="price original_price">
-														{{ item.original_price | money }}
+														{% if settings.show_currency %}
+															{{ item.original_price | money_with_currency }}
+														{% else %}
+															{{ item.original_price | money }}
+														{% endif %}
 													</span>
 												{%- endif -%}
 											</div>
@@ -298,20 +313,41 @@
 															{{ 'products.product.price.sale_price' | t }}
 														</dt>
 														<dd class="price">
-															{{ item.final_line_price | money }}
+															{% if settings.show_currency %}
+																{{
+																	item.final_line_price
+																	| money_with_currency
+																}}
+															{% else %}
+																{{ item.final_line_price | money }}
+															{% endif %}
 														</dd>
 														<dt class="visually-hidden">
 															{{ 'products.product.price.regular_price' | t }}
 														</dt>
 														<dd>
 															<s class="cart-item__old-price price">
-																{{ item.original_line_price | money }}
+																{% if settings.show_currency %}
+																	{{
+																		item.original_line_price
+																		| money_with_currency
+																	}}
+																{% else %}
+																	{{ item.original_line_price | money }}
+																{% endif %}
 															</s>
 														</dd>
 													</dl>
 												{%- else -%}
 													<span class="price">
-														{{ item.original_line_price | money }}
+														{% if settings.show_currency %}
+															{{
+																item.original_line_price
+																| money_with_currency
+															}}
+														{% else %}
+															{{ item.original_line_price | money }}
+														{% endif %}
 													</span>
 												{%- endif -%}
 
@@ -322,7 +358,14 @@
 														<span class="visually-hidden">
 															{{- 'products.product.price.unit_price' | t -}}
 														</span>
-														{{ item.variant.unit_price | money }}
+														{% if settings.show_currency %}
+															{{
+																item.variant.unit_price
+																| money_with_currency
+															}}
+														{% else %}
+															{{ item.variant.unit_price | money }}
+														{% endif %}
 														<span aria-hidden="true">/</span>
 														<span class="visually-hidden"
 															>&nbsp;

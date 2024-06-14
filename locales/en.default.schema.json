@@ -314,6 +314,9 @@
         "badge_sale_percentage": {
           "label": "Show Percentage Discount"
         },
+        "show_currency": {
+          "label": "Show Currency ISO Code"
+        },
         "badge_icon_color": {
           "label": "Badge icon color",
           "info": "Used for product card."
@@ -328,6 +331,9 @@
         "quickview_hover": {
           "label": "Enable hover effect",
           "info": "Used for product card."
+        },
+        "enable_vendor_link": {
+          "label": "Enable vendor link"
         }
       }
     },
@@ -336,6 +342,15 @@
       "settings": {
         "show_color_swatch": {
           "label": "Enable color swatches"
+        },
+        "type_color_swatch": {
+          "label": "Color swatches type",
+          "options__1": {
+            "label": "Custom"
+          },
+          "options__2": {
+            "label": "Standart"
+          }
         },
         "trigger_swatch": {
           "label": "Swatch trigger"
@@ -497,6 +512,9 @@
       "settings": {
         "show_back_to_top": {
           "label": "Enable back to top"
+        },
+        "show_breadcrumbs": {
+          "label": "Enable breadcrumbs"
         }
       }
     },
@@ -616,6 +634,41 @@
         },
         "parallax": {
           "label": "Enable parallax"
+        }
+      },
+      "image": {
+        "aspect_ratio": {
+          "label": "Aspect ratio",
+          "options__1": {
+            "label": "1\/1"
+          },
+          "options__2": {
+            "label": "3\/1"
+          },
+          "options__3": {
+            "label": "3\/2"
+          },
+          "options__4": {
+            "label": "4\/3"
+          },
+          "options__5": {
+            "label": "16\/9"
+          },
+          "options__6": {
+            "label": "21\/9"
+          },
+          "options__7": {
+            "label": "Adapt"
+          },
+          "options__8": {
+            "label": "Full screen"
+          },
+          "options__9": {
+            "label": "Auto"
+          },
+          "options__10": {
+            "label": "Default"
+          }
         }
       },
       "author": {
@@ -2650,6 +2703,12 @@
         "enable_sorting": {
           "label": "Enable sorting"
         },
+        "image_filter": {
+          "content": "Image filter"
+        },
+        "image_filter_columns": {
+          "label": "Image per row"
+        },
         "image_ratio": {
           "label": "Image ratio",
           "options__1": {
@@ -2684,19 +2743,6 @@
         "enable_tags": {
           "label": "Enable filtering",
           "info": "[Customize filters](\/admin\/menus)."
-        },
-        "filter_type": {
-          "label": "Desktop filter layout",
-          "options__1": {
-            "label": "Horizontal"
-          },
-          "options__2": {
-            "label": "Vertical"
-          },
-          "options__3": {
-            "label": "Drawer"
-          },
-          "info": "Drawer is the default mobile layout."
         },
         "enable_sort": {
           "label": "Enable sorting"
@@ -2972,6 +3018,15 @@
             "label": "Left"
           }
         },
+        "thumbnail_alignment": {
+          "label": "Desktop gallery thumbnail alignment",
+          "options__1": {
+            "label": "Bottom"
+          },
+          "options__2": {
+            "label": "Left"
+          }
+        },
         "mobile_alignment": {
           "label": "Mobile product gallery alignment",
           "options__1": {
@@ -3173,6 +3228,35 @@
       },
       "presets": {
         "name": "Page"
+      }
+    },
+    "products-grid": {
+      "name": "Products grid",
+      "settings": {
+        "products_per_page": {
+          "label": "Products amount"
+        },
+        "sort": {
+          "label": "Sort products by:",
+          "options__1": {
+            "label": "Alphabetically, A-Z"
+          },
+          "options__2": {
+            "label": "Alphabetically, Z-A"
+          },
+          "options__3": {
+            "label": "Date, new to old"
+          },
+          "options__4": {
+            "label": "Date, old to new"
+          },
+          "options__5": {
+            "label": "Product price, high to low"
+          },
+          "options__6": {
+            "label": "Product price, low to high"
+          }
+        }
       }
     },
     "product-recommendations": {

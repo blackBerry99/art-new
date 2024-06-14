@@ -6,6 +6,7 @@
         "vendor": {
           "type": "vendor",
           "settings": {
+            "enable_vendor_link": false
           }
         },
         "title": {
@@ -35,13 +36,6 @@
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "<style>\n    .wwk-widget-iframe {\n        margin-top: 15px; \/* Voegt 15px ruimte toe aan de bovenkant *\/\n        border: 0; \/* Verwijdert de border *\/\n        height: 45px !important; \/* Zorgt voor een vaste hoogte van 45px *\/\n        width: 270px !important; \/* Zorgt voor een vaste breedte van 270px *\/\n    }\n<\/style>\n\n<iframe src=\"https:\/\/dashboard.webwinkelkeur.nl\/webshops\/widget_html?id=1219007&layout=new_button-stars&theme=light&color=%23FE008C&show=yes&view=slider&amount=6&width=manual&width_amount=270px&height=45px&interval=5000&language=nld\" scrolling=\"no\" class=\"wwk-widget-iframe wwk-widget--new_button-stars wwk-widget--new_button-stars--light\"><\/iframe>"
-          }
-        },
-        "5650f2c9-cd34-4054-a9d4-f81010af34e8": {
-          "type": "owner",
-          "settings": {
-            "text": "<p>Dit kunstwerk is ook in onze <a href=\"\/pages\/contact\" title=\"Contact\">galerie<\/a> te bewonderen. Ik help je graag met al je vragen. Stuur een <a href=\"https:\/\/wa.me\/31653407418\" target=\"_blank\" title=\"https:\/\/wa.me\/31653407418\">WhatsApp<\/a> of <a href=\"tel:+31653407418\" target=\"_blank\" title=\"tel:+31653407418\">bel<\/a> me<\/p>",
-            "image": "shopify:\/\/shop_images\/859145d4785673e024b48f807e970c10.png"
           }
         },
         "7da2ae8a-0574-401b-8cc2-82a401c2926e": {
@@ -100,7 +94,6 @@
         "variant_picker_CL8ChH",
         "buy_buttons",
         "custom_liquid_QEB4JV",
-        "5650f2c9-cd34-4054-a9d4-f81010af34e8",
         "7da2ae8a-0574-401b-8cc2-82a401c2926e",
         "about_product",
         "about_product2",
@@ -115,6 +108,7 @@
       "settings": {
         "desktop_alignment": "right",
         "mobile_alignment": "after",
+        "thumbnail_alignment": "horizontal",
         "image_fit": "cover"
       }
     },

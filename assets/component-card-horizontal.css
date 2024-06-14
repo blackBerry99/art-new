@@ -69,6 +69,16 @@
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+.card-horizontal__information .vendor_link {
+  pointer-events: all;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  transition: var(--duration-default);
+}
+.card-horizontal__information .vendor_link:hover {
+  opacity: 0.7;
+}
 .card-horizontal__button {
   display: none;
 }

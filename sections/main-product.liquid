@@ -5,7 +5,6 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
-{{ 'custom.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-cart-drawer.css' | asset_url }}" media="all">
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="all">
@@ -59,6 +58,7 @@
       class="
         product__outer
         {% if section.settings.desktop_alignment == 'right' %}product__outer--desktop-order{% endif %}
+        {% if section.settings.thumbnail_alignment == 'vertical' %}product__outer--thumbnail-order{% endif %}
         {% if section.settings.mobile_alignment == 'after' %}product__outer--mobile-order{% endif %}
       "
     >
@@ -77,9 +77,19 @@
                 </p>
 
               {%- when 'vendor' -%}
-                <p class="product__text" {{ block.shopify_attributes }}>
-                  {{- product.vendor -}}
-                </p>
+               
+                {% if block.settings.enable_vendor_link %}
+                  <a
+                    href="{{ product.vendor | url_for_vendor }}"
+                    class= "unstyled-link product__text vendor_link"
+                  >
+                    {{ product.vendor }}
+                  </a>
+                {% else %}
+                  <p class="product__text" {{ block.shopify_attributes }}>
+                    {{- product.vendor -}}
+                  </p>   
+                {%- endif -%}
 
               {%- when 'title' -%}
                 <div
@@ -136,6 +146,16 @@
                     show_badges: true,
                     price_class: 'price--product'
                   -%}
+                  {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                    <div class="product__tax caption">
+                      {%- if shop.taxes_included -%}
+                        {{ 'products.product.include_taxes' | t }}
+                      {%- endif -%}
+                      {%- if shop.shipping_policy.body != blank -%}
+                        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
                 </div>
                 <div {{ block.shopify_attributes }} style="margin: 0">
                   {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
@@ -268,17 +288,17 @@
                           </quantity-input>
                         </div>
                       </div>
-
+            
                       <script type="application/json">
                         {{ product.variants | json }}
                       </script>
                     </variant-radios>
-
+	                  
                   {% else %}
                     {% if product.has_only_default_variant == true
                       and product.selected_or_first_available_variant.available == true
                     %}
-                      <div class="product-parameters__item product-parameters__variant1">
+                      <div class="product-parameters__item product-parameters__variant 1">
                         <div class="color-background-2 no-js-hidden">
                           <div class="product-parameters__item product-parameters__quantity">
                             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
@@ -418,7 +438,7 @@
                     {% endif %}
                   {% endif %}
                 </div>
-
+								
               {%- when 'buy_buttons' -%}
                 <div {{ block.shopify_attributes }}>
                   {%- liquid
@@ -470,20 +490,11 @@
 											{%- endif -%}
 
                       <div class="product-form__buttons">
-                          {% if product.price < 1 and product.selected_or_first_available_variant.available %}
-                              <a href="/pages/contact-1"
-                                 id = "ProductSubmitButton-{{ section.id }}"
-                                 class="product-form__submit button button--tertiary"
-                              >
-                                  {{ 'products.product.contact_seller' | t }}
-                              </a>
-                          {% else %}
                         {%- if show_dynamic_checkout -%}
-                                  <div class="product-form__checkout">
-                                      {{ form | payment_button }}
-                                  </div>
-                              {%- endif -%}
-
+                          <div class="product-form__checkout">
+                            {{ form | payment_button }}
+                          </div>
+                        {%- endif -%}
                         <button
                           id = "ProductSubmitButton-{{ section.id }}"
                           type="submit"
@@ -495,13 +506,12 @@
                         >
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
-                              {% render 'icon-bag' %}
+                            {% render 'icon-cart' %}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
-                              {% render 'icon-bag' %}
+                            {% render 'icon-cart' %}
                           {%- endif -%}
                         </button>
-                          {%- endif -%}
                       </div>
                     {%- endform -%}
                   </product-form>
@@ -632,27 +642,6 @@
                   {{ block.settings.custom_liquid }}
                 </div>
 
-                {%- when 'owner' -%}
-                    <div class="info-block">
-                        {%- if block.settings.image != blank -%}
-                        <div class="info-block__img">
-                                {{
-                                block.settings.image
-                                | image_url: width: 120
-                                | image_tag:
-                                loading: 'lazy',
-                                class: big,
-                                widths: '120'
-                                }}
-                        </div>
-                        {%- endif -%}
-                         {%- if block.settings.text != blank -%}
-                             <div class="info-block__text">
-                                 {{ block.settings.text }}
-                             </div>
-                         {%- endif -%}
-                    </div>
-
               {%- when 'sku' -%}
                 <p
                   class="product__sku no-js-hidden {% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -693,25 +682,35 @@
                 {%- endif -%}
 
               {%- when 'about_product' -%}
-                <div class="summary_title">
-                    {%- assign height = block.settings.image.height -%}
-                    {%- assign width = block.settings.image.width -%}
-                    {% if block.settings.accordion_image != blank %}
-                        {{
-                        block.settings.accordion_image
-                        | image_url: width: 30
-                        | image_tag:
-                        loading: 'lazy',
-                        height: height,
-                        width: width
-                        }}
-                    {% endif %}
-                    <h5 class="h5">{{ block.settings.heading }} </h5>
+                <div class="accordion" {{ block.shopify_attributes }}>
+                  <details {% if block.settings.default_open %} open {% endif %}>
+                    <summary>
+                      <div class="summary_title">
+                        {%- assign height = block.settings.image.height -%}
+									  		{%- assign width = block.settings.image.width -%}
+                        {% if block.settings.accordion_image != blank %}
+                          {{
+                            block.settings.accordion_image
+                            | image_url: width: 30
+                            | image_tag:
+                              loading: 'lazy',
+                              height: height,
+													    width: width
+                          }}
+                        {% endif %}
+                        <h5 class="h5">{{ block.settings.heading }} </h5>
+                        {% render 'icon-caret' %}
+                      </div>
+                    </summary>
+                    <div class="product__description quick-add-hidden">
+                      {{ block.settings.text }}
+                    </div>
+                  </details>
                 </div>
             {%- endcase -%}
           {%- endfor -%}
 
-            <a href="{{ product.url }}" class="list-menu__item link link-hover-line-outer focus-inset full-details">
+          <a href="{{ product.url }}" class="list-menu__item link link-hover-line-outer focus-inset full-details">
             <span>{{- 'general.card.view__more' | t -}}</span>
           </a>
         </div>
@@ -720,7 +719,7 @@
       {% if product.media.size > 0 %}
         <div class="product__media-wrapper">
           <div class="product__media-list-wrapper">
-            <div class="product__media-sublist js-media-sublist no-js-hidden swiper">
+            <div class="product__media-sublist js-media-sublist no-js-hidden swiper" data-thumbnail="{{ section.settings.thumbnail_alignment }}">
               <div class="swiper-wrapper">
                 {%- if product.selected_or_first_available_variant.featured_media != null -%}
                   {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
@@ -759,7 +758,7 @@
 														widths: '576, 550, 1100',
 														width: 743,
 														height: 743
-												}}
+												}}	
                       </div>
                     </div>
                   {%- endunless -%}
@@ -796,14 +795,14 @@
 												| image_tag:
 													loading: 'lazy',
 													widths: '550, 1100'
-											}}
+											}}											
                     </div>
                   </li>
                 {%- endunless -%}
               {%- endfor -%}
             </ul>
 
-            <div class="product__media-list js-media-list no-js-hidden swiper">
+            <div class="product__media-list js-media-list no-js-hidden swiper {% if section.settings.image_fit == 'contain' %} product__media-list--contain{% endif %}">
               <div class="swiper-wrapper">
                 {%- liquid
                   assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
@@ -877,105 +876,6 @@
         </div>
       {% endif %}
     </div>
-        {%- if product.description != blank -%}
-            <h2>Over dit kunstwerk</h2>
-        <div class="product-full">
-            <div class="product-table">
-                {%- if product.vendor != blank -%}
-                    {% for collection in collections %}
-                        {% if collection.title == product.vendor %}
-                            <div class="product-table__row">
-                                <div class="product-table__left">
-                                    Kunstenaar:
-                                </div>
-                                <div class="product-table__right">
-                                    {{ collection.title }}
-                                </div>
-                            </div>
-
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
-
-                {% for field in product.metafields.custom %}
-                    {% if field[0] == 'frame' %}
-                        <div class="product-table__row">
-                            <div class="product-table__left">
-                                Frame:
-                            </div>
-                            <div class="product-table__right">
-                                {{ field[1] }}
-                            </div>
-                        </div>
-
-                    {% endif %}
-                    {% if field[0] == 'uniek_of_editie' %}
-                        <div class="product-table__row">
-                            <div class="product-table__left">
-                                Uniek/editie:
-                            </div>
-                            <div class="product-table__right">
-                                {{ field[1] }}
-                            </div>
-                        </div>
-
-                    {% endif %}
-                    {% if field[0] == 'afmeting_l_x_b_' %}
-                        <div class="product-table__row">
-                            <div class="product-table__left">
-                                Afmetingen:
-                            </div>
-                            <div class="product-table__right">
-                                {{ field[1] }}
-                            </div>
-                        </div>
-
-                    {% endif %}
-
-
-                {%endfor%}
-            </div>
-            {{ product.description }}
-
-            {%- if product.vendor != blank -%}
-                {% for collection in collections %}
-                    {% if collection.title == product.vendor %}
-                        <div class="product-author">
-                            <div class="product-author__main">
-                                {%- if  collection.image != blank -%}
-                                    {{
-                                    collection.image
-                                    | image_url: width: 120
-                                    | image_tag:
-                                    loading: 'lazy',
-                                    class: big,
-                                    widths: '120'
-                                    }}
-                                {% endif %}
-                                <div class="product-author__info">
-                                    {% if collection.title != blank %}
-                                        <div class="product-author__name">
-                                            {{ collection.title }}
-                                        </div>
-                                    {% endif %}
-                                       {% if collection.metafields.custom.country.value != blank %}
-                                    <div class="product-author__country">
-                                        {{ collection.metafields.custom.country.value }}
-                                    </div>
-                                       {% endif %}
-                                </div>
-                            </div>
-                            {% if collection.description != blank %}
-                                <div class="product-author__descr">
-                                    {{ collection.description }}
-                                </div>
-                            {% endif %}
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
-        </div>
-        {% endif %}
     </div>
     </div>
 
@@ -1048,9 +948,9 @@
 											widths: '576, 550, 1100',
 											width: '576',
 						      		data-media-id: media.id
-									}}
+									}}							
 								</button>
-
+                
 								<template>
 									{%- case media.media_type -%}
 										{%- when 'external_video' -%}
@@ -1207,7 +1107,15 @@
       {
         "type": "vendor",
         "name": "t:sections.main-product.blocks.vendor.name",
-        "limit": 1
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "enable_vendor_link",
+            "default": false,
+            "label": "t:settings_schema.product_card.settings.enable_vendor_link.label"
+          }
+        ]
       },
       {
         "type": "price",
@@ -1422,22 +1330,6 @@
       ]
     },
     {
-    "type": "owner",
-    "name": "Owner block",
-    "settings": [
-    {
-    "type": "richtext",
-    "id": "text",
-    "label": "Text"
-    },
-    {
-    "type": "image_picker",
-    "id": "image",
-    "label": "Image"
-    }
-    ]
-    },
-    {
 		"type": "inventory",
 		"name": "t:sections.main-product.blocks.inventory.name",
 		"limit": 1,
@@ -1481,6 +1373,22 @@
       ],
       "default": "before",
       "label": "t:sections.main-product.settings.mobile_alignment.label"
+    },
+    {
+      "type": "select",
+      "id": "thumbnail_alignment",
+      "options": [
+        {
+          "value": "horizontal",
+          "label": "t:sections.main-product.settings.thumbnail_alignment.options__1.label"
+        },
+        {
+          "value": "vertical",
+          "label": "t:sections.main-product.settings.thumbnail_alignment.options__2.label"
+        }
+      ],
+      "default": "horizontal",
+      "label": "t:sections.main-product.settings.thumbnail_alignment.label"
     },
     {
       "type": "select",

@@ -11,26 +11,17 @@
   margin-left: 0;
   padding: 0;
 }
-.contact__container--full {
-  background: #F3F0EC;
-  padding: 20px;
-}
 @media screen and (min-width: 1200px) {
   .contact__container {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 9.8rem;
-  }
-  .contact__container--full {
-    padding: 84px 44px 104px 94px;
+    gap: 5rem;
   }
 }
 @media screen and (min-width: 1560px) {
- .contact__desc {
-
-    max-width: 756px;
-}
+  .contact__container {
+    padding: 0 15.1rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contact__text {
@@ -38,7 +29,6 @@
   }
 }
 .contact__title {
-  font-size: 36px;
   letter-spacing: -0.02em;
   margin: 0 0 1.6rem 0;
 }
@@ -47,14 +37,9 @@
 }
 .contact__desc {
   margin-top: 2.4rem;
-  font-size: 22px;
-}
-.contact__desc--narrow {
-  max-width: 176px;
 }
 .contact-form {
   flex: 1;
-  max-width: 628px;
 }
 @media screen and (min-width: 1200px) {
   .contact-form {
@@ -142,16 +127,11 @@
 }
 .contact__bottom .button {
   width: 100%;
-  /* background-color: rgb(var(--color-button-text)); */
-  /*color: rgba(var(--color-button));*/
-  background: #c27a0d;
-  color: #fff;
-  border: none;
-  font-size: 15px;
-  font-weight: 500;
 }
-.contact__bottom .button:hover svg {
-  color: #ffffff;
+@media screen and (min-width: 576px) {
+  .contact__bottom .button {
+    width: 16.8rem;
+  }
 }
 .contact__add-text {
   font-size: 1.2rem;

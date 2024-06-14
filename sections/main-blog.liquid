@@ -12,12 +12,12 @@
 	{% endif %}
 {%- endpaginate -%}
 
-{%- paginate blog.articles by count -%}
+{%- paginate blog.articles by 7 -%}
 	<div class="main-blog container">
 		<h1 class="main-page-title page-title title--page">
 			{{ blog.title | escape }}
 		</h1>
-		<div class="blog-articles load-more-grid {% if paginate.current_page == 1 %}blog-articles-first{% endif %}">
+		<div class="blog-articles load-more-grid blog-articles-first">
 			{%- for article in blog.articles -%}
 				{%- render 'article-card',
 					article: article,

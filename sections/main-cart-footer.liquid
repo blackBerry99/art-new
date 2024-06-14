@@ -42,7 +42,11 @@
 											{{ 'sections.cart.subtotal' | t }}:
 										</h3>
 										<p class="totals__subtotal-value">
-											{{ cart.total_price | money_with_currency }}
+											{% if settings.show_currency %}
+												{{ cart.total_price | money_with_currency }}
+											{% else %}
+												{{ cart.total_price | money }}
+											{% endif %}
 										</p>
 									</div>
 

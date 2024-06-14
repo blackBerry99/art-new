@@ -225,7 +225,14 @@
 																			}}
 																		</span>
 																		<s class="cart-item__old-price">
-																			{{ item.original_line_price | money }}
+																			{% if settings.show_currency %}
+																				{{
+																					item.original_line_price
+																					| money_with_currency
+																				}}
+																			{% else %}
+																				{{ item.original_line_price | money }}
+																			{% endif %}
 																		</s>
 																		<span class="visually-hidden">
 																			{{
@@ -234,12 +241,26 @@
 																			}}
 																		</span>
 																		<span class="cart-item__final-price">
-																			{{ item.final_line_price | money }}
+																			{% if settings.show_currency %}
+																				{{
+																					item.final_line_price
+																					| money_with_currency
+																				}}
+																			{% else %}
+																				{{ item.final_line_price | money }}
+																			{% endif %}
 																		</span>
 																	</div>
 																{%- else -%}
 																	<span class="cart-item__final-price">
-																		{{ item.original_line_price | money }}
+																		{% if settings.show_currency %}
+																			{{
+																				item.original_line_price
+																				| money_with_currency
+																			}}
+																		{% else %}
+																			{{ item.original_line_price | money }}
+																		{% endif %}
 																	</span>
 																{%- endif -%}
 
@@ -253,7 +274,14 @@
 																				| t
 																			-}}
 																		</span>
-																		{{ item.variant.unit_price | money }}
+																		{% if settings.show_currency %}
+																			{{
+																				item.variant.unit_price
+																				| money_with_currency
+																			}}
+																		{% else %}
+																			{{ item.variant.unit_price | money }}
+																		{% endif %}
 																		<span aria-hidden="true">/</span>
 																		<span class="visually-hidden"
 																			>&nbsp;
@@ -353,10 +381,13 @@
 								{{ 'sections.cart.subtotal' | t }}
 							</h3>
 							<p class="totals__subtotal-value">
-								{{ cart.total_price | money_with_currency }}
+								{% if settings.show_currency %}
+									{{ cart.total_price | money_with_currency }}
+								{% else %}
+									{{ cart.total_price | money }}
+								{% endif %}
 							</p>
 						</div>
-
 						{%- if cart.cart_level_discount_applications.size > 0 -%}
 							<ul
 								class="discounts list-unstyled"

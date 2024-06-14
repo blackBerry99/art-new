@@ -6,10 +6,6 @@
 }
 .collection-product-card .caption-with-letter-spacing {
   margin-top: 0;
-  font-size: 12px;
-}
-.collection-product-card div.card__title {
-text-transform: capitalize;
 }
 
 .card-wrapper {
@@ -18,7 +14,7 @@ text-transform: capitalize;
   height: 100%;
   text-decoration: none;
   overflow: hidden;
-  border-radius: 0.0rem;
+  border-radius: 0.6rem;
   background-color: rgb(var(--color-background-card));
 }
 .card-wrapper .media {
@@ -91,6 +87,14 @@ text-transform: capitalize;
   z-index: 2;
   pointer-events: none;
 }
+.card-information .card-information__wrapper .vendor_link {
+  pointer-events: all;
+  text-decoration: none;
+  transition: var(--duration-default);
+}
+.card-information .card-information__wrapper .vendor_link:hover {
+  opacity: 0.7;
+}
 
 .card__inner {
   position: relative;
@@ -123,7 +127,6 @@ text-transform: capitalize;
   align-items: center;
   justify-content: space-between;
   z-index: 0;
-  text-transform: none;
   pointer-events: all;
 }
 @media screen and (min-width: 420px) {
@@ -162,14 +165,6 @@ text-transform: capitalize;
 @media screen and (min-width: 420px) {
   .card__title .button {
     display: inline-flex;
-    width: initial;
-    height: initial;
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .facets-vertical .card__title .button {
-    display: none;
   }
 }
 
@@ -394,7 +389,7 @@ text-transform: capitalize;
 }
 
 .price-item {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   letter-spacing: -0.01em;
   transition: var(--duration-short);
 }

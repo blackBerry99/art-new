@@ -1,17 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
 	<head>
-	<!-- Added by AVADA SEO Suite -->
-	{% include 'avada-seo' %}
-	<!-- /Added by AVADA SEO Suite -->
-<!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/common/shopify.js"></script> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/a44e717af2e3a249d3171684/script.js"></script> <!-- End cookieyes banner -->
-      <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WD7V3K5W');</script>
-<!-- End Google Tag Manager -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -147,7 +136,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			   :root {
 
-			   --font-body-family: 'NeueMontreal', {{ settings.type_body_font.fallback_families }};
+			   --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
 			   --font-body-style: {{ settings.type_body_font.style }};
 			   --font-body-weight: {{ settings.type_body_font.weight }};
 
@@ -155,13 +144,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			   --font-body-line-height: {{ settings.type_body_line_height }};
 			   --font-secondary-text: {{ settings.body_secondary_text_size }}px;
 
-			   --font-heading-family: 'NeueMontreal', {{ settings.type_header_font.fallback_families }};
+			   --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
 			   --font-heading-style: {{ settings.type_header_font.style }};
 			   --font-heading-weight: {{ settings.type_header_font.weight }};
 			   --font-heading-letter-spacing: {{ settings.type_header_letter_spacing }}em;
 			   --font-heading-line-height: {{ settings.type_header_line_height }};
 
-			   --font-subtitle-family: 'NeueMontreal', {{ settings.type_subtitle_font.fallback_families }};
+			   --font-subtitle-family: {{ settings.type_subtitle_font.family }}, {{ settings.type_subtitle_font.fallback_families }};
 			   --font-subtitle-style: {{ settings.type_subtitle_font.style }};
 			   --font-subtitle-weight: {{ settings.type_subtitle_font.weight }};
 			   --font-subtitle-text-transform: {{ settings.subtitle_text_transform }};
@@ -174,7 +163,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			   --font-heading-h5-size: {{ settings.heading_h5_size }}px;
 			   --font-heading-h6-size: {{ settings.heading_h6_size }}px;
 
-			   --font-heading-card-family: 'NeueMontreal', {{ settings.type_header_font_card.fallback_families }};
+			   --font-heading-card-family: {{ settings.type_header_font_card.family }}, {{ settings.type_header_font_card.fallback_families }};
 			   --font-heading-card-style: {{ settings.type_header_font_card.style }};
 			   --font-heading-card-weight: {{ settings.type_header_font_card.weight }};
 			   --font-text-card-family: {{ settings.type_text_font_card.family }}, {{ settings.type_text_font_card.fallback_families }};
@@ -184,34 +173,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			   --font-heading-card-size: {{ settings.heading_size_card }}px;
 			   --font-text-card-size: {{ settings.text_size_card }}px;
 
-			   --font-button-family: 'NeueMontreal', {{ settings.type_button_font.fallback_families }};
+			   --font-button-family: {{ settings.type_button_font.family }}, {{ settings.type_button_font.fallback_families }};
 			   --font-button-style: {{ settings.type_button_font.style }};
 			   --font-button-weight: {{ settings.type_button_font.weight }};
 			   --font-button-text-transform: {{ settings.button_text_transform }};
 
-			   --font-button-family: 'NeueMontreal', {{ settings.type_button_font.fallback_families }};
+			   --font-button-family: {{ settings.type_button_font.family }}, {{ settings.type_button_font.fallback_families }};
 			   --font-button-style: {{ settings.type_button_font.style }};
 			   --font-button-weight: {{ settings.type_button_font.weight }};
 			   --font-button-text-transform: {{ settings.button_text_transform }};
 			   --font-button-letter-spacing: -0.01em;
 			   --font-subtitle-letter-spacing: 0.06em;
 
-			   --font-header-menu-family: 'NeueMontreal', {{ settings.type_header_menu_font.fallback_families }};
+			   --font-header-menu-family: {{ settings.type_header_menu_font.family }}, {{ settings.type_header_menu_font.fallback_families }};
 			   --font-header-menu-style: {{ settings.type_header_menu_font.style }};
 			   --font-header-menu-weight: {{ settings.type_header_menu_font.weight }};
 				 --font-header-menu-link-size: {{ settings.header_menu_link_size }}px;
 			   --font-header-menu-text-transform: {{ settings.header_menu_text_transform }};
 
-			   --font-footer-menu-family: 'NeueMontreal', {{ settings.type_footer_menu_font.fallback_families }};
+			   --font-footer-menu-family: {{ settings.type_footer_menu_font.family }}, {{ settings.type_footer_menu_font.fallback_families }};
 			   --font-footer-menu-style: {{ settings.type_footer_menu_font.style }};
 			   --font-footer-menu-weight: {{ settings.type_footer_menu_font.weight }};
 			   --font-footer-link-size: {{ settings.link_size_footer }}px;
 			   --font-footer-bottom-link-size: {{ settings.link_size_footer_bottom }}px;
 
-				--font-popups-heading-family: 'NeueMontreal', {{ settings.type_popups_heading_font.fallback_families }};
+				--font-popups-heading-family: {{ settings.type_popups_heading_font.family }}, {{ settings.type_popups_heading_font.fallback_families }};
 				--font-popups-heading-style: {{ settings.type_popups_heading_font.style }};
 				--font-popups-heading-weight: {{ settings.type_popups_heading_font.weight }};
-				--font-popups-text-family: 'NeueMontreal', {{ settings.type_popups_text_font.fallback_families }};
+				--font-popups-text-family: {{ settings.type_popups_text_font.family }}, {{ settings.type_popups_text_font.fallback_families }};
 				--font-popups-text-style: {{ settings.type_popups_text_font.style }};
 				--font-popups-text-weight: {{ settings.type_popups_text_font.weight }};
 				--font-popup-heading-size: {{ settings.popup_heading_size }}px;
@@ -331,7 +320,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		{% if settings.show_back_to_top %}
 			<script src="{{ 'scroll-top.js' | asset_url }}" defer="defer"></script>
 		{% endif %}
-		{% if settings.show_color_swatch %}
+		{% if settings.type_color_swatch == 'custom' %}
 			<script src="{{ 'product-card.js' | asset_url }}" defer="defer"></script>
 		{% endif %}
 		<script
@@ -364,10 +353,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</head>
 
 	<body class="template-{{ template.name }} template-{{ template | replace: '.', '-' }}" data-scheme="{{ settings.color_scheme }}">
-      <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WD7V3K5W"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 		<a
 			class="skip-to-content-link button button--primary visually-hidden"
 			href="#MainContent"

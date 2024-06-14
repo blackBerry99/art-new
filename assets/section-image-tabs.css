@@ -179,13 +179,13 @@
 }
 @media screen and (max-width: 990px) {
   .image-tabs__body {
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 @media screen and (max-width: 750px) {
   .image-tabs__body {
-    padding: 3rem 3rem 1.3rem !important;
+    padding: 3rem 3rem 1.3rem;
   }
   .image-tabs__body .card-horizontal__button {
     display: flex;

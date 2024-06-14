@@ -10,9 +10,7 @@
       ],
       "settings": {
         "color_scheme": "1",
-        "text": "<p>Gratis schadevrij bezorgd<\/p>",
-        "text_second": "14 dagen gratis retourneren",
-        "show_reviews": true
+        "text": "<p>Gratis schadevrij bezorgd<\/p>"
       }
     },
     "header": {

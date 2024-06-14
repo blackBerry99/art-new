@@ -64,40 +64,13 @@
         "show_sku": false,
         "show_desc": false,
         "enable_filtering": true,
-        "filter_type": "vertical",
         "enable_sorting": true
-      }
-    },
-    "add_description_dqKLHH": {
-      "type": "add-description",
-      "blocks": {
-        "text_fdF7jA": {
-          "type": "text",
-          "settings": {
-            "text": "{{ collection.metafields.custom.seo_block | metafield_tag }}"
-          }
-        }
-      },
-      "block_order": [
-        "text_fdF7jA"
-      ],
-      "custom_css": [
-        ".color-background-1 {background: rgb(248, 242, 233);}"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "margin_top": 0,
-        "margin_bottom": 0
       }
     }
   },
   "order": [
     "banner",
     "5541a682-236f-407a-9515-9d57a0f38808",
-    "product-grid",
-    "add_description_dqKLHH"
+    "product-grid"
   ]
 }

@@ -81,6 +81,9 @@ const subSliderInit = (isUpdate) => {
 		document.querySelectorAll(".product-section .js-media-sublist") &&
 		document.querySelectorAll(".product-section .js-media-sublist").length > 0
 	) {
+		let thumbnail_alignment = document.querySelector(
+			".product-section .js-media-sublist"
+		);
 		let subSlider = new Swiper(".product-section .js-media-sublist", {
 			slidesPerView: "auto",
 			spaceBetween: 8,
@@ -106,7 +109,7 @@ const subSliderInit = (isUpdate) => {
 			},
 			breakpoints: {
 				1200: {
-					direction: "horizontal",
+					direction: thumbnail_alignment.dataset.thumbnail,
 					slidesPerView: "auto",
 				},
 			},

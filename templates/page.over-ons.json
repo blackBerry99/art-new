@@ -218,8 +218,7 @@
         "padding_top": 30,
         "padding_bottom": 60,
         "margin_top": 60,
-        "margin_bottom": 0,
-        "text_add": "Bekend van:"
+        "margin_bottom": 0
       }
     },
     "34887700-b49b-4863-8a8b-269a818147e6": {
@@ -293,10 +292,8 @@
     "ae1b03fb-f827-4ab7-998a-2c414b06959c": {
       "type": "contact-form",
       "settings": {
-        "full": true,
         "heading": "<p>Maak een afspraak in de kunstgalerij te Leiden<\/p>",
         "text": "Vul het formulier in of bel Arnoud. Hij neemt je mee in de wereld van kunst. Er is koffie, wat lekkers en ruimte voor persoonlijk advies.",
-        "address": "Flevoweg 35\u2028\n2318 BX, Leiden\n+316 53 40 74 18",
         "margin_top": 170,
         "margin_bottom": 0
       }
@@ -345,7 +342,6 @@
         "height": "16\/9",
         "video_fit": "cover",
         "subheading": "",
-        "add_text": "*Opname in de kunstgalerij bij ‘Nederland ontdekt’ met Ferry Doedens.",
         "heading": "",
         "cover_image": "shopify:\/\/shop_images\/Thumbnail_Nederland_Ontdekt_Moderne_Kunst.jpg",
         "opacity_overlay": 0,

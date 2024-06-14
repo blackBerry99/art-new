@@ -3,7 +3,6 @@
 <script src="{{ 'section-slideshow.js' | asset_url }}" defer="defer"></script>
 
 {% style %}
-
 	{% render 'spaced-section' %}
 
 	.section-{{ section.id }}-padding {
@@ -21,8 +20,13 @@
 			padding-bottom: {{ section.settings.padding_bottom }}px;
 		}
 	}
-
 {% endstyle %}
+
+{% liquid
+  assign aspect_ratio = section.settings.image_size | split: '/'
+  assign temp = aspect_ratio[0] | append: '.0'
+  assign padding_bottom = aspect_ratio[1] | divided_by: temp | times: 100 | round: 2
+%}
 
 <div
 	id="section-{{ section.id }}"
@@ -37,16 +41,30 @@
 		data-effects="{{ section.settings.slide_effects }}"
 		data-is-autoplay="{{ section.settings.is_autoplay }}"
 		data-is-hover-stop-autoplay="{{ section.settings.is_hover_stop_autoplay }}"
-		data-slider-thumbnails="{%- for block in section.blocks -%} {%- case block.type -%} {%- when 'slideshow_item' -%} {% if block.settings.slideshow_item_image != null %} {{ block.settings.slideshow_item_image | image_url: width: 192, height: 192 }}{% unless forloop.last %},{% endunless -%} {% elsif block.settings.slideshow_item_image == null %} {{ "" }}{% unless forloop.last %},{% endunless -%} {% endif %} {% endcase %} {% endfor %}"
+		data-slider-thumbnails="{%- for block in section.blocks -%} {%- case block.type -%} {%- when 'slideshow_item' -%} {% if block.settings.slideshow_item_image != null %} {{ block.settings.slideshow_item_image | image_url: width: 192, height: 192 }}{% unless forloop.last %},{% endunless -%} {% elsif block.settings.slideshow_item_image == null and block.settings.slideshow_item_image_mobile != null %} {{ block.settings.slideshow_item_image_mobile | image_url: width: 192, height: 192 }}{% unless forloop.last %},{% endunless -%} {% else %} {{ "" }}{% unless forloop.last %},{% endunless -%} {% endif %} {% endcase %} {% endfor %}"
 	>
 		<div class="slideshow">
 			<div class="swiper js-swiper">
 				<div class="swiper-wrapper">
 					{%- for block in section.blocks -%}
+							{% liquid 
+							if section.settings.image_size == 'adapt' and block.settings.slideshow_item_image != blank
+								assign padding_bottom = 1 | divided_by: block.settings.slideshow_item_image.aspect_ratio | times: 100 | round: 2
+							endif
+						%}
 						{%- case block.type -%}
 							{%- when 'slideshow_item' -%}
+								{% style %}
+									#shopify-section-{{ section.id }} .swiper-slide {
+										--padding_bottom: {{ padding_bottom }}%;
+									}
+
+									#shopify-section-{{ section.id }} .swiper-slide-{{ block.id }} img{
+                  	object-position: {{ block.settings.position_by_vertical }} !important;
+               		 }
+								{% endstyle %}
 								<div
-									class="swiper-slide segment {% if block.settings.color_scheme == "theme-dark" %}theme-dark{% else %}theme-light{% endif %}  {% if block.settings.opacity_overlay_mobile > 0 %}opacity_overlay_mobile{% endif %} {% if block.settings.slideshow_item_image_mobile != null %}slideshow_item_image_mobile{% endif %}"
+									class="swiper-slide swiper-slide-{{ block.id }} segment {% if block.settings.color_scheme == "theme-dark" %}theme-dark{% else %}theme-light{% endif %}  {% if block.settings.opacity_overlay_mobile > 0 %}opacity_overlay_mobile{% endif %} {% if block.settings.slideshow_item_image_mobile != null %}slideshow_item_image_mobile{% endif %}"
 									{{ block.shopify_attributes }}
 								>
 									<div class="swiper-slide__content section-{{ section.id }}-padding {% if section.settings.under_menu %} container {% endif %}">
@@ -162,38 +180,26 @@
 										or block.settings.slideshow_item_image_mobile != null
 									%}
 										{% if block.settings.slideshow_item_image != null %}
-											<img
-												srcset="
-													{{ block.settings.slideshow_item_image | image_url: width: 1800, height: 566 }} 1x,
-													{{ block.settings.slideshow_item_image | image_url: width: 3600, height: 1132 }} 2x,
-													{{ block.settings.slideshow_item_image | image_url: width: 5400, height: 1698 }} 3x
-												"
-												src="{{ block.settings.slideshow_item_image | image_url: width: 5400, height: 1698 }}"
-												alt="{{ block.settings.slideshow_item_image.alt | escape }}"
-												width="{{ block.settings.slideshow_item_image.width }}"
-												height="{{ block.settings.slideshow_item_image.height }}"
-												loading="lazy"
-												sizes="(max-width: 1760px) 1500px, (max-width: 1560px) 1300px, (max-width: 1360px) 1100px, (max-width: 1200px) 920px, (max-width: 990px) 600px, (max-width: 750px) 500px"
-												class="slideshow__item-img slideshow-img-desktop"
-												style="object-position: {{ block.settings.position_by_vertical }}"
-											>
+											{{
+												block.settings.slideshow_item_image 
+												| image_url: width: block.settings.slideshow_item_image.width
+												| image_tag:
+													class: 'slideshow__item-img slideshow-img-desktop',
+													loading: 'lazy',
+													sizes: '100vw',
+													widths: '180, 360, 535, 720, 940, 1100, 1200, 1440, 1600, 1800, 2000, 2100, 2200, 2880, 3200, 3600, 3800'		
+											}}
 										{% endif %}
 										{% if block.settings.slideshow_item_image_mobile != null %}
-											<img
-												srcset="
-													{{ block.settings.slideshow_item_image_mobile | image_url: width: 1800, height: 566 }} 1x,
-													{{ block.settings.slideshow_item_image_mobile | image_url: width: 3600, height: 1132 }} 2x,
-													{{ block.settings.slideshow_item_image_mobile | image_url: width: 5400, height: 1698 }} 3x
-												"
-												src="{{ block.settings.slideshow_item_image_mobile | image_url: width: 5400, height: 1698 }}"
-												alt="{{ block.settings.slideshow_item_image_mobile.alt | escape }}"
-												width="{{ block.settings.slideshow_item_image_mobile.width }}"
-												height="{{ block.settings.slideshow_item_image_mobile.height }}"
-												loading="lazy"
-												sizes="(max-width: 1760px) 1500px, (max-width: 1560px) 1300px, (max-width: 1360px) 1100px, (max-width: 1200px) 920px, (max-width: 990px) 600px, (max-width: 750px) 500px"
-												class="slideshow__item-img slideshow-img-mobile"
-												style="object-position: {{ block.settings.position_by_vertical }}"
-											>
+											{{
+												block.settings.slideshow_item_image_mobile 
+												| image_url: width: block.settings.slideshow_item_image_mobile.width
+												| image_tag:
+													class: 'slideshow__item-img slideshow-img-mobile',
+													loading: 'lazy',
+													sizes: '100vw',
+													widths: '180, 360, 535, 720, 940, 1100, 1200, 1440, 1600, 1800, 2000, 2100, 2200, 2880, 3200, 3600, 3800'		
+											}}
 										{% endif %}
 									{% else %}
 										<div class="slideshow__placeholder">
@@ -225,6 +231,46 @@
 		"templates": ["*"]
 	},
 	"settings": [
+		{
+			"type": "select",
+			"id": "image_size",
+			"default": "default",
+			"label": "t:sections.all.image.aspect_ratio.label",
+			"options": [
+				{
+					"value": "1/1",
+					"label": "t:sections.all.image.aspect_ratio.options__1.label"
+				},
+				{
+					"value": "3/1",
+					"label": "t:sections.all.image.aspect_ratio.options__2.label"
+				},
+				{
+					"value": "3/2",
+					"label": "t:sections.all.image.aspect_ratio.options__3.label"
+				},
+				{
+					"value": "4/3",
+					"label": "t:sections.all.image.aspect_ratio.options__4.label"
+				},
+				{
+					"value": "16/9",
+					"label": "t:sections.all.image.aspect_ratio.options__5.label"
+				},
+				{
+					"value": "21/9",
+					"label": "t:sections.all.image.aspect_ratio.options__6.label"
+				},
+				{
+					"value": "adapt",
+					"label": "t:sections.all.image.aspect_ratio.options__7.label"
+				},
+				{
+					"value": "default",
+					"label": "t:sections.all.image.aspect_ratio.options__10.label"
+				}
+			]
+		},
 		{
 			"type": "checkbox",
 			"id": "under_menu",

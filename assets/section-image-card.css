@@ -188,7 +188,6 @@
 }
 .image-card .card__subheading--side-1 {
   color: var(--section-txt-color);
-  font-size: 14px;
 }
 .image-card .card__subheading--side-2 {
   max-width: 40.7rem;
@@ -206,7 +205,6 @@
 }
 .image-card .card__title--side-1 {
   color: var(--section-txt-color);
-  font-size: 52px;
 }
 .image-card .card__short-img {
   width: 19.3rem;

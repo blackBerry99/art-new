@@ -24,11 +24,6 @@
   justify-content: center;
   flex-basis: 100%;
 }
-@media screen and (max-width: 575px) {
-  .brands__items {
-    flex-direction: column;
-  }
-}
 @media screen and (min-width: 576px) {
   .brands__item {
     display: block;
@@ -51,7 +46,4 @@
 .brands__placeholder {
   font-size: 3.2rem;
   line-height: 1;
-}
-.brand__text{
-  flex-shrink: 0;
 }

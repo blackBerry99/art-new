@@ -20,7 +20,12 @@
 	assign compare_at_price = target.compare_at_price
 	assign price = target.price | default: 1999
 	assign available = target.available | default: false
-	assign money_price = price | money_without_currency
+
+	if settings.show_currency
+		assign money_price = price | money_with_currency
+	else
+		assign money_price = price | money
+	endif
 
 	if target == product and product.price_varies
 		assign money_price = 'products.product.price.from_price_html' | t: price: money_price
@@ -54,18 +59,9 @@
 					class="price__last"
 				{% endif %}
 			>
-
-				{% if product.price > 0 %}
-					<span class="price-item price-item--regular">
-						{{ money_price | replace: ',', '.'}},-
-					</span>
-                    <div class="price_div">Of betaal in3 <b>(3x 	€{{ money_price | replace: ',', '' | divided_by: 3 | round: 2}},-  zonder rente)</b></div>
-
-				{% else %}      
-					<span class="price-item price-item--regular">
-							{{- 'products.product.price.price_on_request' | t -}}
-					</span>
-				{% endif %}
+				<span class="price-item price-item--regular">
+					{{ money_price }}
+				</span>
 			</dd>
 		</div>
 		<div class="price__sale">
@@ -80,7 +76,7 @@
 				{% endif %}
 			>
 				<span class="price-item price-item--sale price-item--last">
-					{{ money_price | replace: ',', '.'}},-
+					{{ money_price }}
 				</span>
 			</dd>
 			<dt class="price__compare">
@@ -90,7 +86,11 @@
 			</dt>
 			<dd class="price__compare">
 				<span class="price-item price-item--regular">
-					{{ compare_at_price | money }}
+					{% if settings.show_currency %}
+						{{ compare_at_price | money_with_currency }}
+					{% else %}
+						{{ compare_at_price | money }}
+					{% endif %}
 				</span>
 			</dd>
 		</div>
@@ -104,7 +104,17 @@
 				{% endif %}
 			>
 				<span>
-					{{- product.selected_or_first_available_variant.unit_price | money -}}
+					{% if settings.show_currency %}
+						{{-
+							product.selected_or_first_available_variant.unit_price
+							| money_with_currency
+						-}}
+					{% else %}
+						{{-
+							product.selected_or_first_available_variant.unit_price
+							| money
+						-}}
+					{% endif %}
 				</span>
 				<span aria-hidden="true">/</span>
 				<span class="visually-hidden"

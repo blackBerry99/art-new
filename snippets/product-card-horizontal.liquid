@@ -70,22 +70,34 @@
 	</div>
 
 	<div class="card-horizontal__information">
-		{%- if show_sku and product_card_product.selected_or_first_available_variant.sku.size > 0 -%}
+		{%- if show_sku
+			and product_card_product.selected_or_first_available_variant.sku.size > 0
+		-%}
 			<p
 				class="card__sku subtitle no-js-hidden"
 				id="Sku-{{ section.id }}"
 				role="status"
 				{{ block.shopify_attributes }}
 			>
-				<span class="visually-hidden">{{ 'products.product.sku' | t }}:</span> {{- product_card_product.selected_or_first_available_variant.sku -}}
+				<span class="visually-hidden">{{ 'products.product.sku' | t }}:</span>
+				{{- product_card_product.selected_or_first_available_variant.sku -}}
 			</p>
 		{%- endif -%}
 		{%- if show_vendor -%}
 			<span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
 			{%- if product_card_product.vendor != blank -%}
-				<div class="caption-with-letter-spacing subtitle subtitle--secondary">
-					{{ product_card_product.vendor }}
-				</div>
+				{% if settings.enable_vendor_link %}
+					<a
+						href="{{ product_card_product.vendor | url_for_vendor }}"
+						class="caption-with-letter-spacing subtitle subtitle--secondary vendor_link"
+					>
+						{{ product_card_product.vendor }}
+					</a>
+				{% else %}
+					<div class="caption-with-letter-spacing subtitle subtitle--secondary">
+						{{ product_card_product.vendor }}
+					</div>
+				{%- endif -%}
 			{%- else -%}
 				<div class="caption-with-letter-spacing subtitle subtitle--secondary">
 					{{ 'products.product.vendor' | t }}

@@ -66,6 +66,7 @@
 				class="
 					product__outer
 					{% if section.settings.desktop_alignment == 'right' %}product__outer--desktop-order{% endif %}
+					{% if section.settings.thumbnail_alignment == 'vertical' %}product__outer--thumbnail-order{% endif %}
 					{% if section.settings.mobile_alignment == 'after' %}product__outer--mobile-order{% endif %}
 				"
 			>
@@ -732,7 +733,7 @@
 				{% if product.media.size > 0 %}
 					<div class="product__media-wrapper">
 						<div class="product__media-list-wrapper">
-							<div class="product__media-sublist js-media-sublist no-js-hidden swiper">
+							<div class="product__media-sublist js-media-sublist no-js-hidden swiper" data-thumbnail="{{ section.settings.thumbnail_alignment }}">
 								<div class="swiper-wrapper">
 									{%- if product.selected_or_first_available_variant.featured_media != null -%}
 										{%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
@@ -1309,6 +1310,22 @@
       ],
       "default": "before",
       "label": "t:sections.main-product.settings.mobile_alignment.label"
+    },
+		{
+      "type": "select",
+      "id": "thumbnail_alignment",
+      "options": [
+        {
+          "value": "horizontal",
+          "label": "t:sections.main-product.settings.thumbnail_alignment.options__1.label"
+        },
+        {
+          "value": "vertical",
+          "label": "t:sections.main-product.settings.thumbnail_alignment.options__2.label"
+        }
+      ],
+      "default": "horizontal",
+      "label": "t:sections.main-product.settings.thumbnail_alignment.label"
     },
     {
       "type": "select",

@@ -1,7 +1,5 @@
 {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
-{% if template.suffix contains 'over-ons' %}
-{{ 'custom.css' | asset_url | stylesheet_tag }}
-{% endif %}
+
 {%- style -%}
 
 	{% render 'spaced-section' %}

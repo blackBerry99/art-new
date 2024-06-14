@@ -7,28 +7,9 @@
     },
     "form": {
       "type": "contact-form",
-      "blocks": {
-        "2fdf2015-3358-4d94-9ef9-ba9ea2b3f88c": {
-          "type": "contact",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/859145d4785673e024b48f807e970c10.png",
-            "desc": "Laat wat van je horen, dat vind ik leuk! Je kunt altijd bij me terecht voor persoonlijk advies, een afspraak of een praatje.",
-            "name": "arnoud bennink",
-            "phone": "tel:+316 53 40 74 18",
-            "email": "mailto:info@modernekunst.nl",
-            "address": "https:\/\/maps.app.goo.gl\/UcKF2QBLFehQvNCk9",
-            "addressText": "Flevoweg 35, Leiden"
-          }
-        }
-      },
-      "block_order": [
-        "2fdf2015-3358-4d94-9ef9-ba9ea2b3f88c"
-      ],
       "settings": {
-        "full": false,
         "heading": "<p>Maak een afspraak in de galerie<\/p>",
         "text": "Vul het formulier in of bel Arnoud. Hij neemt je mee in de wereld van kunst.  Er is koffie, wat lekkers en ruimte voor persoonlijk advies.",
-        "address": "",
         "margin_top": 20,
         "margin_bottom": 0
       }

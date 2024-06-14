@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Humans.nl",
-    "theme_version": "1.1.1",
-    "theme_author": "Humans.nl",
-    "theme_documentation_url": "https:\/\/humans.nl",
-    "theme_support_url": "https:\/\/humans.nl"
+    "theme_name": "Sydney",
+    "theme_version": "1.1.3",
+    "theme_author": "Apparent Collective",
+    "theme_documentation_url": "https:\/\/apparentcollective.com\/help-center\/documentation\/sydney\/",
+    "theme_support_url": "https:\/\/apparentcollective.com\/help-center\/"
   },
   {
     "name": "t:settings_schema.dark_mode.name",
@@ -490,7 +490,7 @@
         "type": "range",
         "id": "header_menu_link_size",
         "min": 10,
-        "max": 30,
+        "max": 20,
         "step": 1,
         "unit": "px",
         "label": "t:settings_schema.typography.settings.header_menu_link_size.label",
@@ -642,6 +642,12 @@
         "default": true,
         "label": "t:settings_schema.product_card.settings.quickview_hover.label",
         "info": "t:settings_schema.product_card.settings.quickview_hover.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_vendor_link",
+        "default": false,
+        "label": "t:settings_schema.product_card.settings.enable_vendor_link.label"
       }
     ]
   },
@@ -649,10 +655,20 @@
     "name": "t:settings_schema.color_swatch.name",
     "settings": [
       {
-        "type": "checkbox",
-        "id": "show_color_swatch",
-        "label": "t:settings_schema.color_swatch.settings.show_color_swatch.label",
-        "default": false
+        "type": "select",
+        "id": "type_color_swatch",
+        "options": [
+          {
+            "value": "custom",
+            "label": "t:settings_schema.color_swatch.settings.type_color_swatch.options__1.label"
+          },
+          {
+            "value": "standart",
+            "label": "t:settings_schema.color_swatch.settings.type_color_swatch.options__2.label"
+          }
+        ],
+        "default": "custom",
+        "label": "t:settings_schema.color_swatch.settings.type_color_swatch.label"
       },
       {
         "type": "text",
@@ -923,6 +939,12 @@
         "id": "show_breadcrumbs",
         "default": true,
         "label": "t:settings_schema.advanced.settings.show_breadcrumbs.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_currency",
+        "default": true,
+        "label": "t:settings_schema.product_card.settings.show_currency.label"
       }
     ]
   },

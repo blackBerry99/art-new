@@ -2,20 +2,6 @@
   "type": "footer",
   "name": "Footer Group",
   "sections": {
-    "4a073e7a-4dc2-4e2f-a599-1b378ff57c9c": {
-      "type": "ticker-section",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/arn-scherp_1_1.jpg",
-        "heading": "<p>Arnoud adviseert je vol passie over kunst<\/p>",
-        "wa_link_text": "WhatsApp met Arnoud",
-        "wa_link": "https:\/\/wa.me\/31653407418",
-        "call_link_text": "Bel met Arnoud",
-        "call_link": "tel:+31653407418",
-        "ticker_speed": 18,
-        "ticker_font": 120,
-        "margin_top": 170
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -23,9 +9,7 @@
           "type": "link_list",
           "settings": {
             "heading": "",
-            "menu": "footer-menu",
-            "link": "",
-            "link_text": "Afspraak maken"
+            "menu": "footer-menu"
           }
         },
         "99bc3ced-1273-4a58-a843-459ed481289d": {
@@ -39,18 +23,14 @@
           "type": "link_list",
           "settings": {
             "heading": "info",
-            "menu": "footer-info",
-            "link": "",
-            "link_text": "Afspraak maken"
+            "menu": "footer-info"
           }
         },
         "77273b9f-be39-468d-9a35-3877f29f9df3": {
           "type": "link_list",
           "settings": {
             "heading": "Galerie",
-            "menu": "footer-showroom",
-            "link": "",
-            "link_text": "Afspraak maken"
+            "menu": "footer-showroom"
           }
         }
       },
@@ -85,7 +65,6 @@
     }
   },
   "order": [
-    "4a073e7a-4dc2-4e2f-a599-1b378ff57c9c",
     "footer"
   ]
 }

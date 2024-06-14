@@ -4,30 +4,30 @@
       "home": "Home"
     },
     "countdown": {
-      "days": "dagen",
-      "hours": "uren",
-      "minutes": "minuten",
-      "seconds": "seconden"
+      "days": "days",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds"
     },
     "password_page": {
-      "login_form_heading": "Vul het wachtwoord in",
-      "login_password_button": "Vul het wachtwoord in",
-      "login_form_password_label": "Wachtwoord",
-      "login_form_password_placeholder": "Jouw wachtwoord",
-      "login_form_error": "Verkeerd wachtwoord!",
-      "login_form_submit": "Ga door",
+      "login_form_heading": "Enter store using password:",
+      "login_password_button": "Enter using password",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_error": "Wrong password!",
+      "login_form_submit": "Enter",
       "modal": "Password modal",
-      "admin_link_html": "Bent u de shop eigenaar? <a href=\"\/admin\" class=\"link underlined-link\">Log hier in<\/a>",
-      "powered_by_shopify_html": "Deze shop is gemaakt door <a href=\"\/admin\" class=https:\/\/www.humans.nl\/<\/a>"
+      "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"link underlined-link\">Log in here<\/a>",
+      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
     "social": {
       "alt_text": {
-        "share_on_facebook": "Deel op Facebook",
-        "share_on_twitter": "Deel op Twitter",
-        "share_on_pinterest": "Pin op Pinterest"
+        "share_on_facebook": "Share on Facebook",
+        "share_on_twitter": "Tweet on Twitter",
+        "share_on_pinterest": "Pin on Pinterest"
       },
       "links": {
-        "twitter": "X",
+        "twitter": "Twitter",
         "facebook": "Facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
@@ -38,7 +38,7 @@
         "tiktok": "TikTok"
       },
       "links_tr": {
-        "twitter": "X",
+        "twitter": "Twi",
         "facebook": "FB",
         "pinterest": "Pint",
         "instagram": "Inst",
@@ -49,349 +49,344 @@
         "tiktok": "TT"
       }
     },
-    "continue_shopping": "Ga verder met winkelen",
+    "continue_shopping": "Continue shopping",
     "pagination": {
-      "label": "Pagina's",
-      "page": "Pagina {{ number }}",
-      "next": "Volgende pagina",
-      "previous": "Vorige pagina"
+      "label": "Pagination",
+      "page": "Page {{ number }}",
+      "next": "Next page",
+      "previous": "Previous page"
     },
     "search": {
-      "search": "Zoeken op de website",
-      "placeholder": "Wat zoek je...",
-      "products": "Producten",
-      "collections": "Collecties",
-      "articles": "Artikelen",
-      "pages": "Pagina's"
+      "search": "Search",
+      "placeholder": "What are You Looking For ...",
+      "products": "Products",
+      "collections": "Collections",
+      "articles": "Articles",
+      "pages": "Pages"
     },
     "card": {
-      "view__all": "Toon alles",
-      "shop__now": "Bekijk alle kunstwerken",
-      "quick__view": "Bekijk nu",
-      "collection_name": "Naam collectie",
-      "view__more": "Bekijk de volledige omschrijving"
+      "view__all": "View all",
+      "shop__now": "Shop now",
+      "quick__view": "Quick view",
+      "collection_name": "Collection name",
+      "view__more": "View full details"
     },
     "cart": {
-      "view": "Bekijk mijn winkelwagen",
-      "item_added": "Winkelwagen",
-      "empty_cart": "Jouw winkelwagen is leeg"
+      "view": "View My Cart",
+      "item_added": "Cart",
+      "empty_cart": "Your Cart is Empty"
     },
     "share": {
-      "copy_to_clipboard": "Kopieer link",
-      "share": "Deel",
+      "copy_to_clipboard": "Copy link",
+      "share": "Share",
       "share_url": "Link",
-      "success_message": "Link gekopieerd naar klembord",
+      "success_message": "Link copied to clipboard!",
       "links": {
-        "twitter": "X",
+        "twitter": "Twitter",
         "facebook": "Facebook",
         "pinterest": "Pinterest",
-        "copy": "Kopieer link"
+        "copy": "Copy Link"
       }
     },
     "blog": {
-      "author": "door",
-      "update": "Geüpdatet op",
-      "publish": "Geplaatst op"
+      "author": "by",
+      "update": "Updated on",
+      "publish": "Published on"
     },
     "dark_mode": {
-      "dark": "Donker",
-      "light": "Licht"
+      "dark": "Dark Mode",
+      "light": "Light Mode"
     }
   },
   "date_formats": {
     "month_year": "%B %Y"
   },
   "newsletter": {
-    "label": "Email",
-    "success": "Bedankt voor je inschrijving",
-    "button_label": "Schrijf je in",
-    "button_label_request": "Verzend verzoek"
+    "label": "E-mail",
+    "success": "Thanks for subscribing",
+    "button_label": "Subscribe",
+    "button_label_request": "Send request"
   },
   "accessibility": {
-    "skip_to_text": "Verder naar tekst",
-    "skip_to_product_info": "Verder naar product informatie",
-    "close": "Sluit",
+    "skip_to_text": "Skip to content",
+    "skip_to_product_info": "Skip to product information",
+    "close": "Close",
     "unit_price_separator": "per",
-    "vendor": "Kunstenaar:",
-    "error": "Foutmelding",
-    "refresh_page": "Wanneer een selectie maakt, wordt de pagina volledig ververst.",
+    "vendor": "Vendor:",
+    "error": "Error",
+    "refresh_page": "Choosing a selection results in a full page refresh.",
     "link_messages": {
-      "new_window": "Opent in een nieuw venster",
-      "external": "Opent externe website"
+      "new_window": "Opens in a new window.",
+      "external": "Opens external website."
     },
-    "of": "van",
-    "next_slide": "Volgende",
-    "previous_slide": "Vorige",
-    "loading": "Laden..."
+    "of": "of",
+    "next_slide": "Slide right",
+    "previous_slide": "Slide left",
+    "loading": "Loading..."
   },
   "blogs": {
     "article": {
       "blog": "Blog",
-      "read_more_title": "Lees meer: {{ title }}",
+      "read_more_title": "Read more: {{ title }}",
       "comments": {
-        "one": "{{ count }} opmerking",
-        "other": "{{ count }} opmerkingen"
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
       },
-      "moderated": "Opmerkingen worden eerst beoordeeld voordat ze geplaatst worden.",
-      "comment_form_title": "Schrijf een opmerking",
-      "name": "Naam",
+      "moderated": "Please note, comments need to be approved before they are published.",
+      "comment_form_title": "Leave a comment",
+      "name": "Name",
       "email": "Email",
-      "message": "Opmerking",
-      "post": "Plaats opmerking",
-      "back_to_blog": "Terug naar blog",
-      "share": "Deel deze blog",
-      "success": "Jouw opmerking is succesvol geplaatst. Bedankt!",
-      "success_moderated": "Jouw opmerking is succesvol geplaatst. We plaatsen het z.s.m."
+      "message": "Comment",
+      "post": "Post comment",
+      "back_to_blog": "Back to blog",
+      "share": "Share this article",
+      "success": "Your comment was posted successfully! Thank you!",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated."
     }
   },
   "onboarding": {
-    "product_title": "Voorbeeld product titel",
-    "collection_title": "Jouw naam van de collectie"
+    "product_title": "Example product title",
+    "collection_title": "Your collection's name"
   },
   "products": {
     "product": {
-      "back": "Collecties",
-      "add_to_cart": "in winkelwagen",
-      "contact_seller": "contact seller",
-      "on_sale": "Korting",
+      "back": "Collection",
+      "add_to_cart": "Add to Cart",
+      "on_sale": "Sale",
       "choose_product_options": "Choose options for {{ product_name }}",
-      "product_variants": "Product varianten",
+      "product_variants": "Product variants",
       "buy_with": "Buy It With:",
-      "buy_with2": "Wellicht ook interessant:",
+      "buy_with2": "You May Also Like:",
       "media": {
-        "open_featured_media": "Open gekozen media in galerij weergave",
-        "open_media": "Open media {{ index }} in galerij weergave",
-        "play_model": "Speel 3D viewer af",
-        "play_video": "Speel video af"
+        "open_featured_media": "Open featured media in gallery view",
+        "open_media": "Open media {{ index }} in gallery view",
+        "play_model": "Play 3D Viewer",
+        "play_video": "Play video"
       },
-      "modal_1": "Verzend informatie",
-      "modal_2": "Hoe kies je de juiste maat",
+      "modal_1": "Shipping Information",
+      "modal_2": "How to Choose Size",
       "quantity": {
-        "label": "Aantal",
-        "input_label": "Aantal van {{ product }}",
-        "increase": "Verhoog aantal van {{ product }}",
-        "decrease": "Verlaag aantal van {{ product }}",
-        "minimum_of": "Minimum van {{ quantity }}",
-        "maximum_of": "Maximum van {{ quantity }}",
-        "multiples_of": "Vermenigvuldig met {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> in winkelwagen",
-        "in_stock": "{{ quantity }} in voorraad",
-        "out_of_stock": "Niet langer in voorraad"
+        "label": "Quantity",
+        "input_label": "Quantity for {{ product }}",
+        "increase": "Increase quantity for {{ product }}",
+        "decrease": "Decrease quantity for {{ product }}",
+        "minimum_of": "Minimum of {{ quantity }}",
+        "maximum_of": "Maximum of {{ quantity }}",
+        "multiples_of": "Increments of {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> in cart",
+        "in_stock": "{{ quantity }} in Stock Now",
+        "out_of_stock": "Out of stock"
       },
       "pickup_availability": {
-        "view_store_info": "Bekijk winkelinformatie",
+        "view_store_info": "View store information",
         "check_other_stores": "Check availability at other stores",
         "pick_up_available": "Pickup available",
         "pick_up_available_at_html": "Pickup available at <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "pick_up_unavailable_at_html": "Pickup currently unavailable at <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "unavailable": "Couldn't load pickup availability",
-        "refresh": "Ververs"
+        "refresh": "Refresh"
       },
       "price": {
-        "from_price_html": "Vanaf {{ price }}",
-        "regular_price": "Normaal",
-        "sale_price": "Sale",
-        "unit_price": "Per stuk",
-        "price_on_request": "Prijs op aanvraag"
+        "from_price_html": "From {{ price }}",
+        "regular_price": "Regular price",
+        "sale_price": "Sale price",
+        "unit_price": "Unit price"
       },
-      "share": "Deel dit product",
-      "sold_out": "Verkocht",
-      "unavailable": "Niet beschikbaar",
-      "value_unavailable": "{{ option_value }} - Niet beschikbaar",
-      "variant_sold_out_or_unavailable": "Variant uitverkocht of niet beschikbaar",
-      "vendor": "Kunstenaar",
-      "product_heading": "Naam van jouw kunstwerk",
-      "product_description": "Omschrijving van het kunstwerk",
-      "video_exit_message": "{{ title }} open volledige video in een nieuw venster",
-      "include_taxes": "Inclusief BTW",
+      "share": "Share this product",
+      "sold_out": "Sold out",
+      "unavailable": "Unavailable",
+      "value_unavailable": "{{ option_value }} - Unavailable",
+      "variant_sold_out_or_unavailable": "Variant sold out or unavailable",
+      "vendor": "Product vendor",
+      "product_heading": "Name for your product",
+      "product_description": "Description for your product",
+      "video_exit_message": "{{ title }} opens full screen video in same window.",
+      "include_taxes": "Tax included.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
-      "xr_button": "Bekijk in jouw ruimte",
-      "xr_button_label": "View in your space, loads item in augmented reality window",
-      "sku": "SKU"
+      "xr_button": "View in your space",
+      "xr_button_label": "View in your space, loads item in augmented reality window"
     },
     "load_more": {
-      "label": "Laad meer"
+      "label": "Load More"
     },
     "modal": {
-      "label": "Media galerij"
+      "label": "Media gallery"
     },
     "facets": {
-      "all": "Alle",
-      "apply": "Pas toe",
-      "clear": "Verwijder",
-      "show_more": "Toon meer",
-      "show_less": "Toon minder",
-      "clear_all": "Verwijderen",
-      "from": "Van",
-      "filter_and_sort": "Filter en sorteer",
-      "filter_by_label": "Filter",
+      "all": "All",
+      "apply": "Apply",
+      "clear": "Clear",
+      "clear_all": "Clear all",
+      "from": "From",
+      "filter_and_sort": "Filter and sort",
+      "filter_by_label": "Filter:",
       "filter_button": "Filter",
       "filters_selected": {
-        "one": "{{ count }} geselecteerd",
-        "other": "{{ count }} geselecteerd"
+        "one": "{{ count }} selected",
+        "other": "{{ count }} selected"
       },
-      "max_price": "De hoogste prijs is {{ price }}",
+      "max_price": "The highest price is {{ price }}",
       "product_count": {
-        "one": "{{ product_count }} van {{ count }} product",
-        "other": "{{ product_count }} van de {{ count }} producten"
+        "one": "Showing {{ product_count }} of {{ count }} product",
+        "other": "Showing {{ product_count }} of {{ count }} products"
       },
       "product_count_simple": {
         "one": "{{ count }} product",
-        "other": "{{ count }} producten"
+        "other": "{{ count }} products"
       },
       "reset": "Reset",
-      "sort_button": "Sorteert",
-      "sort_by_label": "Sorteer:",
+      "sort_button": "Sort",
+      "sort_by_label": "Sort by:",
       "to": "To",
-      "clear_filter": "Wis filter"
+      "clear_filter": "Clear filter"
     }
   },
   "templates": {
     "search": {
-      "no_results": "Geen resultaten gevonden voor “{{ terms }}”. Check de spelling of gebruik een ander woord of zin",
-      "page": "Pagina",
+      "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
+      "page": "Page",
       "results_with_count": {
-        "one": "{{ count }} resultaat gevonden voor “{{ terms }}”",
-        "other": "{{ count }} resultaten gevonden voor “{{ terms }}”"
+        "one": "{{ count }} result found for “{{ terms }}”",
+        "other": "{{ count }} results found for “{{ terms }}”"
       },
-      "title": "Zoekresultaten",
+      "title": "Search results",
       "results_count": {
-        "one": "{{ count }} resultaat",
-        "other": "{{ count }} resulaten"
+        "one": "{{ count }} result",
+        "other": "{{ count }} results"
       },
       "item_count": {
         "one": "{{ count }} Item",
         "other": "{{ count }} Items"
       },
       "article_count": {
-        "one": "{{ count }} Artikel",
-        "other": "{{ count }} Artikelen"
+        "one": "{{ count }} Article",
+        "other": "{{ count }} Articles"
       },
       "page_count": {
-        "one": "{{ count }} Pagina",
-        "other": "{{ count }} Pagina's"
+        "one": "{{ count }} Page",
+        "other": "{{ count }} Pages"
       },
       "results_products_with_count": {
         "one": "{{ count }} product",
-        "other": "{{ count }} producten"
+        "other": "{{ count }} products"
       },
-      "search_for": "Zoek naar “{{ terms }}”"
+      "search_for": "Search for “{{ terms }}”"
     },
     "cart": {
-      "cart": "Winkelwagen"
+      "cart": "Cart"
     },
     "contact": {
       "form": {
-        "name": "Naam",
+        "name": "Name",
         "email": "E-mail",
-        "phone": "Telefoonnummer",
-        "comment": "Jouw vraag",
-        "send": "Verzend",
-        "post_success": "Bedankt voor je bericht. Ik zal je zo spoedig mogelijk antwoord geven.",
-        "error_heading": "Controleer a.u.b. het volgende:"
+        "phone": "Phone Number",
+        "comment": "Your Request",
+        "send": "Send Request",
+        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "error_heading": "Please adjust the following:"
       }
     },
     "404": {
-      "title": "Kunnen we je verder helpen?",
-      "subtext": "Pagina niet gevonden",
-      "text": "Zoek hieronder de pagina of het kunstwerk waar je naar opzoek bent."
+      "title": "Page not found",
+      "subtext": "404",
+      "text": "The page you were looking for could not be found. It might have been removed, renamed, or did not exist in the first place. Perhaps searching can help."
     }
   },
   "sections": {
     "header": {
-      "announcement": "Melding",
+      "announcement": "Announcement",
       "menu": "Menu",
-      "popular_articles": "Populaire artikelen",
-      "popular_items": "Populaire kunstwerken",
-      "shop_all": "Bekijk kunstwerken",
-      "close": "Sluit",
+      "popular_articles": "Popular Posts",
+      "popular_items": "Popular items",
+      "shop_all": "Shop All",
+      "close": "Close",
       "cart_count": {
-        "one": "{{ count }} product",
-        "other": "{{ count }} producten"
+        "one": "{{ count }} item",
+        "other": "{{ count }} items"
       }
     },
     "cart": {
-      "title_first": "Winkelwagen",
-      "title_last": "Winkelwagen",
-      "caption": "In winkelwagen",
-      "remove_title": "Verwijder {{ title }}",
-      "subtotal": "Subtotaal",
-      "new_subtotal": "Nieuw subtotaal",
-      "note": "Opmerking bij bestelling",
-      "checkout": "Afrekenen",
-      "empty": "Jouw winkelwagen is leeg",
-      "cart_error": "Er is een fout opgetreden bij het bijwerken van uw winkelwagen. Probeer het opnieuw.",
-      "cart_quantity_error_html": "Je kunt slechts [quantity] van dit artikel aan uw winkelwagen toevoegen",
-      "taxes_and_shipping_policy_at_checkout_html": "BTW en <a href=\"{{ link }}\">verzendkosten<\/a> worden berekend bij het afrekenen",
-      "taxes_included_but_shipping_at_checkout": "BTW inbegrepen en verzendkosten berekend bij het afrekenen.",
-      "taxes_included_and_shipping_policy_html": "BTW inbegrepen. <a href=\"{{ link }}\">Verzendkosten<\/a> berekend bij het afrekenen.",
-      "taxes_and_shipping_at_checkout": "BTW en verzendkosten berekend bij het afrekenen",
+      "title_first": "Shopping",
+      "title_last": "Cart",
+      "caption": "Cart items",
+      "remove_title": "Remove {{ title }}",
+      "subtotal": "Subtotal",
+      "new_subtotal": "New subtotal",
+      "note": "Order special instructions",
+      "checkout": "Check Out",
+      "empty": "Your Cart is Empty",
+      "cart_error": "There was an error while updating your cart. Please try again.",
+      "cart_quantity_error_html": "You can only add [quantity] of this item to your cart.",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
+      "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
+      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
       "headings": {
         "product": "Product",
-        "price": "Prijs",
-        "total": "Totaal",
-        "quantity": "Hoeveelheid"
+        "price": "Price",
+        "total": "Total",
+        "quantity": "Quantity"
       },
-      "update": "Bijwerken",
-      "remove": "Verwijder"
+      "update": "Update",
+      "remove": "Remove"
     },
     "categories-list": {
-      "more": "Meer"
+      "more": "More"
     },
     "footer": {
-      "social_placeholder": "Volg ons op social media!",
-      "payment": "Betalingsmethodes"
+      "social_placeholder": "Follow us on social media!",
+      "payment": "Payment methods"
     },
     "featured_blog": {
-      "view_all": "Bekijk alle blogs",
-      "read_more": "Lees meer",
+      "view_all": "Read All Articles",
+      "read_more": "Read more",
       "onboarding_title": "Blog post",
-      "onboarding_content": "Geef jouw klant een samenvatting van deze blog"
+      "onboarding_content": "Give your customers a summary of your blog post"
     },
     "featured_collection": {
-      "view_all": "Toon alles",
-      "view_all_label": "Toon alle kunstwerken in {{ collection_name }} collectie"
+      "view_all": "View all",
+      "view_all_label": "View all products in the {{ collection_name }} collection"
     },
     "collection_list": {
-      "view_all": "Toon alles"
+      "view_all": "View all"
     },
     "collection_template": {
-      "all": "Alle",
-      "apply": "Pas toe",
-      "clear": "Wis",
-      "clear_all": "Wis alles",
-      "empty": "Helaas. Er zijn nog geen producten in deze collectie",
-      "empty_results": "Geen producten gevonden",
-      "from": "Vanaf",
-      "filter_and_sort": "Filteren en sorteren",
-      "filter_by_label": "Filtereren op",
+      "all": "All",
+      "apply": "Apply",
+      "clear": "Clear",
+      "clear_all": "Clear all",
+      "empty": "There are no products in this collection yet",
+      "empty_results": "No products found",
+      "from": "From",
+      "filter_and_sort": "Filter and sort",
+      "filter_by_label": "Filter by",
       "filter_button": "Filter",
       "filters_selected": {
-        "one": "{{ count }} geselecteerd",
-        "other": "{{ count }} geselecteerd"
+        "one": "{{ count }} selected",
+        "other": "{{ count }} selected"
       },
-      "max_price": "Tot {{ price }}",
+      "max_price": "Up to {{ price }}",
       "product_count": {
-        "one": "{{ product_count }} van {{ count }} producten",
-        "other": "{{ product_count }} van {{ count }} producten"
+        "one": "Showing {{ product_count }} of {{ count }} product",
+        "other": "Showing {{ product_count }} of {{ count }} products"
       },
       "reset": "Reset",
-      "sort_button": "Sorteer",
-      "sort_by_label": "Sorteren als",
-      "title": "Collectie",
+      "sort_button": "Sort",
+      "sort_by_label": "Sort by",
+      "title": "Collection",
       "to": "To",
-      "use_fewer_filters_html": "Ga terug naar collecties <a class=\"{{ class }}\" href=\"{{ link }}\">collections<\/a>",
-      "results_use_fewer_filters_html": "Gebruik minder filters of <a class=\"{{ class }}\" href=\"{{ link }}\">wis alles<\/a>"
+      "use_fewer_filters_html": "Return to collection list <a class=\"{{ class }}\" href=\"{{ link }}\">collections<\/a>",
+      "results_use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">remove all<\/a>"
     },
     "video": {
-      "load_video": "Video aan het laden"
+      "load_video": "Loading video"
     }
   },
   "localization": {
-    "country_label": "Valuta",
-    "language_label": "Taal",
-    "update_language": "Ge-update taal ",
-    "update_country": "Update land\/regio"
+    "country_label": "Currency",
+    "language_label": "Language",
+    "update_language": "Update language",
+    "update_country": "Update country\/region"
   },
   "customer": {
     "account": {
@@ -401,8 +396,8 @@
       "details": "Account Details",
       "view_addresses": "View address",
       "return": "Return to Account Details",
-      "shopping_cart": "Winkelwagen",
-      "account_button_shop": "Bekijk alle kunstwerken"
+      "shopping_cart": "Shopping Cart",
+      "account_button_shop": "Shop Now"
     },
     "account_fallback": "Account",
     "activate_account": {
@@ -516,64 +511,39 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Hier is jouw {{ value }} cadeaubon voor {{ shop }}!",
-      "subtext": "Jouw cadeaubon",
-      "gift_card_code": "Code",
-      "shop_link": "Naar de winkel",
-      "remaining_html": "Resterend saldo {{ balance }}",
-      "add_to_apple_wallet": "Voeg toe aan Apple Walet",
-      "qr_image_alt": "QR code — scan om jouw cadeaubon te verzilveren",
-      "copy_code": "Kopieer code",
-      "expired": "Verlopen",
-      "copy_code_success": "Code succesvol gekopieerd",
-      "print_gift_card": "Afdrukken"
+      "title": "Here's your {{ value }} gift card for {{ shop }}!",
+      "subtext": "Your gift card",
+      "gift_card_code": "Gift card code",
+      "shop_link": "Continue shopping",
+      "remaining_html": "Remaining {{ balance }}",
+      "add_to_apple_wallet": "Add to Apple Wallet",
+      "qr_image_alt": "QR code — scan to redeem gift card",
+      "copy_code": "Copy code",
+      "expired": "Expired",
+      "copy_code_success": "Code copied successfully",
+      "print_gift_card": "Print"
     }
   },
   "popular": {
-    "new": "Nieuw",
+    "new": "New",
     "url": "#"
   },
   "about": {
-    "description": "Omschrijving"
+    "description": "Description"
   },
   "recipient": {
     "form": {
-      "checkbox": "Ik wil dit als cadeau verzenden",
-      "email_label": "Ontvanger email",
-      "email_label_optional_for_no_js_behavior": "Ontvanger email (optioneel)",
+      "checkbox": "I want to send this as a gift",
+      "email_label": "Recipient email",
+      "email_label_optional_for_no_js_behavior": "Recipient email (optional)",
       "email": "Email",
-      "name_label": "Ontvanger email (optioneel)",
-      "name": "Naam",
-      "message_label": "Bericht (optioneel)",
-      "message": "Bericht",
-      "max_characters": "{{ max_chars }} maximaal aantal tekens",
-      "send_on": "DD-MM-YYYY",
-      "send_on_label": "Verzend op (optioneel)"
-    }
-  },
-  "shopify": {
-    "checkout": {
-      "shop_policies": {
-        "refund_policy": "Ruilen & Retourneren",
-        "shipping_policy": "Verzendbeleid"
-      },
-      "general": {
-        "cart": "Winkelwagen"
-      },
-      "order_summary": {
-        "shopping_cart_label": "Winkelwagen"
-      },
-      "throttle": {
-        "cart_summary_heading": "Jouw winkelwagen"
-      }
-    },
-    "page_titles": {
-      "not_found": "404 pagina niet gevonden"
-    },
-    "notices": {
-      "cart": {
-        "all_items_in_cart": "{{ name }} zit al in je winkelwagen. Dit is de laatste op voorraad"
-      }
+      "name_label": "Recipient name (optional)",
+      "name": "Name",
+      "message_label": "Message (optional)",
+      "message": "Message",
+      "max_characters": "{{ max_chars }} characters max",
+      "send_on": "YYYY-MM-DD",
+      "send_on_label": "Send on (optional)"
     }
   }
 }

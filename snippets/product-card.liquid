@@ -12,13 +12,16 @@
 	{% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 
-{%- if settings.quickview_show -%}
+{%- if settings.quickview_show or settings.type_color_swatch == 'custom'-%}
 	<link
 		rel="preload"
 		href="{{ 'section-main-product.css' | asset_url }}"
 		as="style"
 		onload="this.onload=null;this.rel='stylesheet'"
 	>
+{%- endif -%}
+
+{%- if settings.quickview_show -%}
 	<link
 		rel="stylesheet"
 		href="{{ 'component-deferred-media.css' | asset_url }}"
@@ -104,6 +107,7 @@
 						product_card_product.featured_media
 						| image_url: width: 1776
 						| image_tag:
+							loading: 'lazy',
 							sizes: sizes,
 							widths: '444, 888, 1332, 1776',
 							class: 'motion-reduce media--first',
@@ -121,6 +125,7 @@
 							product_card_product.media[1]
 							| image_url: width: 1776
 							| image_tag:
+								loading: 'lazy',
 								sizes: sizes,
 								widths: '222, 444, 888, 1332, 1776',
 								class: 'motion-reduce media--second',
@@ -240,22 +245,35 @@
 
 	<div class="card-information">
 		<div class="card-information__wrapper">
-			{%- if show_sku and product_card_product.selected_or_first_available_variant.sku.size > 0 -%}
+			{%- if show_sku
+				and product_card_product.selected_or_first_available_variant.sku.size
+					> 0
+			-%}
 				<p
 					class="card__sku subtitle no-js-hidden"
 					id="Sku-{{ section.id }}"
 					role="status"
 					{{ block.shopify_attributes }}
 				>
-					<span class="visually-hidden">{{ 'products.product.sku' | t }}:</span> {{- product_card_product.selected_or_first_available_variant.sku -}}
+					<span class="visually-hidden">{{ 'products.product.sku' | t }}:</span>
+					{{- product_card_product.selected_or_first_available_variant.sku -}}
 				</p>
 			{%- endif -%}
 			{%- if show_vendor -%}
 				<span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
 				{%- if product_card_product.vendor != blank -%}
-					<div class="caption-with-letter-spacing subtitle subtitle--secondary">
-						{{ product_card_product.vendor }}
-					</div>
+					{% if settings.enable_vendor_link %}
+						<a
+							href="{{ product_card_product.vendor | url_for_vendor }}"
+							class="caption-with-letter-spacing subtitle subtitle--secondary vendor_link"
+						>
+							{{ product_card_product.vendor }}
+						</a>
+					{% else %}
+						<div class="caption-with-letter-spacing subtitle subtitle--secondary">
+							{{ product_card_product.vendor }}
+						</div>
+					{%- endif -%}
 				{%- else -%}
 					<div class="caption-with-letter-spacing subtitle subtitle--secondary">
 						{{ 'products.product.vendor' | t }}
@@ -300,7 +318,7 @@
 							assign name_option = option.name | handle | strip
 						%}
 
-						{% if settings.show_color_swatch and color_trigger == name_option %}
+						{% if settings.type_color_swatch == 'custom' and color_trigger == name_option %}
 							<div class="product-form__controls js-color-swatches">
 								<div class="product-form__controls-group">
 									{% render 'product-variant-options',

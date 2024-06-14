@@ -188,11 +188,6 @@
 				{% endif %}
 			</template>
 		</deferred-media>
-		{% if section.settings.add_text != blank %}
-			<div class="video-section__add">
-				{{ section.settings.add_text | escape }}
-			</div>
-		{% endif %}
 	</div>
 </div>
 
@@ -267,12 +262,6 @@
 			"default": "Subheading",
 			"label": "t:sections.video.settings.subheading.label",
 			"info": "t:sections.video.settings.subheading.info"
-		},
-		{
-			"type": "text",
-			"id": "add_text",
-			"default": "Additional text",
-			"label": "Additional text"
 		},
 		{
 			"type": "text",
