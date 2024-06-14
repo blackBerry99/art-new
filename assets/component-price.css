@@ -7,10 +7,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-size: 1.2rem;
+  font-size: 16px;
   line-height: 1.5;
   color: rgb(var(--color-foreground));
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .price .price__sale .price-item--regular {
@@ -140,4 +140,19 @@ span.price-item.price-item--sale.price-item--last {
 
 span.price-item.price-item--sale.price-item--last.appstle_subscription_final_price {
   margin-left: 1rem !important;
+}
+
+
+.price_div{
+  display: none;
+  background: white;
+  font-size: 17px;
+  opacity: .7;
+  border-radius: 0px;
+  margin: 12px 0; 20px; 0px;
+  padding: 0px 0px;
+}
+
+.product__info-wrapper .price_div {
+  display: block;
 }

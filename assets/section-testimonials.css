@@ -87,11 +87,11 @@ body[data-scheme=dark] .ts-slider__arrow {
 .testimonials--carousel .testimonials__account {
   display: flex;
   align-items: center;
-  margin-top: 1.6rem;
+  margin-top: 5.5rem;
 }
 .testimonials--carousel .testimonials__title {
   margin: 0;
-  font-size: 2.4rem!important;
+  font-size: 26px!important;
 }
 .testimonials--carousel .testimonials__img {
   width: 3.5rem;
@@ -117,7 +117,7 @@ body[data-scheme=dark] .ts-slider__arrow {
 }
 .testimonials--carousel .testimonials__name {
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 22px;
   color: rgb(var(--color-foreground-secondary));
 }
 .testimonials--carousel .testimonials__position {

@@ -1,9 +1,9 @@
 .pagination-wrapper {
-  margin-top: 4rem;
+  margin: 4rem 0;
 }
 @media screen and (min-width: 990px) {
   .pagination-wrapper {
-    margin-top: 5rem;
+    margin: 5rem 0;
   }
 }
 .pagination__list {

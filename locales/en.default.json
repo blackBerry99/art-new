@@ -191,7 +191,8 @@
         "from_price_html": "From {{ price }}",
         "regular_price": "Regular price",
         "sale_price": "Sale price",
-        "unit_price": "Unit price"
+        "unit_price": "Unit price",
+        "price_on_request": "Price on request"
       },
       "share": "Share this product",
       "sold_out": "Sold out",
@@ -217,6 +218,8 @@
       "all": "All",
       "apply": "Apply",
       "clear": "Clear",
+      "show_more": "Show more",
+      "show_less": "Show less",
       "clear_all": "Clear all",
       "from": "From",
       "filter_and_sort": "Filter and sort",

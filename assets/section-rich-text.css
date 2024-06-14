@@ -1,3 +1,8 @@
+div.metafield-rich_text_field h2, div.metafield-rich_text_field h3, div.metafield-rich_text_field h4, div.metafield-rich_text_field h5, div.metafield-rich_text_field h6 {
+font-size: 2.2rem !important;
+  margin-top: 25px !important;
+margin-bottom: 15px !important;
+}
 .rich-text {
   margin: auto;
   max-width: 110rem;
@@ -8,6 +13,7 @@
 
 .rich-text.rich-text--full-width {
   max-width: initial;
+  margin-top: 60px;
   width: 100%;
 }
 
@@ -41,7 +47,8 @@
 }
 @media screen and (min-width: 990px) {
   .rich-text__blocks {
-    max-width: 78rem;
+    max-width: 110rem;
+    font-size: 15px;
   }
 }
 /* Blocks */
@@ -60,4 +67,5 @@
 
 .rich-text__text p {
   margin: 0;
+  padding-bottom: 20px;
 }

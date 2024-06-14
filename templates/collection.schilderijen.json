@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "026262bf-0fb2-4857-9b90-d9bbcc7ba210": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ronald-Chapeau-Brigitte-Gold-Schilderijen.jpg"
+          }
+        },
+        "9295e682-0138-4ed2-af3a-0197c4692300": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Guy-Olivier---I-Am-Wine-Schilderijen_1.jpg"
+          }
+        },
+        "b2c34ec1-7ec8-4475-958f-59556f460f82": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banksy-Girl-With-The-Red-Balloon-Banner.jpg"
+          }
+        },
+        "1f058443-97d3-4e8b-9025-57b60747326b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Je-Shen---Pink-Mediation-Yellow-stripe-Schilderijen.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "026262bf-0fb2-4857-9b90-d9bbcc7ba210",
+        "9295e682-0138-4ed2-af3a-0197c4692300",
+        "b2c34ec1-7ec8-4475-958f-59556f460f82",
+        "1f058443-97d3-4e8b-9025-57b60747326b"
+      ],
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "image_products": "shopify:\/\/shop_images\/Moderne_Kunst_Van_Apple.jpg"
+      }
+    },
+    "5541a682-236f-407a-9515-9d57a0f38808": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 70,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 21,
+        "columns_mobile": "1",
+        "color_scheme": "background-card",
+        "image_ratio": "square",
+        "image_fit": "contain",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_sku": false,
+        "show_desc": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true
+      }
+    },
+    "add_description_c3wqBb": {
+      "type": "add-description",
+      "blocks": {
+        "text_K9btr9": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.seo_block | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_K9btr9"
+      ],
+      "custom_css": [
+        ".color-background-1 {background: rgb(248, 242, 233);}"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "5541a682-236f-407a-9515-9d57a0f38808",
+    "product-grid",
+    "add_description_c3wqBb"
+  ]
+}

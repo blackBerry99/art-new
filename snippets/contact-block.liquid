@@ -1,0 +1,51 @@
+<div class="contact-block">
+    {% if image != blank %}
+        <div class="contact-block__img">
+            {{
+            image
+            | image_url: width: 120
+            | image_tag:
+            loading: 'lazy',
+            class: big,
+            widths: '120'
+            }}
+        </div>
+    {% endif %}
+    {% if desc != blank %}
+        <div class="contact-block__desc"> {{ desc }}</div>
+    {% endif %}
+
+    {% if name != blank %}
+        <div class="contact-block__title contact-block__title--name"> {{ name }}</div>
+    {% endif %}
+
+    {% if phone != blank %}
+        <div class="contact-block__item">
+            <div class="contact-block__title">bellen of whatsapp</div>
+            <a href="{{ phone }}" class="contact-block__item-info">
+                {% assign parts = phone | split: ":" %}
+                {{ parts[1] }}
+            </a>
+        </div>
+    {% endif %}
+
+    {% if email != blank %}
+        <div class="contact-block__item">
+            <div class="contact-block__title">mailen</div>
+            <a href="{{ email }}" class="contact-block__item-info">
+                {% assign parts = email | split: ":" %}
+                {{ parts[1] }}
+            </a>
+        </div>
+    {% endif %}
+
+    {% if address != blank %}
+        <div class="contact-block__item">
+            <div class="contact-block__title">bezoek op afspraak</div>
+            <a href="{{ address }}" class="contact-block__item-info">
+                {{ addressText }}
+            </a>
+        </div>
+    {% endif %}
+
+</div>

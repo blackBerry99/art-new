@@ -17,11 +17,11 @@
 }
 
 .main-blog .pagination-wrapper {
-  margin-top: 8rem;
+  margin: 8rem 0;
 }
 @media screen and (min-width: 990px) {
   .main-blog .pagination-wrapper {
-    margin-top: 11.2rem;
+    margin: 11.2rem 0;
   }
 }
 

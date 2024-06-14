@@ -1,0 +1,428 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "8651e43f-478e-4645-915f-bf4437e25c9f": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20559896805721__8651e43f-478e-4645-915f-bf4437e25c9f-slideshow_item-1": {
+          "type": "slideshow_item",
+          "settings": {
+            "color_scheme": "theme-dark",
+            "collection_title_1": "La Rouge",
+            "collection_title_2": "",
+            "heading": "Guy Olivier",
+            "slideshow_item_image": "shopify:\/\/shop_images\/Guy-Olivier-Schilder-Kunstenaar.jpg",
+            "position_by_vertical": "center",
+            "opacity_overlay": 0,
+            "opacity_overlay_mobile": 0,
+            "button_label": "Bekijk werk",
+            "button_link": "shopify:\/\/collections\/guy-olivier"
+          }
+        },
+        "template--20559896805721__8651e43f-478e-4645-915f-bf4437e25c9f-slideshow_item-2": {
+          "type": "slideshow_item",
+          "settings": {
+            "color_scheme": "theme-dark",
+            "collection_title_1": "Love Boat",
+            "collection_title_2": "",
+            "heading": "Je Shen",
+            "slideshow_item_image": "shopify:\/\/shop_images\/Je-Shen-Schilder-Kunstenaar.jpg",
+            "position_by_vertical": "center",
+            "opacity_overlay": 0,
+            "opacity_overlay_mobile": 0,
+            "button_label": "Bekijk werk",
+            "button_link": "shopify:\/\/collections\/je-shen"
+          }
+        },
+        "template--20559896805721__8651e43f-478e-4645-915f-bf4437e25c9f-slideshow_item-3": {
+          "type": "slideshow_item",
+          "settings": {
+            "color_scheme": "theme-dark",
+            "collection_title_1": "Wild Bill",
+            "collection_title_2": "",
+            "heading": "Herman Brood",
+            "slideshow_item_image": "shopify:\/\/shop_images\/Herman-Brood-Schilderijen-Kunst.jpg",
+            "position_by_vertical": "center",
+            "opacity_overlay": 0,
+            "opacity_overlay_mobile": 0,
+            "button_label": "Bekijk werk",
+            "button_link": "shopify:\/\/collections\/herman-brood"
+          }
+        },
+        "52030466-ca7d-45e8-bdce-c85adc8619bd": {
+          "type": "slideshow_item",
+          "settings": {
+            "color_scheme": "theme-dark",
+            "collection_title_1": "Dream Hotel II",
+            "collection_title_2": "",
+            "heading": "Van Apple",
+            "slideshow_item_image": "shopify:\/\/shop_images\/Van-Apple-Art-Kunstenaar-Leiden.jpg",
+            "position_by_vertical": "center",
+            "opacity_overlay": 0,
+            "opacity_overlay_mobile": 0,
+            "button_label": "Bekijk werk",
+            "button_link": "shopify:\/\/collections\/van-apple-art"
+          }
+        }
+      },
+      "block_order": [
+        "template--20559896805721__8651e43f-478e-4645-915f-bf4437e25c9f-slideshow_item-1",
+        "template--20559896805721__8651e43f-478e-4645-915f-bf4437e25c9f-slideshow_item-2",
+        "template--20559896805721__8651e43f-478e-4645-915f-bf4437e25c9f-slideshow_item-3",
+        "52030466-ca7d-45e8-bdce-c85adc8619bd"
+      ],
+      "settings": {
+        "under_menu": false,
+        "heading_position": "top",
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": false,
+        "parallax": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 4,
+        "slide_effects": "slide",
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "margin_top": 60,
+        "margin_bottom": 0
+      }
+    },
+    "87eec95a-0224-406b-b614-d8363200785d": {
+      "type": "categories-list",
+      "blocks": {
+        "template--20559896805721__87eec95a-0224-406b-b614-d8363200785d-collection_item-1": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "van-apple-art",
+            "image": "shopify:\/\/shop_images\/van-apple-art.jpg"
+          }
+        },
+        "template--20559896805721__87eec95a-0224-406b-b614-d8363200785d-collection_item-2": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "ronald-chapeau",
+            "image": "shopify:\/\/shop_images\/ronald-chapeau-schilderijen.jpg"
+          }
+        },
+        "template--20559896805721__87eec95a-0224-406b-b614-d8363200785d-collection_item-3": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "herman-brood",
+            "image": "shopify:\/\/shop_images\/herman-brood-schilderijen.jpg"
+          }
+        },
+        "template--20559896805721__87eec95a-0224-406b-b614-d8363200785d-collection_item-4": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "guy-olivier",
+            "image": "shopify:\/\/shop_images\/guy-olivier-schilderijen.jpg"
+          }
+        },
+        "43342acc-6673-49d0-8196-7039de072ebc": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "banksy",
+            "image": "shopify:\/\/shop_images\/after-banksy-schilderijen.jpg"
+          }
+        },
+        "61a4cbf9-d92a-4d74-a40a-a0dbb79c22b8": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "je-shen",
+            "image": "shopify:\/\/shop_images\/je-shen-schilderijen.jpg"
+          }
+        },
+        "collection_item_hAHDEX": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "gert-willem-haasnoot",
+            "image": "shopify:\/\/shop_images\/Gert_Willem_Haasnoot_Kunstenaar_moderne_kunst.jpg"
+          }
+        },
+        "0acd50fc-e6bc-4351-9663-dc88106d1bcb": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "jacqueline-schafer",
+            "image": "shopify:\/\/shop_images\/Jacqueline-Schafer.jpg"
+          }
+        },
+        "fbd27430-3e82-49a6-be76-11b9f54abef2": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "hans-jochem-bakker",
+            "image": "shopify:\/\/shop_images\/hans-jochem-bakker.jpg"
+          }
+        },
+        "5f8fb607-1252-49a9-9193-8bab5bfe36db": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "nissim-men",
+            "image": "shopify:\/\/shop_images\/Nissim-men-kunstenaar.jpg"
+          }
+        },
+        "eca0eb61-7d65-4cc6-bb30-82f24caaa39a": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "mr-welder-leen",
+            "image": "shopify:\/\/shop_images\/mr-welder-leen.jpg"
+          }
+        },
+        "dd6faa18-109c-4aeb-a713-9fa61c7ad59b": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "peter-donkersloot",
+            "image": "shopify:\/\/shop_images\/peter-donkersluit.jpg"
+          }
+        },
+        "e8a26806-3e8d-4c86-b2ce-533260caeab2": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "gerdine-duijsens",
+            "image": "shopify:\/\/shop_images\/gerdine-duijsens.jpg"
+          }
+        },
+        "f847af7a-1791-4012-bfe6-0c6d850a8596": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "rick-triest",
+            "image": "shopify:\/\/shop_images\/rick-triest-schilderijen.jpg"
+          }
+        },
+        "collection_item_fMrqGM": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "ton-pret",
+            "image": "shopify:\/\/shop_images\/Ton-pret-After-hard-work-this-visionar-can-relax.jpg"
+          }
+        },
+        "e8ebeeac-ee7b-4b5f-a594-b864cbdff50f": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "jorg-ridderbusch",
+            "image": "shopify:\/\/shop_images\/Jorg-Ridderbusch.jpg"
+          }
+        },
+        "collection_item_LRCWGq": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "francisco-bartus-1"
+          }
+        },
+        "630e334e-feb3-4a03-aff0-b4c47c0f3819": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "ortaire-de-coupigny",
+            "image": "shopify:\/\/shop_images\/Ortaire-de-Coupigny.jpg"
+          }
+        },
+        "bfd3fa63-74e6-421d-861a-d76440fbe81d": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "peter-klashorst",
+            "image": "shopify:\/\/shop_images\/Peter-Klashorst.jpg"
+          }
+        },
+        "aab998af-5afd-4bf0-b5aa-bf16e908ba34": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "jef-poldervaart",
+            "image": "shopify:\/\/shop_images\/Jef-Poldervaart.jpg"
+          }
+        },
+        "2e954587-4f6a-4543-b102-5c99f1b13fc6": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "floyd-douglas",
+            "image": "shopify:\/\/shop_images\/Floyd-Douglas.jpg"
+          }
+        },
+        "249765b8-68aa-408b-b072-fb1cc3ea6c0c": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "hans-gilbers",
+            "image": "shopify:\/\/shop_images\/hans-gilbers-schilderijen.jpg"
+          }
+        },
+        "5e681c08-2a21-437c-abbf-7aca518e6966": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "marga-klumper",
+            "image": "shopify:\/\/shop_images\/marga-klumper-schilderijen.jpg"
+          }
+        },
+        "3a376410-647b-4cfc-a117-0f2f230f670e": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "yulia-muravyeva",
+            "image": "shopify:\/\/shop_images\/yulia-muravyeva-schilderijen.jpg"
+          }
+        },
+        "644109c8-c0c5-4fe0-80b6-d84eeffd38cf": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "custom-de-biest",
+            "image": "shopify:\/\/shop_images\/custom-de-biest-schilderijen.jpg"
+          }
+        },
+        "d572cb7b-de51-403d-9d1b-4e430f7d72e6": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "dion-v",
+            "image": "shopify:\/\/shop_images\/dion-v-schilderijen.jpg"
+          }
+        },
+        "bf8d3a8e-01b4-4feb-ab59-f1278e3da061": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "martis-bros",
+            "image": "shopify:\/\/shop_images\/martis-bros-beeldende-kunst.jpg"
+          }
+        },
+        "53a1a645-93f1-45a6-a365-f9f2883d9f82": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "lincy-hoogveld",
+            "image": "shopify:\/\/shop_images\/lincy-hoogveld-schilderijen.jpg"
+          }
+        },
+        "9154a304-f644-482a-b84f-c1a68374e5db": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "seven-hansen",
+            "image": "shopify:\/\/shop_images\/seven-hansen-schilderijen.jpg"
+          }
+        },
+        "d6bccc9c-bc9e-4058-8ed0-ca3d150205ab": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "nitra-art",
+            "image": "shopify:\/\/shop_images\/nitra-art-schilderijen.jpg"
+          }
+        },
+        "1abbfc3f-f2f5-4755-8a8b-69af626b43fd": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "lambert-oude-wesselink",
+            "image": "shopify:\/\/shop_images\/lambert-oude-wesselink-schilderijen.jpg"
+          }
+        },
+        "54a4cc15-d00d-4ece-a8b2-ecf6410e0706": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "tessa-qwartz",
+            "image": "shopify:\/\/shop_images\/tessa-qwartz-schilderijen.jpg"
+          }
+        },
+        "099f49bf-bb3b-4938-b049-886569a5e1a4": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "chaiyapong-hongtong",
+            "image": "shopify:\/\/shop_images\/chaiyapong-hongtong-schilderijen.jpg"
+          }
+        },
+        "e3ecfcc7-ea99-4a73-93d3-0e953248c782": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "pieter-vonk",
+            "image": "shopify:\/\/shop_images\/pieter-vonk-schilderijen.jpg"
+          }
+        },
+        "1d1d33ab-e972-4b12-8a7c-1f280d59680b": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "mcartie",
+            "image": "shopify:\/\/shop_images\/mcartie-schilderijen.jpg"
+          }
+        },
+        "b56222e7-4819-4c43-8bdb-8762823e5f79": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "clemens-briels",
+            "image": "shopify:\/\/shop_images\/clemens-briels-schilderijen.jpg"
+          }
+        },
+        "284e605e-ebe9-440c-9e50-a4dec11369cf": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "andy-warhol",
+            "image": "shopify:\/\/shop_images\/andy-warhol-schilderijen.jpg"
+          }
+        },
+        "e9919f0c-60ff-428a-9f83-d909695bd14b": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "jack-liemburg",
+            "image": "shopify:\/\/shop_images\/jack-liemburg-schilderijen.jpg"
+          }
+        },
+        "909d06e5-cd49-4afc-aa26-244d12f766ee": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "angelo-accardi",
+            "image": "shopify:\/\/shop_images\/angelo-accardi-schilderijen.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--20559896805721__87eec95a-0224-406b-b614-d8363200785d-collection_item-1",
+        "template--20559896805721__87eec95a-0224-406b-b614-d8363200785d-collection_item-2",
+        "template--20559896805721__87eec95a-0224-406b-b614-d8363200785d-collection_item-3",
+        "template--20559896805721__87eec95a-0224-406b-b614-d8363200785d-collection_item-4",
+        "43342acc-6673-49d0-8196-7039de072ebc",
+        "61a4cbf9-d92a-4d74-a40a-a0dbb79c22b8",
+        "collection_item_hAHDEX",
+        "0acd50fc-e6bc-4351-9663-dc88106d1bcb",
+        "fbd27430-3e82-49a6-be76-11b9f54abef2",
+        "5f8fb607-1252-49a9-9193-8bab5bfe36db",
+        "eca0eb61-7d65-4cc6-bb30-82f24caaa39a",
+        "dd6faa18-109c-4aeb-a713-9fa61c7ad59b",
+        "e8a26806-3e8d-4c86-b2ce-533260caeab2",
+        "f847af7a-1791-4012-bfe6-0c6d850a8596",
+        "collection_item_fMrqGM",
+        "e8ebeeac-ee7b-4b5f-a594-b864cbdff50f",
+        "collection_item_LRCWGq",
+        "630e334e-feb3-4a03-aff0-b4c47c0f3819",
+        "bfd3fa63-74e6-421d-861a-d76440fbe81d",
+        "aab998af-5afd-4bf0-b5aa-bf16e908ba34",
+        "2e954587-4f6a-4543-b102-5c99f1b13fc6",
+        "249765b8-68aa-408b-b072-fb1cc3ea6c0c",
+        "5e681c08-2a21-437c-abbf-7aca518e6966",
+        "3a376410-647b-4cfc-a117-0f2f230f670e",
+        "644109c8-c0c5-4fe0-80b6-d84eeffd38cf",
+        "d572cb7b-de51-403d-9d1b-4e430f7d72e6",
+        "bf8d3a8e-01b4-4feb-ab59-f1278e3da061",
+        "53a1a645-93f1-45a6-a365-f9f2883d9f82",
+        "9154a304-f644-482a-b84f-c1a68374e5db",
+        "d6bccc9c-bc9e-4058-8ed0-ca3d150205ab",
+        "1abbfc3f-f2f5-4755-8a8b-69af626b43fd",
+        "54a4cc15-d00d-4ece-a8b2-ecf6410e0706",
+        "099f49bf-bb3b-4938-b049-886569a5e1a4",
+        "e3ecfcc7-ea99-4a73-93d3-0e953248c782",
+        "1d1d33ab-e972-4b12-8a7c-1f280d59680b",
+        "b56222e7-4819-4c43-8bdb-8762823e5f79",
+        "284e605e-ebe9-440c-9e50-a4dec11369cf",
+        "e9919f0c-60ff-428a-9f83-d909695bd14b",
+        "909d06e5-cd49-4afc-aa26-244d12f766ee"
+      ],
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "image_ratio": "landscape",
+        "image_fit": "cover",
+        "show_count": true,
+        "show_desc": false,
+        "margin_top": 90,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8651e43f-478e-4645-915f-bf4437e25c9f",
+    "87eec95a-0224-406b-b614-d8363200785d"
+  ]
+}

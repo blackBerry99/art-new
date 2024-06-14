@@ -108,11 +108,11 @@
 									<div class="search__form-inner">
 										<div class="field">
 											<input
-													class="search__input field__input" 
-													id="Search-In-Template" 
-													type="search" 
-													name="q" 
-													value="{{ search.terms | escape }}" 
+													class="search__input field__input"
+													id="Search-In-Template"
+													type="search"
+													name="q"
+													value="{{ search.terms | escape }}"
 													placeholder="{{ 'general.search.placeholder' | t }}"
 													{%- if settings.predictive_search_enabled -%}
 														role="combobox"
@@ -173,7 +173,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    <div id="ProductGridContainer">
+    <div id="ProductGridContainer" style="width: 100%">
       {% paginate search.results by 24 %}
         {%- if search.results.size == 0 and search.filters != empty -%}
           <div

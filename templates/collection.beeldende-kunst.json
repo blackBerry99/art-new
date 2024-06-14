@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "f69612f9-74e9-431a-80e9-1bcaee05b0e9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Martis-Bros-Dutch-King-Banner.jpg"
+          }
+        },
+        "df914a4a-2d6a-4c11-afd1-ca58417ccc43": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/665_x_665_Schilderijen_1.jpg"
+          }
+        },
+        "200c6899-c971-4ffe-9994-0aa3fb851215": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jacqueline-Schafer-Vreemde-Vogel-Banner.jpg"
+          }
+        },
+        "b127b5b9-697b-4885-9a16-f12947f1b4a5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mr._Welder_Leen_-_Steel_Mind.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "f69612f9-74e9-431a-80e9-1bcaee05b0e9",
+        "df914a4a-2d6a-4c11-afd1-ca58417ccc43",
+        "200c6899-c971-4ffe-9994-0aa3fb851215",
+        "b127b5b9-697b-4885-9a16-f12947f1b4a5"
+      ],
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "image_products": "shopify:\/\/shop_images\/Moderne_Kunst_Van_Apple.jpg"
+      }
+    },
+    "5541a682-236f-407a-9515-9d57a0f38808": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 70,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 21,
+        "columns_mobile": "1",
+        "color_scheme": "background-card",
+        "image_ratio": "square",
+        "image_fit": "contain",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_sku": false,
+        "show_desc": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true
+      }
+    },
+    "add_description_dqKLHH": {
+      "type": "add-description",
+      "blocks": {
+        "text_fdF7jA": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.seo_block | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_fdF7jA"
+      ],
+      "custom_css": [
+        ".color-background-1 {background: rgb(248, 242, 233);}"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "5541a682-236f-407a-9515-9d57a0f38808",
+    "product-grid",
+    "add_description_dqKLHH"
+  ]
+}

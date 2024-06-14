@@ -6,6 +6,10 @@
 }
 .collection-product-card .caption-with-letter-spacing {
   margin-top: 0;
+  font-size: 12px;
+}
+.collection-product-card div.card__title {
+text-transform: capitalize;
 }
 
 .card-wrapper {
@@ -14,7 +18,7 @@
   height: 100%;
   text-decoration: none;
   overflow: hidden;
-  border-radius: 0.6rem;
+  border-radius: 0.0rem;
   background-color: rgb(var(--color-background-card));
 }
 .card-wrapper .media {
@@ -119,6 +123,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 0;
+  text-transform: none;
   pointer-events: all;
 }
 @media screen and (min-width: 420px) {
@@ -389,7 +394,7 @@
 }
 
 .price-item {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   letter-spacing: -0.01em;
   transition: var(--duration-short);
 }

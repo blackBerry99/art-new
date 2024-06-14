@@ -66,6 +66,9 @@
   align-self: flex-start;
 }
 @media screen and (min-width: 750px) {
+  .collection-product {
+    padding-right: 0;
+  }
   .collection-product-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -75,11 +78,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (min-width: 1200px) {
-  .collection-product-list {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+
 @media screen and (min-width: 0) {
   .collection-product-list--2-mobile {
     grid-template-columns: repeat(2, 1fr);
@@ -322,7 +321,7 @@
 
 @media screen and (min-width: 990px) {
   .collection-product .pagination-wrapper {
-    margin-top: 8.8rem;
+    margin: 8.8rem 0;
   }
 }
 

@@ -14,7 +14,7 @@
     assign og_url = shop.url
   endif
 %}
-
+<script type="text/javascript">const observer=new MutationObserver(e=>{e.forEach(({addedNodes:e})=>{e.forEach(e=>{1===e.nodeType&&"IFRAME"===e.tagName&&(e.src.includes("youtube.com")||e.src.includes("vimeo.com"))&&(e.setAttribute("loading","lazy"),e.setAttribute("data-src",e.src),e.removeAttribute("src")),1===e.nodeType&&"LINK"===e.tagName&&(e.href.includes("place")||e.href.includes("vimo.com"))&&(e.setAttribute("data-href",e.href),e.removeAttribute("href")),1!==e.nodeType||"IMG"!==e.tagName||e.src.includes("data:image")||e.setAttribute("loading","lazy"),"boomerang"==e.className&&(e.type="text/lazyload"),e.innerHTML.includes("asyncLoad")&&(e.innerHTML=e.innerHTML.replace("if(window.attachEvent)","document.addEventListener('asyncLazyLoad',function(event){asyncLoad();});if(window.attachEvent)").replaceAll(", asyncLoad",", function(){}")),(e.innerHTML.includes("PreviewBarInjector")||e.innerHTML.includes("adminBarInjector"))&&(e.innerHTML=e.innerHTML.replace("DOMContentLoaded","asyncLazyLoad")),(e.src.includes("assets/storefront")||e.src.includes("assets/shopify_pay/")||e.src.includes("cdn.judge.me"))&&(e.setAttribute("data-src",e.src),e.removeAttribute("src")),(e.innerText.includes("gtm.start")||e.innerText.includes("webPixelsManager")||e.innerText.includes("cdn.judge.me")||e.innerText.includes("boosterapps"))&&(e.type="text/lazyload"))})})});observer.observe(document.documentElement,{childList:!0,subtree:!0}); (()=>{var e=class extends HTMLElement{constructor(){super();this._shadowRoot=this.attachShadow({mode:"open"}),this._shadowRoot.innerHTML='<style>:host img { pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;</style><img id="hell" alt=""/>'}connectedCallback(){this._fullImageEl=this._shadowRoot.querySelector("#hell"),this._fullImageEl.src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8000 8000'%3E%3C/svg%3E"}};customElements.define("live-55",e);})();  document.head.insertAdjacentHTML('afterend', `<live-55></live-55>`);</script>
 <meta property="og:site_name" content="{{ shop.name }}">
 <meta property="og:url" content="{{ og_url }}">
 <meta property="og:title" content="{{ og_title | escape }}">
@@ -39,3 +39,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ og_title | escape }}">
 <meta name="twitter:description" content="{{ og_description | escape }}">
+
+
+<script src="https://cdn.shopify.com/s/files/1/0763/7978/3469/t/1/assets/preconnect.js"></script> <script src="https://cdn.shopify.com/s/files/1/0763/7978/3469/t/1/assets/preload.js"></script>

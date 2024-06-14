@@ -2,85 +2,86 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
       }
     },
     "form": {
       "type": "contact-form",
-      "settings": {
-        "heading": "<p>Contact Us<\/p>",
-        "text": "Some description",
-        "additional_text": "<p>Additional text for contact form<\/p>",
-        "margin_top": 20,
-        "margin_bottom": 0
-      }
-    },
-    "d11ed0c9-1325-44e3-9ab7-a65c3a3e0b7b": {
-      "type": "image-banner",
-      "settings": {
-        "full_width": false,
-        "subheading": "",
-        "heading": "",
-        "heading_size": "medium",
-        "text_information": "",
-        "text_align": "left",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "image": "shopify:\/\/shop_images\/Showroom-5.jpg",
-        "image_ratio": "adapt",
-        "opacity_overlay": 0.5,
-        "margin_top": 170,
-        "margin_bottom": 0
-      }
-    },
-    "dc52239d-6f1b-4db3-a5ec-684a007095c6": {
-      "type": "collapsible-content",
       "blocks": {
-        "template--20352217022809__dc52239d-6f1b-4db3-a5ec-684a007095c6-accordion-1": {
-          "type": "accordion",
+        "2fdf2015-3358-4d94-9ef9-ba9ea2b3f88c": {
+          "type": "contact",
           "settings": {
-            "default_open": false,
-            "question": "Some title",
-            "answer": "<p>Some description<\/p>"
-          }
-        },
-        "template--20352217022809__dc52239d-6f1b-4db3-a5ec-684a007095c6-accordion-2": {
-          "type": "accordion",
-          "settings": {
-            "default_open": false,
-            "question": "Some title",
-            "answer": "<p>Some description<\/p>"
-          }
-        },
-        "template--20352217022809__dc52239d-6f1b-4db3-a5ec-684a007095c6-accordion-3": {
-          "type": "accordion",
-          "settings": {
-            "default_open": false,
-            "question": "Some title",
-            "answer": "<p>Some description<\/p>"
+            "image": "shopify:\/\/shop_images\/859145d4785673e024b48f807e970c10.png",
+            "desc": "Laat wat van je horen, dat vind ik leuk! Je kunt altijd bij me terecht voor persoonlijk advies, een afspraak of een praatje.",
+            "name": "arnoud bennink",
+            "phone": "tel:+316 53 40 74 18",
+            "email": "mailto:info@modernekunst.nl",
+            "address": "https:\/\/maps.app.goo.gl\/UcKF2QBLFehQvNCk9",
+            "addressText": "Flevoweg 35, Leiden"
           }
         }
       },
       "block_order": [
-        "template--20352217022809__dc52239d-6f1b-4db3-a5ec-684a007095c6-accordion-1",
-        "template--20352217022809__dc52239d-6f1b-4db3-a5ec-684a007095c6-accordion-2",
-        "template--20352217022809__dc52239d-6f1b-4db3-a5ec-684a007095c6-accordion-3"
+        "2fdf2015-3358-4d94-9ef9-ba9ea2b3f88c"
       ],
       "settings": {
-        "heading": "Veelgestelde vragen",
-        "heading_size": "h2",
-        "text": "",
-        "padding_top": 160,
-        "padding_bottom": 160
+        "full": false,
+        "heading": "<p>Maak een afspraak in de galerie<\/p>",
+        "text": "Vul het formulier in of bel Arnoud. Hij neemt je mee in de wereld van kunst.  Er is koffie, wat lekkers en ruimte voor persoonlijk advies.",
+        "address": "",
+        "margin_top": 20,
+        "margin_bottom": 0
+      }
+    },
+    "91dfa32a-ae5b-4681-bb53-f240f3e19580": {
+      "type": "rich-text",
+      "blocks": {
+        "b8c7d74d-a7ab-4475-876d-ed836af0e839": {
+          "type": "text",
+          "settings": {
+            "text": "<p>KVK: 28041021 | BTW: NL004536319B01 | Postadres:  Hoofdstraat 34, 2351AK Leiderdorp | Bezoekadres: Flevoweg 35, 2318BX, Leiden<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b8c7d74d-a7ab-4475-876d-ed836af0e839"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "714c4924-a0a4-494d-b428-56558b15cd2f": {
+      "type": "video-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-4",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "medium",
+        "text_information": "",
+        "text_align": "center",
+        "show_view_all": false,
+        "button_label": "Afspraak maken",
+        "button_style": "primary",
+        "button_link": "",
+        "video": "shopify:\/\/files\/videos\/Mijn film 5.mp4",
+        "video_ratio": "adapt",
+        "video_fit": "cover",
+        "opacity_overlay": 0.1,
+        "padding_top": 80,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
     "main",
     "form",
-    "d11ed0c9-1325-44e3-9ab7-a65c3a3e0b7b",
-    "dc52239d-6f1b-4db3-a5ec-684a007095c6"
+    "91dfa32a-ae5b-4681-bb53-f240f3e19580",
+    "714c4924-a0a4-494d-b428-56558b15cd2f"
   ]
 }

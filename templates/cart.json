@@ -28,34 +28,10 @@
       "settings": {
         "show_cart_note": true
       }
-    },
-    "popular-products": {
-      "type": "popular-products",
-      "settings": {
-        "border_top": false,
-        "subtitle": "Subheading",
-        "heading": "<p>Some heading<\/p>",
-        "filter": false,
-        "link": "",
-        "button_link": "",
-        "collection": "schilderijen",
-        "products_limit": 4,
-        "columns_mobile": "1",
-        "color_scheme": "background-card",
-        "image_ratio": "square",
-        "image_fit": "cover",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_sku": false,
-        "show_desc": false,
-        "margin_top": 170,
-        "margin_bottom": 0
-      }
     }
   },
   "order": [
     "cart-items",
-    "cart-footer",
-    "popular-products"
+    "cart-footer"
   ]
 }

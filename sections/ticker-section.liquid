@@ -1,0 +1,201 @@
+{{ 'section-ticker.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'ticker.js' | asset_url }}" defer="defer"></script>
+
+{% style %}
+	{% render 'spaced-section' %}
+
+	#section-{{ section.id }} .ticker__title {
+	font-size: 30px;
+	}
+
+	#section-{{ section.id }} .ticker__svg {
+	width: 10px;
+	height: 10px;
+	}
+
+	@media screen and (min-width: 576px) {
+	#section-{{ section.id }} .ticker__title {
+	font-size: 60px;
+	}
+
+	#section-{{ section.id }} .ticker__svg {
+	width: 30px;
+	height: 30px;
+	}
+	}
+
+	@media screen and (min-width: 990px) {
+	#section-{{ section.id }} .ticker__title {
+	font-size: {{ section.settings.ticker_font | times: 0.8 | round: 0 }}px;
+	}
+	}
+
+	@media screen and (min-width: 1360px) {
+	#section-{{ section.id }} .ticker__title {
+	font-size: {{ section.settings.ticker_font }}px;
+	}
+	}
+{% endstyle %}
+<div class=" ticker-section">
+	{%- if section.settings.image != blank -%}
+		{{
+		section.settings.image
+		| image_url: width: 447
+		| image_tag:
+		loading: 'lazy',
+		class: big,
+		widths: '447'
+		}}
+	{%- endif -%}
+	{%- if section.settings.wa_link != blank -%}
+	<a  target="_blank" href="{{ section.settings.wa_link }}" class="link-btn">
+			<div class="link-btn__text"> {{ section.settings.wa_link_text }}</div>
+			<div  class="link-btn__link">
+				<svg class="icon icon-button-arrow" width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M9.33716 3.345L2.16466 10.5175L0.986328 9.33917L8.15799 2.16667H1.83716V0.5H11.0038V9.66667H9.33716V3.345Z" fill="#C27A0D"></path>
+				</svg>
+			</div>
+		</a>
+	{%- endif -%}
+
+	{%- if section.settings.call_link != blank -%}
+	<a  target="_blank" href="{{ section.settings.call_link }}" class="link-btn">
+			<div class="link-btn__text"> {{ section.settings.call_link_text }}</div>
+			<div class="link-btn__link">
+				<svg class="icon icon-button-arrow" width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M9.33716 3.345L2.16466 10.5175L0.986328 9.33917L8.15799 2.16667H1.83716V0.5H11.0038V9.66667H9.33716V3.345Z" fill="#C27A0D"></path>
+				</svg>
+			</div>
+		</a>
+	{%- endif -%}
+	<div
+			class="ticker"
+			data-date="{{ section.settings.date_picker }}"
+			data-ticker-speed="{{ section.settings.ticker_speed }}"
+			data-ticker-id="{{ section.id }}"
+			id="section-{{ section.id }}"
+	>
+
+		<div class="swiper ticker-js-{{ section.id }}" id="js-carousel">
+			<div class="swiper-wrapper">
+				{%- if section.settings.heading != blank -%}
+					{%- liquid
+						assign fontSize = section.settings.ticker_font
+						if fontSize >= 0 and fontSize <= 30
+							assign SvgFontSize = '1rem'
+						elsif fontSize >= 30 and fontSize <= 60
+							assign SvgFontSize = '2rem'
+						elsif fontSize >= 60 and fontSize <= 90
+							assign SvgFontSize = '3rem'
+						elsif fontSize >= 90 and fontSize <= 120
+							assign SvgFontSize = '4.3rem'
+						else
+							assign SvgFontSize = '5rem'
+						endif
+					-%}
+					{% style %}
+						@media screen and (min-width: 1360px) {
+						#section-{{ section.id }} .ticker__svg {
+						width:  {{ SvgFontSize }};
+						height: {{ SvgFontSize }};
+						}
+						}
+					{% endstyle %}
+
+					{% for i in (1..15) %}
+						<div class="swiper-slide">
+							<h2 class="ticker__title title--section">
+								{{ section.settings.heading }}
+								<span class="ticker__svg">
+								{% render 'ticker-svg' %}
+							</span>
+							</h2>
+						</div>
+					{% endfor %}
+				{%- endif -%}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "Ticker section",
+	"tag": "section",
+	"class": "ticker-section",
+	"settings": [
+		{
+		"type": "image_picker",
+		"id": "image",
+		"label": "Background image"
+		},
+		{
+			"type": "richtext",
+			"id": "heading",
+			"default": "<p>Write any text here for the ticker</p>",
+			"label": "t:sections.ticker.settings.heading.label"
+		},
+		{
+		"type": "text",
+		"id": "wa_link_text",
+		"default": "WhatsApp met Arnoud",
+		"label": "WhatsApp link text"
+		},
+		{
+		"type": "url",
+		"id": "wa_link",
+		"label": "WhatsApp link"
+		},
+		{
+		"type": "text",
+		"id": "call_link_text",
+		"default": "Bel met Arnoud",
+		"label": "Call link text"
+		},
+		{
+		"type": "url",
+		"id": "call_link",
+		"label": "Call link"
+		},
+		{
+			"type": "range",
+			"id": "ticker_speed",
+			"min": 1,
+			"max": 50,
+			"step": 1,
+			"default": 20,
+			"unit": "s",
+			"label": "t:sections.ticker.settings.ticker_speed.label"
+		},
+		{
+			"type": "range",
+			"id": "ticker_font",
+			"min": 10,
+			"max": 200,
+			"step": 10,
+			"unit": "px",
+			"label": "t:sections.ticker.settings.ticker_font.label",
+			"default": 120
+		},
+		{
+			"type": "header",
+			"content": "t:sections.all.section-margin.header.content"
+		},
+		{
+			"type": "range",
+			"id": "margin_top",
+			"min": 0,
+			"max": 200,
+			"step": 10,
+			"default": 10,
+			"unit": "px",
+			"label": "t:sections.all.section-margin.margin_top.label"
+		}
+	],
+	"presets": [
+		{
+			"name": "Ticker section"
+		}
+	]
+}
+{% endschema %}

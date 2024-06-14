@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "b049bd1c-89ae-40fd-a68a-88d394fa5989": {
+      "type": "faq-section",
+      "blocks": {
+        "168bf7e7-ff40-42cc-906b-95aeabf015d8": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Hoelang is de levertijd van mijn bestelling?",
+            "answer": "<p>Normaliter wordt jouw pakket binnen 1-3 werkdagen afgeleverd, echter dit kan in bepaalde situaties uitlopen met een aantal dagen. Wij streven ernaar om jouw bestelling zo spoedig mogelijk af te leveren. Indien blijkt dat je jouw bestelling drie werkdagen na bevestiging van verzending nog niet hebt ontvangen, neem dan contact op. In uitzonderlijke gevallen kan DHL, PostNL of DPD langer doen over de aflevering van jouw pakket.<\/p>"
+          }
+        },
+        "template--20440799412569__b049bd1c-89ae-40fd-a68a-88d394fa5989-accordion-1": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Kan ik mijn bestelling afhalen?",
+            "answer": "<p>Je kunt je bestelling ophalen in onze showroom te Leiden. Na je bestelling, stuur een e-mail naar <a href=\"mailto:info@modernekunst.nl\" title=\"mailto:info@modernekunst.nl\">info@modernekunst.nl<\/a> om aan te geven dat je kiest voor afhalen. Dit biedt je de unieke kans om onze volledige collectie in de showroom te bekijken.<\/p>"
+          }
+        },
+        "template--20440799412569__b049bd1c-89ae-40fd-a68a-88d394fa5989-accordion-2": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Kan ik mijn bestelling retourneren?",
+            "answer": "<p>U heeft het recht uw bestelling tot 14 dagen na ontvangst zonder opgave van reden te annuleren. U heeft na annulering nogmaals 14 dagen om uw product retour te sturen. U krijgt dan het volledige orderbedrag inclusief verzendkosten gecrediteerd. Enkel de kosten voor retour van u thuis naar de webwinkel zijn voor eigen rekening. Deze kosten bedragen circa 7,25 per pakket, raadpleeg voor de exacte tarieven de website van uw vervoerder. <\/p><p>Indien u gebruik maakt van uw herroepingsrecht, zal het product met alle geleverde toebehoren en – indien redelijkerwijze mogelijk – in de originele staat en verpakking aan de ondernemer geretourneerd worden. Mocht het product beschadigd of de verpakking meer beschadigd zijn dan nodig is om het product te verkopen, dan kunnen we deze waardevermindering van het product aan u doorberekenen. Behandel het product dus met zorg en zorg ervoor dat deze bij een retour goed verpakt is.<\/p><p>Om gebruik te maken van dit recht kunt u contact met ons opnemen via <a href=\"mailto:info@modernekunst.nl\" target=\"_blank\" title=\"mailto:info@modernekunst.nl\">info@modernekunst.nl<\/a>. Wij zullen vervolgens het verschuldigde orderbedrag binnen 14 dagen na aanmelding van uw retour terugstorten mits het product reeds in goede orde retour ontvangen is.<\/p>"
+          }
+        },
+        "template--20440799412569__b049bd1c-89ae-40fd-a68a-88d394fa5989-accordion-3": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Is het mogelijk om advies in te winnen over kunst?",
+            "answer": "<p>Je kunt de eigenaar van deze webshop, Arnoud, bereiken via telefoon of WhatsApp voor vragen. Je mag ook een foto van je ruimte doorsturen, zodat Arnoud persoonlijk advies kan geven.<br\/><br\/>WhatsApp: <a href=\"https:\/\/wa.me\/31653407418\" title=\"https:\/\/wa.me\/31653407418\">+316 53 40 74 18<\/a><br\/>Bellen: <a href=\"tel:+31653407418\" title=\"tel:+31653407418\">+316 53 40 74 18<\/a><\/p>"
+          }
+        },
+        "f504cff2-715c-414c-b668-99e3b05a3dd3": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Hoe werkt de schadevrij bezorggarantie?",
+            "answer": "<p>Op alle orders zit een aankomst- en schadevrij bezorgd garantie. Mocht er tijdens de verzending schade aan het kunstwerk optreden, dan is dat ons risico. Kijk na de bezorging direct of er iets is beschadigd en neem in dit geval direct contact met ons op. Bij schade ontvang je een nieuw exemplaar van het kunstwerk of we vergoeden het aankoopbedrag. Let op: gebreken of verkeerd geleverde producten dienen binnen 14 dagen na levering te worden gemeld per mail (<a href=\"mailto:info@modernekunst.nl\" title=\"mailto:info@modernekunst.nl\">info@modernekunst.nl<\/a>) of telefoon: <a href=\"tel:+31653407418\" title=\"tel:+31653407418\">+316 53 40 74 18<\/a><\/p>"
+          }
+        },
+        "b0ac5ea5-090e-45d5-986a-00f104029613": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Kan ik kunstwerken ook komen bezichtigen?",
+            "answer": "<p>In onze galerij in Leiden kun je kunstwerken bezichtigen. Om een bezoek te plannen, vul je eenvoudig het afspraakformulier in op onze contactpagina. Voor een snellere reactie kan je ook bellen. Let op: bezichtiging is alleen mogelijk op afspraak.<\/p>"
+          }
+        },
+        "0a29ffca-b7db-4458-ab6f-8c61703bb81d": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Verzenden jullie ook naar België en Luxemburg?",
+            "answer": "<p>Ja. Kies tijdens het afrekenen voor het betreffende land.<\/p>"
+          }
+        },
+        "a5bf238b-be86-44d4-bf5f-5c5924ac908e": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Verzenden jullie ook buiten Benelux?",
+            "answer": "<p>Ja, neem hiervoor contact met ons op.<\/p>"
+          }
+        },
+        "56f54d44-8a84-417b-890c-ced0ae374072": {
+          "type": "contact",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/859145d4785673e024b48f807e970c10.png",
+            "desc": "Is jouw vraag niet beantwoord? Neem dan vrijblijvend contact met me op. Ik help je graag verder.",
+            "name": "arnoud bennink",
+            "phone": "tel:+316 53 40 74 18",
+            "email": "mailto:info@modernekunst.nl",
+            "address": "https:\/\/maps.app.goo.gl\/UcKF2QBLFehQvNCk9",
+            "addressText": "Flevoweg 35, Leiden"
+          }
+        }
+      },
+      "block_order": [
+        "168bf7e7-ff40-42cc-906b-95aeabf015d8",
+        "template--20440799412569__b049bd1c-89ae-40fd-a68a-88d394fa5989-accordion-1",
+        "template--20440799412569__b049bd1c-89ae-40fd-a68a-88d394fa5989-accordion-2",
+        "template--20440799412569__b049bd1c-89ae-40fd-a68a-88d394fa5989-accordion-3",
+        "f504cff2-715c-414c-b668-99e3b05a3dd3",
+        "b0ac5ea5-090e-45d5-986a-00f104029613",
+        "0a29ffca-b7db-4458-ab6f-8c61703bb81d",
+        "a5bf238b-be86-44d4-bf5f-5c5924ac908e",
+        "56f54d44-8a84-417b-890c-ced0ae374072"
+      ],
+      "settings": {
+        "heading": "Veelgestelde vragen",
+        "heading_size": "h2",
+        "text": "Some description.",
+        "padding_top": 80,
+        "padding_bottom": 160
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b049bd1c-89ae-40fd-a68a-88d394fa5989"
+  ]
+}

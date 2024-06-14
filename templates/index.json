@@ -22,10 +22,10 @@
             "color_scheme": "theme-dark",
             "card_subtitle": "Schilderijen",
             "card_title": "Laat je wand spreken",
-            "card_image": "shopify:\/\/shop_images\/Herman-Brood-Banner-2.jpg",
-            "card_image_hover": "shopify:\/\/shop_images\/Herman-Brood-Banner-2.jpg",
+            "card_image": "shopify:\/\/shop_images\/schilderij-kopen.jpg",
+            "card_image_hover": "shopify:\/\/shop_images\/schilderijen-kopen.jpg",
             "opacity_overlay": 0.2,
-            "card_desctiption_hover": "Herman Brood - Chet Baker",
+            "card_desctiption_hover": "Je Shen - Tree House",
             "button_label": "Alle schilderijen",
             "button_link": "shopify:\/\/collections\/schilderijen"
           }
@@ -34,14 +34,14 @@
           "type": "image-card_block",
           "settings": {
             "color_scheme": "theme-dark",
-            "card_subtitle": "Sculpturen",
+            "card_subtitle": "Beeldende kunst",
             "card_title": "Geef je ruimte vorm",
             "card_image": "shopify:\/\/shop_images\/Sculpture-2-1.jpg",
             "card_image_hover": "shopify:\/\/shop_images\/Sculpture-2-1-1-hover.png",
             "opacity_overlay": 0.3,
             "card_desctiption_hover": "Van Apple - Popeye",
-            "button_label": "Alle sculpturen",
-            "button_link": "shopify:\/\/collections\/sculpturen"
+            "button_label": "Alle beelden",
+            "button_link": "shopify:\/\/collections\/beeldende-kunst"
           }
         },
         "template--20214204858713__c76ed737-5742-4bda-a9d6-a3f6f8ba8033-image-card_block-3": {
@@ -55,7 +55,7 @@
             "opacity_overlay": 0.2,
             "card_desctiption_hover": "Herman Brood",
             "button_label": "Alle kunstenaars",
-            "button_link": "shopify:\/\/collections"
+            "button_link": "shopify:\/\/pages\/kunstenaars"
           }
         }
       },
@@ -64,30 +64,11 @@
         "template--20214204858713__c76ed737-5742-4bda-a9d6-a3f6f8ba8033-image-card_block-2",
         "template--20214204858713__c76ed737-5742-4bda-a9d6-a3f6f8ba8033-image-card_block-3"
       ],
-      "settings": {
-        "margin_top": 60,
-        "margin_bottom": 0
-      }
-    },
-    "f5755aed-c8c1-418b-b4a3-27e79aa588a9": {
-      "type": "rich-text",
-      "blocks": {
-        "template--20214204858713__f5755aed-c8c1-418b-b4a3-27e79aa588a9-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Bekend van:<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--20214204858713__f5755aed-c8c1-418b-b4a3-27e79aa588a9-text-1"
+      "custom_css": [
+
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "margin_top": 90,
+        "margin_top": 60,
         "margin_bottom": 0
       }
     },
@@ -145,10 +126,11 @@
       "settings": {
         "border_top": false,
         "border_bottom": true,
-        "padding_top": 0,
-        "padding_bottom": 30,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "margin_top": 60,
+        "margin_bottom": 0,
+        "text_add": "Bekend van:"
       }
     },
     "21c423b3-a885-469d-a009-744aad420d61": {
@@ -157,21 +139,21 @@
         "template--20214204858713__21c423b3-a885-469d-a009-744aad420d61-column-2": {
           "type": "column",
           "settings": {
-            "product": "peter-donkersloot-don-corleone-v",
+            "product": "peter-donkersloot-don-corleone-ii",
             "active": false
           }
         },
         "template--20214204858713__21c423b3-a885-469d-a009-744aad420d61-column-3": {
           "type": "column",
           "settings": {
-            "product": "lambert-oude-wesselink-business-meeting",
+            "product": "je-shen-tree-house",
             "active": false
           }
         },
         "25f49b2c-58a6-4b16-8b25-ff8c22ab7237": {
           "type": "column",
           "settings": {
-            "product": "herman-brood-chet-baker-giclee",
+            "product": "steel-mind",
             "active": false
           }
         },
@@ -196,30 +178,16 @@
         "image_ratio": "portrait",
         "image_fit": "contain",
         "show_secondary_image": false,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_sku": false,
         "show_desc": false,
-        "margin_top": 30,
+        "margin_top": 200,
         "margin_bottom": 0
       }
     },
     "27ba735f-c835-4041-bc3e-409190ff3388": {
       "type": "featured-products",
       "blocks": {
-        "25ec3bcd-1bca-4033-8a72-4ec95cf7bd87": {
-          "type": "column",
-          "settings": {
-            "product": "floyd-douglas-venetie",
-            "active": false
-          }
-        },
-        "19d9a42f-e218-4153-a33a-3be04d4b4cfc": {
-          "type": "column",
-          "settings": {
-            "product": "jef-poldervaart-la-jeune-fille-et-moi",
-            "active": false
-          }
-        },
         "bb1ce789-be38-4e1c-a31e-b6504471638f": {
           "type": "column",
           "settings": {
@@ -227,18 +195,32 @@
             "active": false
           }
         },
+        "25ec3bcd-1bca-4033-8a72-4ec95cf7bd87": {
+          "type": "column",
+          "settings": {
+            "product": "gerdine-duijsens-my-one-and-only",
+            "active": false
+          }
+        },
+        "19d9a42f-e218-4153-a33a-3be04d4b4cfc": {
+          "type": "column",
+          "settings": {
+            "product": "van-apple-dream-hotel",
+            "active": false
+          }
+        },
         "b7348dc6-0037-42b5-a02b-cb82788805c9": {
           "type": "column",
           "settings": {
-            "product": "je-shen-mediation-pink",
+            "product": "herman-brood-wild-bill-giclee",
             "active": false
           }
         }
       },
       "block_order": [
+        "bb1ce789-be38-4e1c-a31e-b6504471638f",
         "25ec3bcd-1bca-4033-8a72-4ec95cf7bd87",
         "19d9a42f-e218-4153-a33a-3be04d4b4cfc",
-        "bb1ce789-be38-4e1c-a31e-b6504471638f",
         "b7348dc6-0037-42b5-a02b-cb82788805c9"
       ],
       "settings": {
@@ -248,7 +230,7 @@
         "image_ratio": "portrait",
         "image_fit": "contain",
         "show_secondary_image": false,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_sku": false,
         "show_desc": false,
         "margin_top": 10,
@@ -263,7 +245,7 @@
           "settings": {
             "button_label": "Alle producten",
             "button_link": "shopify:\/\/collections",
-            "button_style": "primary"
+            "button_style": "secondary"
           }
         }
       },
@@ -287,15 +269,15 @@
           "settings": {
             "tab_title": "Abstract",
             "image_tabs": "shopify:\/\/shop_images\/Abstracte-kunst-schilderij.jpg",
-            "button_link": "https:\/\/modernekunst.nl\/collections\/wall-art?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Abstract"
+            "button_link": "https:\/\/modernekunst.nl\/collections\/schilderijen?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Abstract"
           }
         },
         "1d09ed15-66e5-46bb-85e9-80d73fe3565d": {
           "type": "image-tabs_item",
           "settings": {
             "tab_title": "Foto kunst",
-            "image_tabs": "shopify:\/\/shop_images\/Fotografie-kunst.jpg",
-            "button_link": "https:\/\/modernekunst.nl\/collections\/wall-art?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Foto+kunst"
+            "image_tabs": "shopify:\/\/shop_images\/Nissim-Men-Around-Rotterdam-Homepage.jpg",
+            "button_link": "https:\/\/modernekunst.nl\/collections\/schilderijen?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Foto+kunst"
           }
         },
         "template--20214204858713__2e961fb9-d129-43c6-ae77-a7067c4ca4eb-image-tabs_item-2": {
@@ -303,7 +285,7 @@
           "settings": {
             "tab_title": "Pop art",
             "image_tabs": "shopify:\/\/shop_images\/pop-art-schilderijen.jpg",
-            "button_link": "https:\/\/modernekunst.nl\/collections\/wall-art?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Pop+art"
+            "button_link": "https:\/\/modernekunst.nl\/collections\/schilderijen?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Pop+art"
           }
         },
         "template--20214204858713__2e961fb9-d129-43c6-ae77-a7067c4ca4eb-image-tabs_item-3": {
@@ -311,7 +293,7 @@
           "settings": {
             "tab_title": "Street art",
             "image_tabs": "shopify:\/\/shop_images\/street-art.jpg",
-            "button_link": "https:\/\/modernekunst.nl\/collections\/wall-art?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Street+art"
+            "button_link": "https:\/\/modernekunst.nl\/collections\/schilderijen?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Street+art"
           }
         },
         "9b206b08-0cac-4683-a82d-097d74a078fe": {
@@ -319,7 +301,7 @@
           "settings": {
             "tab_title": "Modern",
             "image_tabs": "shopify:\/\/shop_images\/moderne-kunst-kopen.jpg",
-            "button_link": "https:\/\/modernekunst.nl\/collections\/wall-art?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Modern"
+            "button_link": "https:\/\/modernekunst.nl\/collections\/schilderijen?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.custom.kunsstijl=Modern"
           }
         }
       },
@@ -340,8 +322,59 @@
         "heading": "",
         "collection_title_1": "Kunststijlen",
         "collection_title_2": "",
-        "margin_top": 100,
+        "margin_top": 130,
         "margin_bottom": 0
+      }
+    },
+    "db3781d6-ba4b-4487-8007-9a715d2de40a": {
+      "type": "accordion-section",
+      "blocks": {
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-1": {
+          "type": "accordion_block",
+          "settings": {
+            "heading": "14 dagen vrijblijvend proefhangen",
+            "text": "<p>We begrijpen de waarde van een weloverwogen kunstaankoop. Daarom bieden we je de gelegenheid om 14 dagen lang kosteloos en geheel vrijblijvend een schilderij op proef te nemen. Ontdek hoe kunst jouw interieur kan versterken en de sfeer kan beïnvloeden. Geen verplichtingen, enkel de kans om te zien welk kunstwerk het beste bij jou past. Iedere bestelling kun je kosteloos binnen 14 dagen retourneren.<\/p>",
+            "accordion_image": "shopify:\/\/shop_images\/Layer_3.svg",
+            "default_open": false
+          }
+        },
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-2": {
+          "type": "accordion_block",
+          "settings": {
+            "heading": "Gratis verzenden & retourneren",
+            "text": "<p>Op al onze kunstwerken bieden we gratis verzending en retournering. Als een kunstaankoop niet aan je verwachtingen voldoet, retourneer je deze eenvoudig door een e-mail te sturen naar <a href=\"mailto:info@modernekunst.nl\" title=\"mailto:info@modernekunst.nl\">info@modernekunst.nl<\/a> met het ordernummer. Wij vergoeden dan zo snel mogelijk het aankoopbedrag.<\/p>",
+            "accordion_image": "shopify:\/\/shop_images\/Group.svg",
+            "default_open": false
+          }
+        },
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-3": {
+          "type": "accordion_block",
+          "settings": {
+            "heading": "Schadevrij bezorg garantie",
+            "text": "<p>Op alle orders zit een aankomst- en schadevrij bezorgd garantie. Mocht er tijdens de verzending schade aan het kunstwerk optreden, dan is dat ons risico. Kijk na de bezorging direct of er iets is beschadigd en neem in dit geval direct contact met ons op. Bij schade ontvang je een nieuw exemplaar van het kunstwerk of we vergoeden het aankoopbedrag. Let op: gebreken of verkeerd geleverde producten dienen binnen 14 dagen na levering te worden gemeld per mail (<a href=\"mailto:info@modernekunst.nl\" title=\"mailto:info@modernekunst.nl\">info@modernekunst.nl<\/a>) of telefoon: <a href=\"tel:+31653407418\" title=\"tel:+31653407418\">+31653407418<\/a>.<\/p>",
+            "accordion_image": "shopify:\/\/shop_images\/Layer_1_1.svg",
+            "default_open": false
+          }
+        },
+        "30aaa4d5-367b-4fca-9683-3fd62a805e8e": {
+          "type": "accordion_block",
+          "settings": {
+            "heading": "Website beveiligd en gekeurd",
+            "text": "<p>Modernekunst.nl is lid van Webwinkelkeur, wat betekent dat we voldoen aan strenge beveiligingsnormen. Bij ons ben je verzekerd van een veilige ervaring op elk gebied, inclusief veilige betaling, verzending, geschillenafhandeling en garantie voor een schadevrije bezorging. Jouw gemoedsrust is onze prioriteit.<\/p>",
+            "accordion_image": "shopify:\/\/shop_images\/Group_5.svg",
+            "default_open": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-1",
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-2",
+        "template--20352216957273__db3781d6-ba4b-4487-8007-9a715d2de40a-accordion_block-3",
+        "30aaa4d5-367b-4fca-9683-3fd62a805e8e"
+      ],
+      "settings": {
+        "heading": "Wij doen altijd een stapje extra",
+        "descr": "Onze klanten beoordelen ons met 5 sterren op Webwinkelkeur op basis van onafhankelijke en geverifieerde ervaringen."
       }
     },
     "5fc74ce8-d011-4265-b2c4-ee385b089c86": {
@@ -353,14 +386,14 @@
         "full_width": false,
         "color_scheme": "background-4",
         "subheading": "",
-        "heading": "<p>Onze showroom in Leiden<\/p>",
-        "heading_size": "large",
+        "heading": "<p>Bezoek onze galerie in Leiden<\/p>",
+        "heading_size": "medium",
         "text_information": "",
         "text_align": "center",
         "show_view_all": true,
         "button_label": "Afspraak maken",
-        "button_style": "primary",
-        "button_link": "",
+        "button_style": "secondary",
+        "button_link": "shopify:\/\/pages\/contact",
         "video": "shopify:\/\/files\/videos\/Mijn film 5.mp4",
         "video_ratio": "adapt",
         "video_fit": "contain",
@@ -372,16 +405,6 @@
     "2eb1e1de-3152-4ded-b75d-dc23a11b1e33": {
       "type": "testimonials",
       "blocks": {
-        "template--20214204858713__2eb1e1de-3152-4ded-b75d-dc23a11b1e33-testimonials_blocks-1": {
-          "type": "testimonials_blocks",
-          "settings": {
-            "testimonials_product": "guy-olivier-la-rouge",
-            "slide_text": "We werden vakkundig en vol enthousiasme geholpen. We mochten zelfs meerdere schilderijen op zicht meenemen. Onze Guy Olivier hangt geweldig! Wij komen er zeker nog terug.",
-            "image": "shopify:\/\/shop_images\/image_31.png",
-            "slide_name": "Ineke Roos",
-            "slide_position": ""
-          }
-        },
         "template--20214204858713__2eb1e1de-3152-4ded-b75d-dc23a11b1e33-testimonials_blocks-3": {
           "type": "testimonials_blocks",
           "settings": {
@@ -402,11 +425,21 @@
             "slide_position": ""
           }
         },
+        "template--20214204858713__2eb1e1de-3152-4ded-b75d-dc23a11b1e33-testimonials_blocks-1": {
+          "type": "testimonials_blocks",
+          "settings": {
+            "testimonials_product": "guy-olivier-la-rouge",
+            "slide_text": "We werden vakkundig en vol enthousiasme geholpen. We mochten zelfs meerdere schilderijen op zicht meenemen. Onze Guy Olivier hangt geweldig! Wij komen er zeker nog terug.",
+            "image": "shopify:\/\/shop_images\/image_31.png",
+            "slide_name": "Ineke Roos",
+            "slide_position": ""
+          }
+        },
         "1681ee5b-d268-4c7f-a356-34ee54cd97ce": {
           "type": "testimonials_blocks",
           "settings": {
             "testimonials_product": "herman-brood-chet-baker-giclee",
-            "slide_text": "Wat een topzaak:-) Wij zijn op een zaterdag binnen komen vallen en erg prettig geholpen. Na het zien van een mooi werk hebben wij er even over nagedacht, en toen was het geen probleem de zeefdruk even binnen ons interieur te zien",
+            "slide_text": "Wat een topzaak:-) Wij zijn op een zaterdag binnen komen vallen en erg prettig geholpen. Na het zien van een mooi werk hebben wij er even over nagedacht, en toen was het geen probleem de zeefdruk even binnen ons interieur te zien.",
             "image": "shopify:\/\/shop_images\/unnamed.png",
             "slide_name": "Tim B",
             "slide_position": ""
@@ -414,9 +447,9 @@
         }
       },
       "block_order": [
-        "template--20214204858713__2eb1e1de-3152-4ded-b75d-dc23a11b1e33-testimonials_blocks-1",
         "template--20214204858713__2eb1e1de-3152-4ded-b75d-dc23a11b1e33-testimonials_blocks-3",
         "688c549c-066f-4e55-8a47-58e272df1f6b",
+        "template--20214204858713__2eb1e1de-3152-4ded-b75d-dc23a11b1e33-testimonials_blocks-1",
         "1681ee5b-d268-4c7f-a356-34ee54cd97ce"
       ],
       "settings": {
@@ -431,19 +464,19 @@
         "show_sku": false,
         "show_desc": false,
         "margin_top": 170,
-        "margin_bottom": 0
+        "margin_bottom": 140
       }
     }
   },
   "order": [
     "instagram-collage",
     "c76ed737-5742-4bda-a9d6-a3f6f8ba8033",
-    "f5755aed-c8c1-418b-b4a3-27e79aa588a9",
     "47cb27da-9947-4d97-a77a-23b89f558ff0",
     "21c423b3-a885-469d-a009-744aad420d61",
     "27ba735f-c835-4041-bc3e-409190ff3388",
     "ac00dc1e-cca8-4c90-a54b-928261a2b31f",
     "2e961fb9-d129-43c6-ae77-a7067c4ca4eb",
+    "db3781d6-ba4b-4487-8007-9a715d2de40a",
     "5fc74ce8-d011-4265-b2c4-ee385b089c86",
     "2eb1e1de-3152-4ded-b75d-dc23a11b1e33"
   ]

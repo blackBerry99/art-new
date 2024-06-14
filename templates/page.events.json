@@ -1,0 +1,119 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "274461af-6c02-47ff-a0b2-5f44d60af541": {
+      "type": "instagram-slider",
+      "blocks": {
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-1": {
+          "type": "instagram-slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Moderne-kunst-events.jpg"
+          }
+        },
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-2": {
+          "type": "instagram-slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Moderne-kunst-events-schilderijen.jpg"
+          }
+        },
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-3": {
+          "type": "instagram-slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Moderne_Kunst_Events_1.jpg"
+          }
+        },
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-4": {
+          "type": "instagram-slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Moderne_Kunst_Events.jpg"
+          }
+        },
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-5": {
+          "type": "instagram-slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Moderne_Kunst_Events_Ferry_Doedens.jpg"
+          }
+        },
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-6": {
+          "type": "instagram-slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Moderne_Kunst_Nitra_Art.jpg"
+          }
+        },
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-7": {
+          "type": "instagram-slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4E1899FA-35ED-4E75-967D-DDAD0FB66844_1_105_c_a0efc4c5-9cca-43dd-805b-03d6e5ae5d07.jpg"
+          }
+        },
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-8": {
+          "type": "instagram-slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Moderne_Kunst_Events_2.jpg"
+          }
+        },
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-9": {
+          "type": "instagram-slider_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Moderne_Kunst_Events_Arnoud_Bennink.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-1",
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-2",
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-3",
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-4",
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-5",
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-6",
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-7",
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-8",
+        "template--20562883281241__274461af-6c02-47ff-a0b2-5f44d60af541-instagram-slider_image-9"
+      ],
+      "settings": {
+        "heading": "<p>Ontdek welke evenementen in de planning staan<\/p>",
+        "title": "",
+        "image_account": "shopify:\/\/shop_images\/Moderne_Kunst_Logo.jpg",
+        "name_account": "",
+        "desc_account": "",
+        "button_label": "",
+        "button_link": "",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_aLVwDe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LNeVB6": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Momenteel staan er geen events op de planning. <\/p>",
+            "heading_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LNeVB6"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 170,
+        "padding_bottom": 170,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "274461af-6c02-47ff-a0b2-5f44d60af541",
+    "rich_text_aLVwDe"
+  ]
+}

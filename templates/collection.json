@@ -4,7 +4,8 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true
+        "show_collection_image": true,
+        "image_products": "shopify:\/\/shop_images\/Moderne_Kunst_Van_Apple.jpg"
       }
     },
     "5541a682-236f-407a-9515-9d57a0f38808": {
@@ -21,7 +22,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 20,
+        "products_per_page": 21,
         "columns_mobile": "1",
         "color_scheme": "background-card",
         "image_ratio": "square",
@@ -34,11 +35,37 @@
         "filter_type": "vertical",
         "enable_sorting": true
       }
+    },
+    "add_description_mc8xKh": {
+      "type": "add-description",
+      "blocks": {
+        "text_4pFNfe": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.seo_block | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_4pFNfe"
+      ],
+      "custom_css": [
+        ".color-background-1 {background: #F3F0EC;}"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
     "banner",
     "5541a682-236f-407a-9515-9d57a0f38808",
-    "product-grid"
+    "product-grid",
+    "add_description_mc8xKh"
   ]
 }

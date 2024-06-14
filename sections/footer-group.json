@@ -2,29 +2,90 @@
   "type": "footer",
   "name": "Footer Group",
   "sections": {
+    "4a073e7a-4dc2-4e2f-a599-1b378ff57c9c": {
+      "type": "ticker-section",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/arn-scherp_1_1.jpg",
+        "heading": "<p>Arnoud adviseert je vol passie over kunst<\/p>",
+        "wa_link_text": "WhatsApp met Arnoud",
+        "wa_link": "https:\/\/wa.me\/31653407418",
+        "call_link_text": "Bel met Arnoud",
+        "call_link": "tel:+31653407418",
+        "ticker_speed": 18,
+        "ticker_font": 120,
+        "margin_top": 170
+      }
+    },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "39161491-5bf5-485f-aed3-fc7c981abc0e": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer-menu",
+            "link": "",
+            "link_text": "Afspraak maken"
+          }
+        },
+        "99bc3ced-1273-4a58-a843-459ed481289d": {
+          "type": "link_info",
+          "settings": {
+            "heading": "",
+            "text": "<p>Geef je interieur karakter.<\/p>"
+          }
+        },
+        "d24e90b0-26a4-41c8-abad-5fc2f05fc58f": {
+          "type": "link_list",
+          "settings": {
+            "heading": "info",
+            "menu": "footer-info",
+            "link": "",
+            "link_text": "Afspraak maken"
+          }
+        },
+        "77273b9f-be39-468d-9a35-3877f29f9df3": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Galerie",
+            "menu": "footer-showroom",
+            "link": "",
+            "link_text": "Afspraak maken"
+          }
+        }
+      },
+      "block_order": [
+        "39161491-5bf5-485f-aed3-fc7c981abc0e",
+        "99bc3ced-1273-4a58-a843-459ed481289d",
+        "d24e90b0-26a4-41c8-abad-5fc2f05fc58f",
+        "77273b9f-be39-468d-9a35-3877f29f9df3"
+      ],
+      "custom_css": [
+        ".iframe-wrapper1 {padding-top: 13px; display: flex; \/* Maakt de div een flex container *\/ justify-content: center; \/* Centreert horizontaal *\/ align-items: center; \/* Centreert verticaal *\/ height: px; \/* Stel een specifieke hoogte in voor de container *\/ width: 280px; \/* Stel de breedte in, zorg dat deze overeenkomt met de breedte van de iframe *\/}",
+        "iframe.wwk-widget-iframe {border: 0; height: 45px !important; width: 100% !important; \/* De breedte van de iframe past zich aan de container aan *\/}"
+      ],
       "settings": {
-        "color_scheme": "background-2",
+        "color_scheme": "background-3",
         "show_border": false,
-        "logo_width": 110,
-        "show_newsletter": true,
-        "newsletter_text": "Subscribe to Our Newsletter and Get 10% Off",
+        "logo": "shopify:\/\/shop_images\/logo-mod.svg",
+        "logo_2": "shopify:\/\/shop_images\/logo-mod.svg",
+        "logo_width": 170,
+        "show_newsletter": false,
+        "newsletter_text": "",
         "show_social": true,
-        "show_social_icons": false,
+        "show_social_icons": true,
         "enable_follow_on_shop": false,
         "payment_enable": true,
-        "payment_heading": "We Accept:",
-        "enable_country_selector": true,
+        "payment_heading": "",
+        "enable_country_selector": false,
         "enable_language_selector": false,
-        "show_policy": false,
-        "copyright": "&copy; Copyright, {{ shop.name | link_to: routes.root_url }} {{ 'now' | date: '%Y' }}",
-        "margin_top": 170,
+        "margin_top": 0,
         "margin_bottom": 0
       }
     }
   },
   "order": [
+    "4a073e7a-4dc2-4e2f-a599-1b378ff57c9c",
     "footer"
   ]
 }

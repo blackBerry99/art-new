@@ -117,6 +117,7 @@
 .drawer__heading {
   margin-bottom: 0;
   margin-top: 0;
+  font-size: 3rem;
 }
 .drawer__count {
   color: rgba(var(--color-secondary-text));
@@ -435,6 +436,10 @@ cart-drawer-items {
 cart-drawer-items::-webkit-scrollbar {
   width: 3px;
   height: 3px;
+}
+#CartDrawer-Checkout.cart__checkout-button.button.button--primary.button--full-width {
+background: #C27A0D;
+  color: #fff;
 }
 
 cart-drawer-items::-webkit-scrollbar-thumb {

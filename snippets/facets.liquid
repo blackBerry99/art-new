@@ -132,7 +132,11 @@
                     id="Details-{{ forloop.index }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
                     data-index="{{ forloop.index }}"
-                    {% if filter_type == 'vertical' and forloop.index == 1 %}
+                    {% if filter_type == 'vertical' and
+                      forloop.index == 1 or
+                      forloop.index == 2 or
+                      forloop.index == 3 or
+                      forloop.index == 4 %}
                       open
                     {% endif %}
                   >
@@ -154,7 +158,7 @@
                             {{ 'products.facets.filter_and_operator_subtitle' | t }}
                           </span>
                         {%- endif -%}
-                        {% render 'icon-caret' %}
+                        {% render 'icon-caret-simple' %}
                       </div>
                     </summary>
                     <div
@@ -361,9 +365,10 @@
                     assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,UYU,VES,VND' | split: ','
                     assign uses_comma_decimals = false
                     if currencies_using_comma_decimals contains cart.currency.iso_code
-                      assign uses_comma_decimals = true
+                      assign uses_comma_decimals = false
                     endif
                   %}
+              
                   <details
                     id="Details-{{ forloop.index }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
@@ -375,7 +380,7 @@
                     <summary class="facets__summary caption-large focus-offset">
                       <div>
                         <span>{{ filter.label | escape }}</span>
-                        {% render 'icon-caret' %}
+                        {% render 'icon-caret-simple' %}
                       </div>
                     </summary>
                     <div
@@ -396,7 +401,67 @@
                         {%- endif -%}
                       </div>
                       <price-range class="facets__price">
-                        <span class="field-currency">{{ cart.currency.symbol }}</span>
+                        {% liquid
+												if uses_comma_decimals
+													assign max_price = filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' 
+												else
+													assign max_price = filter.range_max | money_without_currency | replace: ',', '' 
+												endif
+
+												if uses_comma_decimals 
+													if filter.min_value.value
+														assign current_price_min = filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' 
+														assign range_min = current_price_min | divided_by: max_price | times: 100
+													else
+														assign range_min = 0
+														assign current_price_min = 0
+													endif
+												else 
+													if filter.min_value.value
+														assign current_price_min = filter.min_value.value | money_without_currency | replace: ',', '' 
+														assign range_min = current_price_min | divided_by: max_price | times: 100
+													else
+														assign range_min = 0
+														assign current_price_min = 0
+													endif
+												endif
+												
+												if uses_comma_decimals 
+													if filter.max_value.value
+														assign current_price_max = filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.'
+														assign range_max = current_price_max | divided_by: max_price | times: 100
+													else
+														assign current_price_max = max_price
+														assign range_max = 100 
+													endif
+												else 
+													if filter.max_value.value
+														assign current_price_max = filter.max_value.value | money_without_currency | replace: ',', '' 
+														assign range_max = current_price_max | divided_by: max_price | times: 100
+													else
+														assign current_price_max = max_price
+														assign range_max = 100
+													endif	
+												endif
+											%}
+                      		<div class="facets__range" style="--range-min: {{ range_min }}%; --range-max: {{ range_max }}%">
+														<input 
+															type="range" 
+															value="{{ current_price_min }}" 
+															min="0" 
+															max = "{{ max_price }}"
+															class="field__range"
+														/>
+														 <input 
+															type="range" 
+															value="{{ current_price_max }}" 
+															min="0" 
+															max = "{{ max_price }}"
+															class="field__range"
+														/>
+													</div>
+                        	<div class="facets__price-wrapper">
+                              <span class="field-currency">{{ cart.currency.symbol }}</span>
                         <div class="field">
                           <input
                             class="field__input"
@@ -451,6 +516,8 @@
                             {{- 'products.facets.to' | t -}}
                           </label>
                         </div>
+                            </div>
+                        
                       </price-range>
                     </div>
                   </details>
@@ -874,7 +941,24 @@
                           </p>
 
                           <price-range class="facets__price">
-                            <span class="field-currency">{{ cart.currency.symbol }}</span>
+                      		<div class="facets__range" style="--range-min: {{ range_min }}%; --range-max: {{ range_max }}%">
+														<input 
+															type="range" 
+															value="{{ current_price_min }}" 
+															min="0" 
+															max = "{{ max_price }}"
+															class="field__range"
+														/>
+														 <input 
+															type="range" 
+															value="{{ current_price_max }}" 
+															min="0" 
+															max = "{{ max_price }}"
+															class="field__range"
+														/>
+													</div>
+                    <div class="facets__price-wrapper">
+                          <span class="field-currency">{{ cart.currency.symbol }}</span>
                             <div class="field">
                               <input
                                 class="field__input"
@@ -930,6 +1014,9 @@
                                 {{- 'products.facets.to' | t -}}
                               </label>
                             </div>
+                    </div>
+                
+                        
                           </price-range>
                           <div class="no-js-hidden mobile-facets__footer">
                             <facet-remove class="mobile-facets__clear-wrapper">

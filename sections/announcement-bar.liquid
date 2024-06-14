@@ -1,4 +1,7 @@
-<div class="announcement-bar announcement-bar-{% if section.settings.color_scheme == '1' %}1{% endif %}{% if section.settings.color_scheme == '2' %}2{% endif %}" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+<div class="announcement-bar
+announcement-bar-{% if section.settings.color_scheme == '1' %}1{% endif %}{% if section.settings.color_scheme == '2' %}2{% endif %}
+announcement-bar--{% if section.settings.text != blank and section.settings.text_second != blank %}between{% endif %}"
+	 role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
 	{%- if section.settings.text != blank -%}
 		<div class="announcement-bar__message">
 			{%- if section.settings.image != blank -%}
@@ -15,9 +18,30 @@
 				</figure>
 			{%- endif -%}
 			<div class="announcement-bar__text">{{ section.settings.text }}</div>
+			{%- if section.settings.text_second != blank -%}
+			<div class="announcement-bar__text--second">
+				{{ section.settings.text_second }}
+			</div>
+			{%- endif -%}
+			{%- if section.settings.show_reviews == true -%}
+				<div class="announcement-bar__reviews">
+					<style>
+    iframe.wwk-widget-iframe1 {
+        filter: grayscale(100%);
+    }
+</style>
+
+<div class="iframe-wrapper1">
+    <iframe src="https://dashboard.webwinkelkeur.nl/webshops/widget_html?id=1219007&layout=new_button-stars&theme=dark&color=%23262626&show=yes&view=slider&amount=6&width=280&height=45px&interval=5000&language=nld" scrolling="no" class="wwk-widget-iframe1 wwk-widget--new_button-stars wwk-widget--new_button-stars--dark" style="border: 0; height: 45px!important; width: 280px!important;"></iframe>
+</div>
+
+
+
+				</div>
+			{%- endif -%}
 		</div>
 		{%- if section.settings.link != blank -%}
-			</a>
+			</a
 		{%- endif -%}
 	{%- endif -%}
 </div>
@@ -48,6 +72,17 @@
 			"id": "text",
 			"default": "<p>For example, a test of the announcement of some news</p>",
 			"label": "t:sections.announcement-bar.settings.text.label"
+		},
+		{
+		"type": "text",
+		"id": "text_second",
+		"label": "t:sections.announcement-bar.settings.text.label"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_reviews",
+			"default": true,
+			"label": "Show reviews"
 		},
 		{
 			"type": "image_picker",

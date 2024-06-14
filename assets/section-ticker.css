@@ -13,13 +13,18 @@
 }
 .ticker__svg {
   width: 4.3rem;
+  opacity: 0;
   height: 4.3rem;
   position: relative;
   margin: 0 1.5rem;
 }
+
 @media screen and (min-width: 576px) {
   .ticker__svg {
     margin: 0 2.7rem;
+  }
+  .ticker-section .ticker {
+    margin-bottom: -50px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -40,8 +45,95 @@
 .ticker__title {
   margin: 0;
   text-align: center;
-  text-transform: capitalize;
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
 }
+
+.ticker-section {
+  background: #161616;
+  text-align: center;
+  position: relative;
+}
+.ticker-section .ticker {
+  top: -438px;
+}
+@media screen and (min-width: 1200px) {
+  .ticker-section {
+    padding-bottom: 6rem;
+  }
+}
+.link-btn {
+  display: flex;
+  padding: 6px 8px 6px 32px;
+  border: 1px solid #ffffff;
+  border-radius: 60px;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+  margin: 0 auto 14px;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+}
+.link-btn--sm {
+  padding: 6px 8px 6px 22px;
+}
+
+.link-btn--sm .link-btn__link{
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+}
+.link-btn--sm .link-btn__link svg{
+  width: 9px;
+  height: 9px;
+}
+
+.link-btn:first-of-type {
+  margin-top: -30px;
+}
+.link-btn__text {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.link-btn--sm .link-btn__text {
+  font-size: 18px;
+}
+
+.link-btn__link {
+  border-radius: 50%;
+  width: 47px;
+  height: 47px;
+  background: #FBEDD8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  transition: all 0.1s;
+  margin-left: 16px;
+}
+
+.ticker-section  .ticker__title {
+  color: #ffffff;
+}
+
+#shopify-section-sections--20352217186649__4a073e7a-4dc2-4e2f-a599-1b378ff57c9c.shopify-section.shopify-section-group-footer-group.ticker-section {
+margin-top: 130px;
+}
+
+@media screen and (max-width: 575px) {
+  .ticker-section img {
+    width: 280px;
+    height: 280px;
+  }
+  .ticker-section .ticker {
+    top: -300px;
+  }
+    .ticker-section .ticker__title {
+    font-size: 50px !important;
+  }
+}
+

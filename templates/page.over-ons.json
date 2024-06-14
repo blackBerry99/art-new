@@ -13,7 +13,7 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Ontmoet Arnoud Bennink: een portret van een portret<\/p>",
-            "heading_size": "medium"
+            "heading_size": "large"
           }
         }
       },
@@ -31,6 +31,9 @@
     },
     "a10caf53-cf52-4e2f-8e54-f89b7b351fe8": {
       "type": "image-banner",
+      "custom_css": [
+        ".image-banner {max-width: 1152px;}"
+      ],
       "settings": {
         "full_width": false,
         "subheading": "",
@@ -41,11 +44,12 @@
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
-        "image": "shopify:\/\/shop_images\/IMG_2694_png_3a33f07d-9673-4283-bbc1-fd6f459306d4.png",
+        "image": "shopify:\/\/shop_images\/Arnoud-Bennink-Moderne-Kunst.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Arnoud-Bennink-Moderne-Kunst.jpg",
         "image_ratio": "landscape",
         "opacity_overlay": 0,
         "margin_top": 0,
-        "margin_bottom": 0
+        "margin_bottom": 70
       }
     },
     "225105d6-0f56-426d-90ec-4a34b46333ac": {
@@ -54,17 +58,20 @@
         "9fdd76c2-9a77-45c9-abc7-979b14bf1afa": {
           "type": "text",
           "settings": {
-            "text": "<p>Arnoud vult zijn prachtige galerie met levenslust. De kunst gaat leven, als hij gaat vertellen. “Dit vind ik dus zó mooi!” zegt hij vol passie. Hij staat naast een kunstwerk van Guy Olivier en omlijst het met een verhaal. Over de kunstenaar. Over de techniek. Achter iedere zin een uitroepteken. Het werkt aanstekelijk.<\/p>"
+            "text": "<p>Arnoud vult zijn prachtige galerij met levenslust. De kunst gaat leven, als hij gaat vertellen. “Dit vind ik dus zó mooi!” zegt hij vol passie. Hij staat naast een kunstwerk van Guy Olivier en omlijst het met een verhaal. Over de kunstenaar. Over de techniek. Achter iedere zin een uitroepteken. Het werkt aanstekelijk.<\/p>"
           }
         }
       },
       "block_order": [
         "9fdd76c2-9a77-45c9-abc7-979b14bf1afa"
       ],
+      "custom_css": [
+        "p {font-size: 28px; line-height: 41px; text-align: left;}"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 30,
+        "padding_top": 10,
         "padding_bottom": 0,
         "margin_top": 0,
         "margin_bottom": 0
@@ -83,27 +90,8 @@
       "block_order": [
         "e548f92b-00e4-4369-8fc8-e05da71ca69f"
       ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 30,
-        "padding_bottom": 0,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "dec2a04e-0c20-4f2b-8354-257827b2b2a0": {
-      "type": "rich-text",
-      "blocks": {
-        "8b762c9e-9573-429d-9f6d-54a8a30fb186": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "De allereerste Brood"
-          }
-        }
-      },
-      "block_order": [
-        "8b762c9e-9573-429d-9f6d-54a8a30fb186"
+      "custom_css": [
+        "p {font-size: 22px; line-height: 31px; text-align: left;}"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -117,6 +105,13 @@
     "1cde4943-0db0-4a2a-8ca5-2aa35cabe602": {
       "type": "rich-text",
       "blocks": {
+        "b6818869-b8f2-4a67-b001-60d80fad1217": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>De allereerste Brood<\/p>",
+            "heading_size": "medium"
+          }
+        },
         "48b78dce-0d17-412e-a2bc-4bfb60ae5cd5": {
           "type": "text",
           "settings": {
@@ -125,7 +120,12 @@
         }
       },
       "block_order": [
+        "b6818869-b8f2-4a67-b001-60d80fad1217",
         "48b78dce-0d17-412e-a2bc-4bfb60ae5cd5"
+      ],
+      "custom_css": [
+        "p {font-size: 22px; line-height: 31px; text-align: left;}",
+        "h2 p {font-size: 36px; line-height: 64px; text-align: left;}"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -138,23 +138,26 @@
     },
     "6838cb19-55d6-477a-a509-944f14722994": {
       "type": "video-banner",
+      "custom_css": [
+
+      ],
       "settings": {
         "full_width": false,
         "color_scheme": "background-4",
         "subheading": "",
-        "heading": "",
+        "heading": "<p>Bezoek onze galerij in Leiden<\/p>",
         "heading_size": "medium",
         "text_information": "",
         "text_align": "center",
         "show_view_all": true,
         "button_label": "Afspraak maken",
-        "button_style": "primary",
-        "button_link": "",
+        "button_style": "secondary",
+        "button_link": "shopify:\/\/pages\/contact",
         "video": "shopify:\/\/files\/videos\/Mijn film 5.mp4",
         "video_ratio": "adapt",
         "video_fit": "cover",
-        "opacity_overlay": 0,
-        "padding_top": 50,
+        "opacity_overlay": 0.3,
+        "padding_top": 70,
         "padding_bottom": 0
       }
     },
@@ -214,49 +217,40 @@
         "border_bottom": true,
         "padding_top": 30,
         "padding_bottom": 60,
-        "margin_top": 40,
-        "margin_bottom": 0
-      }
-    },
-    "ef11a680-faea-4a86-aed3-acd7cf27f128": {
-      "type": "rich-text",
-      "blocks": {
-        "e10cd291-f322-4785-9f2c-90829cd5571b": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Kunstgalerie in Leiden"
-          }
-        }
-      },
-      "block_order": [
-        "e10cd291-f322-4785-9f2c-90829cd5571b"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 30,
-        "padding_bottom": 0,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "margin_top": 60,
+        "margin_bottom": 0,
+        "text_add": "Bekend van:"
       }
     },
     "34887700-b49b-4863-8a8b-269a818147e6": {
       "type": "rich-text",
       "blocks": {
+        "3c652dd7-d3ae-479d-8fa5-4a9466c944a1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Kunstgalerij in Leiden<\/p>",
+            "heading_size": "medium"
+          }
+        },
         "b929002a-970e-4ebe-bd39-1e3bcb8e49c2": {
           "type": "text",
           "settings": {
-            "text": "<p>In zijn galerie is Arnoud de gastheer. Met de armen en het hart wijd open ontvangt hij. Er is koffie, wat lekkers en tijd. Tijd om rond te lopen, om je te vergapen aan de kleuren. “Laat even wat foto’s van je interieur zien.” zegt hij. En dan: “Kijk, als je hier nou dat werk met de witte lijst hangt, dat is precies de tint van het vloerkleed.” En hij weet ook, zo uit je hoofd inschatten of het thuis zou passen - dat is lastig. <\/p>"
+            "text": "<p>In zijn galerij is Arnoud de gastheer. Met de armen en het hart wijd open ontvangt hij. Er is koffie, wat lekkers en tijd. Tijd om rond te lopen, om je te vergapen aan de kleuren. “Laat even wat foto’s van je interieur zien.” zegt hij. <\/p>"
           }
         }
       },
       "block_order": [
+        "3c652dd7-d3ae-479d-8fa5-4a9466c944a1",
         "b929002a-970e-4ebe-bd39-1e3bcb8e49c2"
+      ],
+      "custom_css": [
+        "p {font-size: 22px; line-height: 31px; text-align: left;}",
+        "h2 p {font-size: 36px; line-height: 64px; text-align: left;}"
       ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 30,
+        "padding_top": 90,
         "padding_bottom": 0,
         "margin_top": 0,
         "margin_bottom": 0
@@ -271,32 +265,21 @@
             "heading": "<p>“Neem deze vijf maar op proef, dan besluit je thuis welke je het mooiste vindt.” <br\/><\/p>",
             "heading_size": "medium"
           }
-        }
-      },
-      "block_order": [
-        "template--20352217284953__ed6c20c5-45fe-463f-a426-1ffc95fe0ea6-heading-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 30,
-        "margin_top": 30,
-        "margin_bottom": 0
-      }
-    },
-    "3f925f3c-f7cd-48df-8b22-6390816bbbd8": {
-      "type": "rich-text",
-      "blocks": {
-        "8b36f5a9-4529-47ca-afa9-5b665bcb0e0c": {
+        },
+        "fd58e032-f61d-4ebf-9493-62a3e93c89dc": {
           "type": "text",
           "settings": {
-            "text": "<p>Meestal is het Arnoud zelf die de kunst bij je thuis komt brengen. Dat contact met mensen, hij leeft ervoor.<\/p>"
+            "text": "<p>En dan: “Kijk, als je hier nou dat werk met de witte lijst hangt, dat is precies de tint van het vloerkleed.” En hij weet ook, zo uit je hoofd inschatten of het thuis zou passen - dat is lastig. Meestal is het Arnoud zelf die de kunst bij je thuis komt brengen. Dat contact met mensen, hij leeft ervoor.<\/p>"
           }
         }
       },
       "block_order": [
-        "8b36f5a9-4529-47ca-afa9-5b665bcb0e0c"
+        "template--20352217284953__ed6c20c5-45fe-463f-a426-1ffc95fe0ea6-heading-1",
+        "fd58e032-f61d-4ebf-9493-62a3e93c89dc"
+      ],
+      "custom_css": [
+        "h2 p {color: #c27a0d; font-size: 39px; line-height: 48px; margin-bottom: 30px;}",
+        "p {font-size: 22px; line-height: 31px; text-align: left;}"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -310,74 +293,43 @@
     "ae1b03fb-f827-4ab7-998a-2c414b06959c": {
       "type": "contact-form",
       "settings": {
+        "full": true,
         "heading": "<p>Maak een afspraak in de kunstgalerij te Leiden<\/p>",
         "text": "Vul het formulier in of bel Arnoud. Hij neemt je mee in de wereld van kunst. Er is koffie, wat lekkers en ruimte voor persoonlijk advies.",
-        "additional_text": "<p>Additional text for contact form.<\/p>",
+        "address": "Flevoweg 35\u2028\n2318 BX, Leiden\n+316 53 40 74 18",
         "margin_top": 170,
-        "margin_bottom": 0
-      }
-    },
-    "33be9f5d-1ae5-49f0-8601-0b4f208b98a7": {
-      "type": "rich-text",
-      "blocks": {
-        "8ad90ce5-a034-4e86-8b77-d57ff362636f": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Zijn eerste handeltje begint al als twaalfjarige"
-          }
-        }
-      },
-      "block_order": [
-        "8ad90ce5-a034-4e86-8b77-d57ff362636f"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 30,
-        "padding_bottom": 0,
-        "margin_top": 0,
         "margin_bottom": 0
       }
     },
     "7a902a14-1fe4-4043-a162-b4bb71404c50": {
       "type": "rich-text",
       "blocks": {
+        "34f69bcb-f539-4b9a-bfbd-03df3015e0b1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Zijn eerste handeltje begint al als twaalfjarige<\/p>",
+            "heading_size": "medium"
+          }
+        },
         "363b5628-abb3-4825-8b95-ebb29a72b383": {
           "type": "text",
           "settings": {
-            "text": "<p>Op het Amsterdamse Waterlooplein koopt hij oude houten sigarenmallen in voor zeven gulden vijftig - die hij in Leiderdorp vervolgens weer verkoopt. Het plezier van inkopen en iemand blij maken met een aankoop, het zit tot in zijn botten verankerd. De klant helpen die een kunstwerk zoekt voor zijn vrouw. Maar wat zou ze mooi vinden? Arnoud komt er wel uit met deze man, die best blijkt te weten wat ze mooi vindt.<\/p>"
+            "text": "<p>Op het Amsterdamse Waterlooplein koopt hij oude houten sigarenmallen in voor zeven gulden vijftig - die hij in Leiderdorp vervolgens weer verkoopt. Het plezier van inkopen en iemand blij maken met een aankoop, het zit tot in zijn botten verankerd. De klant helpen die een kunstwerk zoekt voor zijn vrouw. Maar wat zou ze mooi vinden? Arnoud komt er wel uit met deze man, die best blijkt te weten wat ze mooi vindt.<\/p><p>Naast kunsthandelaar is hij ook opa, en hij geeft zijn kleinkinderen ieder een klein kunstwerkje van een vogeltje. De één met het snaveltje naar links, de ander met het snaveltje naar rechts. Het inspireert de kinderen tot het tekenen van vogeltjes en natuurlijk vragen ze hem of de tekeningen in de galerij mogen hangen. “Dat is toch mooi, dat je dat bij kan brengen?” zegt hij glunderend.<\/p><p><\/p><p><\/p><p><\/p><p><\/p>"
           }
         }
       },
       "block_order": [
+        "34f69bcb-f539-4b9a-bfbd-03df3015e0b1",
         "363b5628-abb3-4825-8b95-ebb29a72b383"
       ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 30,
-        "padding_bottom": 0,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "e3098f6e-c274-4d7d-93b5-2705f9f8db65": {
-      "type": "rich-text",
-      "blocks": {
-        "b338bd19-7891-4826-b0e4-5257aec97877": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Naast kunsthandelaar is hij ook opa, en hij geeft zijn kleinkinderen ieder een klein kunstwerkje van een vogeltje. De één met het snaveltje naar links, de ander met het snaveltje naar rechts. Het inspireert de kinderen tot het tekenen van vogeltjes en natuurlijk vragen ze hem of de tekeningen in de galerie mogen hangen. “Dat is toch mooi, dat je dat bij kan brengen?” zegt hij glunderend.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "b338bd19-7891-4826-b0e4-5257aec97877"
+      "custom_css": [
+        "p {font-size: 22px; line-height: 31px; text-align: left; margin-bottom: 30px;}",
+        "h2 p {font-size: 36px; line-height: 64px; text-align: left;}"
       ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 30,
+        "padding_top": 90,
         "padding_bottom": 0,
         "margin_top": 0,
         "margin_bottom": 0
@@ -385,11 +337,15 @@
     },
     "83a6259c-eeea-4527-a7a8-26930311fbc9": {
       "type": "video",
+      "custom_css": [
+        ".container {max-width: 1152px;}"
+      ],
       "settings": {
         "full_width": false,
         "height": "16\/9",
         "video_fit": "cover",
         "subheading": "",
+        "add_text": "*Opname in de kunstgalerij bij ‘Nederland ontdekt’ met Ferry Doedens.",
         "heading": "",
         "cover_image": "shopify:\/\/shop_images\/Thumbnail_Nederland_Ontdekt_Moderne_Kunst.jpg",
         "opacity_overlay": 0,
@@ -399,71 +355,39 @@
         "video_muted": false,
         "video_controls": true,
         "description": "",
-        "padding_top": 40,
+        "padding_top": 100,
         "padding_bottom": 0
-      }
-    },
-    "e63909f6-7249-434e-b881-06de68fc2ac9": {
-      "type": "rich-text",
-      "blocks": {
-        "b5dc1ee0-8953-49ba-b2bd-fae055392634": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Voelsprieten voor opkomend talent heeft hij dus wel"
-          }
-        }
-      },
-      "block_order": [
-        "b5dc1ee0-8953-49ba-b2bd-fae055392634"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 30,
-        "padding_bottom": 0,
-        "margin_top": 0,
-        "margin_bottom": 0
       }
     },
     "51114c53-a00b-4a13-a6f2-d98a62dbed80": {
       "type": "rich-text",
       "blocks": {
+        "72abba64-331c-4eb3-9899-35c267d2c648": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Voelsprieten voor opkomend talent heeft hij dus wel<\/p>",
+            "heading_size": "medium"
+          }
+        },
         "905af08f-6534-4a77-a4f9-cc83533271f2": {
           "type": "text",
           "settings": {
-            "text": "<p>Zoals ook bij Je Shen. Arnoud is gefascineerd door de prachtige werken van deze Chinese kunstenaar en is de enige in Nederland die de werken verkoopt. En, hij gaat voor kwaliteit: om een kunstwerk hoort een ècht mooie baklijst, vindt Arnoud. ‘Ik wil overal het neusje van de zalm.<br\/><\/p>"
+            "text": "<p>Zoals ook bij Je Shen. Arnoud is gefascineerd door de prachtige werken van deze Chinese kunstenaar en is de enige in Nederland die de werken verkoopt. En, hij gaat voor kwaliteit: om een kunstwerk hoort een ècht mooie baklijst, vindt Arnoud. ‘Ik wil overal het neusje van de zalm.<\/p><p>Arnoud Bennink. Een kleurrijk portret in goede conditie. Ruim over de pensioenleeftijd en nog lang niet moe. <\/p>"
           }
         }
       },
       "block_order": [
+        "72abba64-331c-4eb3-9899-35c267d2c648",
         "905af08f-6534-4a77-a4f9-cc83533271f2"
       ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 30,
-        "padding_bottom": 0,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
-    "e4475852-ad44-4694-9f25-6731a94b5d5c": {
-      "type": "rich-text",
-      "blocks": {
-        "38bbbe11-d8cc-458e-9b9b-f1fbf2ac55c6": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Arnoud Bennink. Een kleurrijk portret in goede conditie. Ruim over de pensioenleeftijd en nog lang niet moe. <br\/><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "38bbbe11-d8cc-458e-9b9b-f1fbf2ac55c6"
+      "custom_css": [
+        "p {font-size: 22px; line-height: 31px; text-align: left; margin-bottom: 30px;}",
+        "h2 p {font-size: 36px; line-height: 64px; text-align: left;}"
       ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 30,
+        "padding_top": 100,
         "padding_bottom": 0,
         "margin_top": 0,
         "margin_bottom": 0
@@ -475,27 +399,11 @@
         "7a76950e-25d7-4291-9e82-0624c7ecc223": {
           "type": "heading",
           "settings": {
-            "heading": "<p><br\/>“Hoe lang ik dit nog blijf doen? Totdat ik m’n hoofdje neerleg.” <br\/><br\/><\/p>",
+            "heading": "<p>“Hoe lang ik dit nog blijf doen? Totdat ik m’n hoofdje neerleg.” <\/p>",
             "heading_size": "medium"
           }
-        }
-      },
-      "block_order": [
-        "7a76950e-25d7-4291-9e82-0624c7ecc223"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "margin_top": 10,
-        "margin_bottom": 0
-      }
-    },
-    "472d2645-1029-4966-874e-5ec526c722e6": {
-      "type": "rich-text",
-      "blocks": {
-        "7cc75e87-4498-4fca-b98e-2e934cc3656a": {
+        },
+        "c36030f7-b6f9-43dd-b791-28711b5cc34c": {
           "type": "text",
           "settings": {
             "text": "<p>Hij omringt zich met jonge mensen en geniet van het varen in zijn sloep. Sport regelmatig en kookt graag een mooi diner. Als hij uit eten is geweest, probeert hij het gerecht thuis ook te maken. Ik heb zo'n fantastisch leven!' zegt hij met een grote lach.<\/p>"
@@ -503,12 +411,17 @@
         }
       },
       "block_order": [
-        "7cc75e87-4498-4fca-b98e-2e934cc3656a"
+        "7a76950e-25d7-4291-9e82-0624c7ecc223",
+        "c36030f7-b6f9-43dd-b791-28711b5cc34c"
+      ],
+      "custom_css": [
+        "h2 p {color: #c27a0d; font-size: 39px; line-height: 48px; margin-bottom: 20px;}",
+        "p {font-size: 22px; line-height: 31px; text-align: left;}"
       ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 30,
+        "padding_top": 0,
         "padding_bottom": 0,
         "margin_top": 0,
         "margin_bottom": 0
@@ -521,23 +434,15 @@
     "a10caf53-cf52-4e2f-8e54-f89b7b351fe8",
     "225105d6-0f56-426d-90ec-4a34b46333ac",
     "773c53d0-6c15-4545-b6f3-66902bd9db9b",
-    "dec2a04e-0c20-4f2b-8354-257827b2b2a0",
     "1cde4943-0db0-4a2a-8ca5-2aa35cabe602",
     "6838cb19-55d6-477a-a509-944f14722994",
     "f1b992c4-4994-4990-965d-86af28752eb7",
-    "ef11a680-faea-4a86-aed3-acd7cf27f128",
     "34887700-b49b-4863-8a8b-269a818147e6",
     "ed6c20c5-45fe-463f-a426-1ffc95fe0ea6",
-    "3f925f3c-f7cd-48df-8b22-6390816bbbd8",
     "ae1b03fb-f827-4ab7-998a-2c414b06959c",
-    "33be9f5d-1ae5-49f0-8601-0b4f208b98a7",
     "7a902a14-1fe4-4043-a162-b4bb71404c50",
-    "e3098f6e-c274-4d7d-93b5-2705f9f8db65",
     "83a6259c-eeea-4527-a7a8-26930311fbc9",
-    "e63909f6-7249-434e-b881-06de68fc2ac9",
     "51114c53-a00b-4a13-a6f2-d98a62dbed80",
-    "e4475852-ad44-4694-9f25-6731a94b5d5c",
-    "16d71891-132f-4c64-9883-d2d45e3113c8",
-    "472d2645-1029-4966-874e-5ec526c722e6"
+    "16d71891-132f-4c64-9883-d2d45e3113c8"
   ]
 }

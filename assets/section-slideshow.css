@@ -340,6 +340,7 @@ section.section-slideshow.section-under-menu .slideshow {
 }
 .slideshow .swiper-slide__content-width {
   max-width: 71.7rem;
+  padding-top: 4rem;
 }
 .slideshow__placeholder {
   position: absolute;

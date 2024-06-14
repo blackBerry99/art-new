@@ -268,40 +268,171 @@ customElements.define('facet-filters-form', FacetFiltersForm);
 FacetFiltersForm.setListeners();
 
 class PriceRange extends HTMLElement {
-  constructor() {
-    super();
-    this.querySelectorAll('input').forEach((element) =>
-      element.addEventListener('change', this.onRangeChange.bind(this))
-    );
-    this.setMinAndMaxValues();
-  }
+	constructor() {
+		super();
+		this.querySelectorAll("input").forEach((element) =>
+			element.addEventListener("change", this.onRangeChange.bind(this))
+		);
+		this.setMinAndMaxValues();
+		this.controlSlider();
+		this.controlInput();
+	}
 
-  onRangeChange(event) {
-    this.adjustToValidValues(event.currentTarget);
-    this.setMinAndMaxValues();
-  }
+	onRangeChange(event) {
+		this.adjustToValidValues(event.currentTarget);
+		this.setMinAndMaxValues();
+	}
 
-  setMinAndMaxValues() {
-    const inputs = this.querySelectorAll('input');
-    const minInput = inputs[0];
-    const maxInput = inputs[1];
-    if (maxInput.value) minInput.setAttribute('max', maxInput.value);
-    if (minInput.value) maxInput.setAttribute('min', minInput.value);
-    if (minInput.value === '') maxInput.setAttribute('min', 0);
-    if (maxInput.value === '') minInput.setAttribute('max', maxInput.getAttribute('max'));
-  }
+	setMinAndMaxValues() {
+		const inputs = this.querySelectorAll("input");
+		const minInput = inputs[0];
+		const maxInput = inputs[1];
+       minInput.setAttribute("min", 0);
 
-  adjustToValidValues(input) {
-    const value = Number(input.value);
-    const min = Number(input.getAttribute('min'));
-    const max = Number(input.getAttribute('max'));
+    maxInput.setAttribute("max", maxInput.getAttribute("max"));
+		// if (maxInput.value) minInput.setAttribute("max", maxInput.value);
+		// if (minInput.value) maxInput.setAttribute("min", minInput.value);
+		// if (minInput.value === "") maxInput.setAttribute("min", 0);
+		// if (maxInput.value === "")
+		// 	minInput.setAttribute("max", maxInput.getAttribute("max"));
+	}
 
-    if (value < min) input.value = min;
-    if (value > max) input.value = max;
-  }
+	adjustToValidValues(input) {
+		const value = Number(input.value);
+		const min = Number(input.getAttribute("min"));
+		const max = Number(input.getAttribute("max"));
+
+		if (value < min) input.value = min;
+		if (value > max) input.value = max;
+	}
+
+	fillSlider() {
+		const inputRangeWrappers = document.querySelectorAll(
+			".facets__price .facets__range"
+		);
+		inputRangeWrappers.forEach((inputWrapper) => {
+			const inputsRange = inputWrapper.querySelectorAll(".field__range");
+			const inputRangeFrom = inputsRange[0];
+			const inputRangeTo = inputsRange[1];
+
+			const range = inputRangeTo.max - inputRangeTo.min;
+			const fromCurrent = inputRangeFrom.value - inputRangeTo.min;
+			const toCurrent = inputRangeTo.value - inputRangeTo.min;
+			const minRange = (fromCurrent / range) * 100;
+			const maxRange = (toCurrent / range) * 100;
+
+			inputWrapper.setAttribute(
+				"style",
+				`--range-min: ${minRange}%; --range-max: ${maxRange}%`
+			);
+		});
+	}
+
+	controlSlider() {
+		const inputRangeWrappers = document.querySelectorAll(
+			".facets__price .facets__range"
+		);
+		const inputNumberWrappers = document.querySelectorAll(
+			".facets__price .facets__price-wrapper"
+		);
+
+		inputRangeWrappers.forEach((inputWrapper, index) => {
+			const inputsRange = inputWrapper.querySelectorAll(".field__range");
+			const inputRangeFrom = inputsRange[0];
+			const inputRangeTo = inputsRange[1];
+			const inputNumberFrom =
+				inputNumberWrappers[index].querySelectorAll(".field__input")[0];
+			const inputNumberTo =
+				inputNumberWrappers[index].querySelectorAll(".field__input")[1];
+
+			inputRangeFrom.oninput = () => {
+				const from = parseInt(inputRangeFrom.value, 10);
+				const to = parseInt(inputRangeTo.value, 10);
+				if (from > to) {
+					inputRangeFrom.value = to;
+					inputNumberFrom.value = to;
+				} else {
+					inputNumberFrom.value = from;
+				}
+
+				this.fillSlider();
+			};
+
+			if (Number(inputRangeTo.value) <= 0) {
+				inputRangeTo.style.zIndex = 2;
+			} else {
+				inputRangeTo.style.zIndex = 0;
+			}
+
+			inputRangeTo.oninput = () => {
+				const from = parseInt(inputRangeFrom.value, 10);
+				const to = parseInt(inputRangeTo.value, 10);
+				if (from <= to) {
+					inputRangeTo.value = to;
+					inputNumberTo.value = to;
+				} else {
+					inputNumberTo.value = from;
+					inputRangeTo.value = from;
+				}
+
+				if (Number(inputRangeTo.value) <= 0) {
+					inputRangeTo.style.zIndex = 2;
+				} else {
+					inputRangeTo.style.zIndex = 0;
+				}
+
+				this.fillSlider();
+			};
+		});
+	}
+
+	controlInput() {
+		const inputRangeWrappers = document.querySelectorAll(
+			".facets__price .facets__range"
+		);
+		const inputNumberWrappers = document.querySelectorAll(
+			".facets__price .facets__price-wrapper"
+		);
+
+		inputNumberWrappers.forEach((inputWrapper, index) => {
+			const inputsNumber = inputWrapper.querySelectorAll(".field__input");
+			const inputNumberFrom = inputsNumber[0];
+			const inputNumberTo = inputsNumber[1];
+			const inputRangeFrom =
+				inputRangeWrappers[index].querySelectorAll(".field__range")[0];
+			const inputRangeTo =
+				inputRangeWrappers[index].querySelectorAll(".field__range")[1];
+
+			inputNumberFrom.oninput = () => {
+				const from = parseInt(inputNumberFrom.value, 10);
+				const to = parseInt(inputNumberTo.value, 10);
+				if (from > to) {
+					inputRangeFrom.value = to;
+					inputNumberFrom.value = to;
+				} else {
+					inputRangeFrom.value = from;
+				}
+
+				this.fillSlider();
+			};
+
+			inputNumberTo.oninput = () => {
+				const from = parseInt(inputNumberFrom.value, 10);
+				const to = parseInt(inputNumberTo.value, 10);
+				if (from <= to) {
+					inputRangeTo.value = to;
+					inputNumberTo.value = to;
+				} else {
+					inputNumberTo.value = from;
+				}
+
+				this.fillSlider();
+			};
+		});
+	}
 }
 
-customElements.define('price-range', PriceRange);
+customElements.define("price-range", PriceRange);
 
 class FacetRemove extends HTMLElement {
   constructor() {

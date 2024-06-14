@@ -8,6 +8,9 @@
 <div class="brands container">
 	<div class="border-wrapper {% if section.settings.border_top %}brand__border--top{% endif %} {% if section.settings.border_bottom %}brand__border--bottom{% endif %} ">
 		<div class="brands__items section-{{ section.id }}-padding">
+			{% if section.settings.text_add != blank %}
+				<div class="brand__flex-text">{{ section.settings.text_add }}</div>
+			{% endif %}
 			{%- for block in section.blocks -%}
 				<a
 					class="brands__item"
@@ -132,6 +135,12 @@
 			"default": 0,
 			"unit": "px",
 			"label": "t:sections.all.section-margin.margin_bottom.label"
+		},
+		{
+		"type": "text",
+		"id": "text_add",
+		"default": "Bekend van:",
+		"label": "Additional text"
 		}
 	],
 	"blocks": [

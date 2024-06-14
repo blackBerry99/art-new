@@ -4,9 +4,15 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "custom_css": [
+        ".iframe-wrapper1 {padding-top: 5px; display: flex; \/* Maakt de div een flex container *\/ justify-content: center; \/* Centreert horizontaal *\/ align-items: center; \/* Centreert verticaal *\/ height: px; \/* Stel een specifieke hoogte in voor de container *\/ width: 280px; \/* Stel de breedte in, zorg dat deze overeenkomt met de breedte van de iframe *\/}",
+        "iframe.wwk-widget-iframe {border: 0; height: 45px !important; width: 100% !important; \/* De breedte van de iframe past zich aan de container aan *\/}"
+      ],
       "settings": {
         "color_scheme": "1",
-        "text": "<p>Gratis schadevrij bezorgd<\/p>"
+        "text": "<p>Gratis schadevrij bezorgd<\/p>",
+        "text_second": "14 dagen gratis retourneren",
+        "show_reviews": true
       }
     },
     "header": {
@@ -37,14 +43,14 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "menu": "main-menu",
-        "logo": "shopify:\/\/shop_images\/Moderne-kunst.svg",
-        "logo_width": 50,
-        "heading_search": "<p>Search<\/p>",
+        "logo": "shopify:\/\/shop_images\/Modernekunst.svg",
+        "logo_width": 245,
+        "heading_search": "<p>Zoeken<\/p>",
         "show_collection_card": false,
         "collection_list": [
-
+          "herman-brood"
         ],
-        "show_items": false,
+        "show_items": true,
         "product_list": [
 
         ],

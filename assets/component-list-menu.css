@@ -6,7 +6,7 @@
   position: absolute;
   left: 1.5rem;
   min-width: 100%;
-  width: 20rem;
+  width: 23rem;
   background-color: rgb(var(--color-header-background));
 }
 
@@ -37,6 +37,6 @@
 .list-menu--disclosure.localization-selector {
   max-height: 18rem;
   overflow: auto;
-  width: 10rem;
+  width: 12rem;
   padding: 0.5rem;
 }
